@@ -1112,8 +1112,7 @@ end</text>
                   bold="false"/>
         <label/>
         <text>OGSet.ArcDescriptorOptions(fn (CPN&apos;a:Arc) =&gt;
- (st_Arc CPN&apos;a)^&quot; &quot;^(st_BE(ArcToBE CPN&apos;a)));
-</text>
+ (st_Arc CPN&apos;a)^&quot; &quot;^(st_BE(ArcToBE CPN&apos;a)));</text>
       </Aux>
       <Aux id="ID1412489354">
         <posattr x="-378.000000"
@@ -1155,8 +1154,7 @@ end</text>
         <textattr colour="Black"
                   bold="false"/>
         <label/>
-        <text>OGSet.ArcDescriptorOptions(fn (arc) =&gt; &quot;&quot;);
-</text>
+        <text>OGSet.ArcDescriptorOptions(fn (arc) =&gt; &quot;&quot;);</text>
       </Aux>
       <Aux id="ID1412502322">
         <posattr x="-378.000000"
@@ -1203,8 +1201,7 @@ end</text>
       (st_Node CPN&apos;n)^&quot;:\n&quot;
       ^(st_Mark.Grid&apos;Generator 1 CPN&apos;n)^&quot;\n&quot;
       ^(st_Mark.Grid&apos;Generated 1 CPN&apos;n)^&quot;\n&quot;
-      ^(st_Mark.Grid&apos;Consumer 1 CPN&apos;n)^&quot;\n&quot;);
-</text>
+      ^(st_Mark.Grid&apos;Consumer 1 CPN&apos;n)^&quot;\n&quot;);</text>
       </Aux>
       <Aux id="ID1412525717">
         <posattr x="-378.000000"
@@ -1251,7 +1248,12 @@ fn (PI,mark) =&gt; PI ^ &quot;: &quot; ^ mark ^ &quot;\n&quot;)</text>
           <text>&lt;same as model&gt;</text>
         </value>
       </option>
-      <option name="extensions.10003.enable">
+      <option name="extensions.10006.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10002.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -1261,17 +1263,12 @@ fn (PI,mark) =&gt; PI ^ &quot;: &quot; ^ mark ^ &quot;\n&quot;)</text>
           <boolean>true</boolean>
         </value>
       </option>
+      <option name="extensions.10003.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
       <option name="extensions.10005.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10006.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10002.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -1509,8 +1506,8 @@ fn (PI,mark) =&gt; PI ^ &quot;: &quot; ^ mark ^ &quot;\n&quot;)</text>
         </sheets>
         <zorder>
           <position value="1"/>
-          <position value="0"/>
           <position value="2"/>
+          <position value="0"/>
         </zorder>
       </cpnbinder>
     </binders>
@@ -1580,9 +1577,7 @@ fn (PI,mark) =&gt; PI ^ &quot;: &quot; ^ mark ^ &quot;\n&quot;)</text>
           <IndexNode expanded="false"/>
         </IndexNode>
       </IndexNode>
-      <IndexNode expanded="false">
-        <IndexNode expanded="false"/>
-      </IndexNode>
+      <IndexNode expanded="false"/>
       <IndexNode expanded="true">
         <IndexNode expanded="false">
           <IndexNode expanded="true"/>

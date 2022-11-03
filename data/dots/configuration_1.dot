@@ -1,0 +1,201 @@
+digraph cpn_tools_graph {
+  N47 [label="47:
+sgrid'Generator 1: empty
+sgrid'Generated 1: 1`0
+sgrid'Consumer 1: 1`({i=4,t=CON,c=3},6)++
+1`({i=5,t=CON,c=1},0)++
+1`({i=6,t=CON,c=2},0)
+"];
+  N56 [label="56:
+sgrid'Generator 1: empty
+sgrid'Generated 1: 1`0
+sgrid'Consumer 1: 1`({i=4,t=CON,c=3},3)++
+1`({i=5,t=CON,c=1},1)++
+1`({i=6,t=CON,c=2},2)
+"];
+  N60 [label="60:
+sgrid'Generator 1: empty
+sgrid'Generated 1: 1`0
+sgrid'Consumer 1: 1`({i=4,t=CON,c=3},0)++
+1`({i=5,t=CON,c=1},0)++
+1`({i=6,t=CON,c=2},6)
+"];
+  N64 [label="64:
+sgrid'Generator 1: empty
+sgrid'Generated 1: 1`0
+sgrid'Consumer 1: 1`({i=4,t=CON,c=3},0)++
+1`({i=5,t=CON,c=1},2)++
+1`({i=6,t=CON,c=2},4)
+"];
+  N67 [label="67:
+sgrid'Generator 1: empty
+sgrid'Generated 1: 1`0
+sgrid'Consumer 1: 1`({i=4,t=CON,c=3},3)++
+1`({i=5,t=CON,c=1},3)++
+1`({i=6,t=CON,c=2},0)
+"];
+  N69 [label="69:
+sgrid'Generator 1: empty
+sgrid'Generated 1: 1`0
+sgrid'Consumer 1: 1`({i=4,t=CON,c=3},0)++
+1`({i=5,t=CON,c=1},4)++
+1`({i=6,t=CON,c=2},2)
+"];
+  N71 [label="71:
+sgrid'Generator 1: empty
+sgrid'Generated 1: 1`0
+sgrid'Consumer 1: 1`({i=4,t=CON,c=3},0)++
+1`({i=5,t=CON,c=1},6)++
+1`({i=6,t=CON,c=2},0)
+"];
+  N1 -> N4 [ label="A3:1->4:sgrid'gen 1: {p2=0,gen={i=2,t=GEN,c=1},p1=1}" ];
+  N1 -> N3 [ label="A2:1->3:sgrid'gen 1: {p2=0,gen={i=3,t=GEN,c=3},p1=3}" ];
+  N1 -> N2 [ label="A1:1->2:sgrid'gen 1: {p2=0,gen={i=1,t=GEN,c=2},p1=2}" ];
+  N10 -> N23 [ label="A34:10->23:sgrid'gen 1: {p2=0,gen={i=2,t=GEN,c=1},p1=1}" ];
+  N10 -> N18 [ label="A33:10->18:sgrid'gen 1: {p2=0,gen={i=1,t=GEN,c=2},p1=2}" ];
+  N11 -> N25 [ label="A37:11->25:sgrid'trans 1: {p3=1,con={i=5,t=CON,c=1},p4=0}" ];
+  N11 -> N22 [ label="A36:11->22:sgrid'gen 1: {p2=1,gen={i=2,t=GEN,c=1},p1=1}" ];
+  N11 -> N19 [ label="A35:11->19:sgrid'gen 1: {p2=1,gen={i=1,t=GEN,c=2},p1=2}" ];
+  N12 -> N25 [ label="A41:12->25:sgrid'trans 1: {p3=2,con={i=6,t=CON,c=2},p4=0}" ];
+  N12 -> N26 [ label="A40:12->26:sgrid'trans 1: {p3=2,con={i=5,t=CON,c=1},p4=1}" ];
+  N12 -> N20 [ label="A39:12->20:sgrid'gen 1: {p2=2,gen={i=1,t=GEN,c=2},p1=2}" ];
+  N12 -> N24 [ label="A38:12->24:sgrid'gen 1: {p2=2,gen={i=2,t=GEN,c=1},p1=1}" ];
+  N13 -> N24 [ label="A43:13->24:sgrid'gen 1: {p2=0,gen={i=3,t=GEN,c=3},p1=3}" ];
+  N13 -> N16 [ label="A42:13->16:sgrid'gen 1: {p2=0,gen={i=1,t=GEN,c=2},p1=2}" ];
+  N14 -> N29 [ label="A46:14->29:sgrid'trans 1: {p3=6,con={i=4,t=CON,c=3},p4=0}" ];
+  N14 -> N28 [ label="A45:14->28:sgrid'trans 1: {p3=6,con={i=6,t=CON,c=2},p4=0}" ];
+  N14 -> N27 [ label="A44:14->27:sgrid'trans 1: {p3=6,con={i=5,t=CON,c=1},p4=0}" ];
+  N15 -> N29 [ label="A47:15->29:sgrid'gen 1: {p2=0,gen={i=3,t=GEN,c=3},p1=3}" ];
+  N16 -> N31 [ label="A50:16->31:sgrid'trans 1: {p3=2,con={i=5,t=CON,c=1},p4=1}" ];
+  N16 -> N30 [ label="A49:16->30:sgrid'trans 1: {p3=2,con={i=6,t=CON,c=2},p4=0}" ];
+  N16 -> N27 [ label="A48:16->27:sgrid'gen 1: {p2=2,gen={i=3,t=GEN,c=3},p1=3}" ];
+  N17 -> N30 [ label="A52:17->30:sgrid'trans 1: {p3=1,con={i=5,t=CON,c=1},p4=0}" ];
+  N17 -> N28 [ label="A51:17->28:sgrid'gen 1: {p2=1,gen={i=3,t=GEN,c=3},p1=3}" ];
+  N18 -> N33 [ label="A55:18->33:sgrid'trans 1: {p3=2,con={i=6,t=CON,c=2},p4=0}" ];
+  N18 -> N32 [ label="A54:18->32:sgrid'trans 1: {p3=2,con={i=5,t=CON,c=1},p4=0}" ];
+  N18 -> N29 [ label="A53:18->29:sgrid'gen 1: {p2=2,gen={i=2,t=GEN,c=1},p1=1}" ];
+  N19 -> N35 [ label="A59:19->35:sgrid'trans 1: {p3=3,con={i=5,t=CON,c=1},p4=0}" ];
+  N19 -> N34 [ label="A58:19->34:sgrid'trans 1: {p3=3,con={i=6,t=CON,c=2},p4=2}" ];
+  N19 -> N33 [ label="A57:19->33:sgrid'trans 1: {p3=3,con={i=4,t=CON,c=3},p4=0}" ];
+  N19 -> N28 [ label="A56:19->28:sgrid'gen 1: {p2=3,gen={i=2,t=GEN,c=1},p1=1}" ];
+  N2 -> N8 [ label="A7:2->8:sgrid'trans 1: {p3=2,con={i=5,t=CON,c=1},p4=0}" ];
+  N2 -> N7 [ label="A6:2->7:sgrid'trans 1: {p3=2,con={i=6,t=CON,c=2},p4=0}" ];
+  N2 -> N6 [ label="A5:2->6:sgrid'gen 1: {p2=2,gen={i=3,t=GEN,c=3},p1=3}" ];
+  N2 -> N5 [ label="A4:2->5:sgrid'gen 1: {p2=2,gen={i=2,t=GEN,c=1},p1=1}" ];
+  N20 -> N32 [ label="A63:20->32:sgrid'trans 1: {p3=4,con={i=4,t=CON,c=3},p4=0}" ];
+  N20 -> N35 [ label="A62:20->35:sgrid'trans 1: {p3=4,con={i=6,t=CON,c=2},p4=0}" ];
+  N20 -> N36 [ label="A61:20->36:sgrid'trans 1: {p3=4,con={i=5,t=CON,c=1},p4=1}" ];
+  N20 -> N27 [ label="A60:20->27:sgrid'gen 1: {p2=4,gen={i=2,t=GEN,c=1},p1=1}" ];
+  N21 -> N31 [ label="A65:21->31:sgrid'gen 1: {p2=0,gen={i=2,t=GEN,c=1},p1=1}" ];
+  N21 -> N36 [ label="A64:21->36:sgrid'gen 1: {p2=0,gen={i=3,t=GEN,c=3},p1=3}" ];
+  N22 -> N38 [ label="A68:22->38:sgrid'trans 1: {p3=2,con={i=6,t=CON,c=2},p4=2}" ];
+  N22 -> N37 [ label="A67:22->37:sgrid'trans 1: {p3=2,con={i=5,t=CON,c=1},p4=0}" ];
+  N22 -> N28 [ label="A66:22->28:sgrid'gen 1: {p2=2,gen={i=1,t=GEN,c=2},p1=2}" ];
+  N23 -> N39 [ label="A70:23->39:sgrid'trans 1: {p3=1,con={i=5,t=CON,c=1},p4=0}" ];
+  N23 -> N29 [ label="A69:23->29:sgrid'gen 1: {p2=1,gen={i=1,t=GEN,c=2},p1=2}" ];
+  N24 -> N40 [ label="A74:24->40:sgrid'trans 1: {p3=3,con={i=5,t=CON,c=1},p4=1}" ];
+  N24 -> N37 [ label="A73:24->37:sgrid'trans 1: {p3=3,con={i=6,t=CON,c=2},p4=0}" ];
+  N24 -> N39 [ label="A72:24->39:sgrid'trans 1: {p3=3,con={i=4,t=CON,c=3},p4=0}" ];
+  N24 -> N27 [ label="A71:24->27:sgrid'gen 1: {p2=3,gen={i=1,t=GEN,c=2},p1=2}" ];
+  N25 -> N37 [ label="A76:25->37:sgrid'gen 1: {p2=0,gen={i=2,t=GEN,c=1},p1=1}" ];
+  N25 -> N35 [ label="A75:25->35:sgrid'gen 1: {p2=0,gen={i=1,t=GEN,c=2},p1=2}" ];
+  N26 -> N41 [ label="A79:26->41:sgrid'trans 1: {p3=1,con={i=5,t=CON,c=1},p4=2}" ];
+  N26 -> N36 [ label="A78:26->36:sgrid'gen 1: {p2=1,gen={i=1,t=GEN,c=2},p1=2}" ];
+  N26 -> N40 [ label="A77:26->40:sgrid'gen 1: {p2=1,gen={i=2,t=GEN,c=1},p1=1}" ];
+  N27 -> N44 [ label="A82:27->44:sgrid'trans 1: {p3=5,con={i=4,t=CON,c=3},p4=0}" ];
+  N27 -> N43 [ label="A81:27->43:sgrid'trans 1: {p3=5,con={i=5,t=CON,c=1},p4=1}" ];
+  N27 -> N42 [ label="A80:27->42:sgrid'trans 1: {p3=5,con={i=6,t=CON,c=2},p4=0}" ];
+  N28 -> N42 [ label="A85:28->42:sgrid'trans 1: {p3=4,con={i=5,t=CON,c=1},p4=0}" ];
+  N28 -> N46 [ label="A84:28->46:sgrid'trans 1: {p3=4,con={i=4,t=CON,c=3},p4=0}" ];
+  N28 -> N45 [ label="A83:28->45:sgrid'trans 1: {p3=4,con={i=6,t=CON,c=2},p4=2}" ];
+  N29 -> N44 [ label="A88:29->44:sgrid'trans 1: {p3=3,con={i=5,t=CON,c=1},p4=0}" ];
+  N29 -> N46 [ label="A87:29->46:sgrid'trans 1: {p3=3,con={i=6,t=CON,c=2},p4=0}" ];
+  N29 -> N47 [ label="A86:29->47:sgrid'trans 1: {p3=3,con={i=4,t=CON,c=3},p4=3}" ];
+  N3 -> N12 [ label="A12:3->12:sgrid'trans 1: {p3=3,con={i=5,t=CON,c=1},p4=0}" ];
+  N3 -> N11 [ label="A11:3->11:sgrid'trans 1: {p3=3,con={i=6,t=CON,c=2},p4=0}" ];
+  N3 -> N10 [ label="A10:3->10:sgrid'trans 1: {p3=3,con={i=4,t=CON,c=3},p4=0}" ];
+  N3 -> N9 [ label="A9:3->9:sgrid'gen 1: {p2=3,gen={i=2,t=GEN,c=1},p1=1}" ];
+  N3 -> N6 [ label="A8:3->6:sgrid'gen 1: {p2=3,gen={i=1,t=GEN,c=2},p1=2}" ];
+  N30 -> N42 [ label="A89:30->42:sgrid'gen 1: {p2=0,gen={i=3,t=GEN,c=3},p1=3}" ];
+  N31 -> N48 [ label="A91:31->48:sgrid'trans 1: {p3=1,con={i=5,t=CON,c=1},p4=2}" ];
+  N31 -> N43 [ label="A90:31->43:sgrid'gen 1: {p2=1,gen={i=3,t=GEN,c=3},p1=3}" ];
+  N32 -> N49 [ label="A93:32->49:sgrid'trans 1: {p3=1,con={i=5,t=CON,c=1},p4=1}" ];
+  N32 -> N44 [ label="A92:32->44:sgrid'gen 1: {p2=1,gen={i=2,t=GEN,c=1},p1=1}" ];
+  N33 -> N46 [ label="A94:33->46:sgrid'gen 1: {p2=0,gen={i=2,t=GEN,c=1},p1=1}" ];
+  N34 -> N50 [ label="A96:34->50:sgrid'trans 1: {p3=1,con={i=5,t=CON,c=1},p4=0}" ];
+  N34 -> N45 [ label="A95:34->45:sgrid'gen 1: {p2=1,gen={i=2,t=GEN,c=1},p1=1}" ];
+  N35 -> N50 [ label="A99:35->50:sgrid'trans 1: {p3=2,con={i=6,t=CON,c=2},p4=2}" ];
+  N35 -> N51 [ label="A98:35->51:sgrid'trans 1: {p3=2,con={i=5,t=CON,c=1},p4=1}" ];
+  N35 -> N42 [ label="A97:35->42:sgrid'gen 1: {p2=2,gen={i=2,t=GEN,c=1},p1=1}" ];
+  N36 -> N52 [ label="A103:36->52:sgrid'trans 1: {p3=3,con={i=5,t=CON,c=1},p4=2}" ];
+  N36 -> N49 [ label="A102:36->49:sgrid'trans 1: {p3=3,con={i=4,t=CON,c=3},p4=0}" ];
+  N36 -> N51 [ label="A101:36->51:sgrid'trans 1: {p3=3,con={i=6,t=CON,c=2},p4=0}" ];
+  N36 -> N43 [ label="A100:36->43:sgrid'gen 1: {p2=3,gen={i=2,t=GEN,c=1},p1=1}" ];
+  N37 -> N53 [ label="A105:37->53:sgrid'trans 1: {p3=1,con={i=5,t=CON,c=1},p4=1}" ];
+  N37 -> N42 [ label="A104:37->42:sgrid'gen 1: {p2=1,gen={i=1,t=GEN,c=2},p1=2}" ];
+  N38 -> N45 [ label="A106:38->45:sgrid'gen 1: {p2=0,gen={i=1,t=GEN,c=2},p1=2}" ];
+  N39 -> N44 [ label="A107:39->44:sgrid'gen 1: {p2=0,gen={i=1,t=GEN,c=2},p1=2}" ];
+  N4 -> N13 [ label="A15:4->13:sgrid'trans 1: {p3=1,con={i=5,t=CON,c=1},p4=0}" ];
+  N4 -> N9 [ label="A14:4->9:sgrid'gen 1: {p2=1,gen={i=3,t=GEN,c=3},p1=3}" ];
+  N4 -> N5 [ label="A13:4->5:sgrid'gen 1: {p2=1,gen={i=1,t=GEN,c=2},p1=2}" ];
+  N40 -> N53 [ label="A110:40->53:sgrid'trans 1: {p3=2,con={i=6,t=CON,c=2},p4=0}" ];
+  N40 -> N54 [ label="A109:40->54:sgrid'trans 1: {p3=2,con={i=5,t=CON,c=1},p4=2}" ];
+  N40 -> N43 [ label="A108:40->43:sgrid'gen 1: {p2=2,gen={i=1,t=GEN,c=2},p1=2}" ];
+  N41 -> N52 [ label="A112:41->52:sgrid'gen 1: {p2=0,gen={i=1,t=GEN,c=2},p1=2}" ];
+  N41 -> N54 [ label="A111:41->54:sgrid'gen 1: {p2=0,gen={i=2,t=GEN,c=1},p1=1}" ];
+  N42 -> N57 [ label="A115:42->57:sgrid'trans 1: {p3=3,con={i=6,t=CON,c=2},p4=2}" ];
+  N42 -> N56 [ label="A114:42->56:sgrid'trans 1: {p3=3,con={i=4,t=CON,c=3},p4=0}" ];
+  N42 -> N55 [ label="A113:42->55:sgrid'trans 1: {p3=3,con={i=5,t=CON,c=1},p4=1}" ];
+  N43 -> N59 [ label="A118:43->59:sgrid'trans 1: {p3=4,con={i=4,t=CON,c=3},p4=0}" ];
+  N43 -> N58 [ label="A117:43->58:sgrid'trans 1: {p3=4,con={i=5,t=CON,c=1},p4=2}" ];
+  N43 -> N55 [ label="A116:43->55:sgrid'trans 1: {p3=4,con={i=6,t=CON,c=2},p4=0}" ];
+  N44 -> N59 [ label="A120:44->59:sgrid'trans 1: {p3=2,con={i=5,t=CON,c=1},p4=1}" ];
+  N44 -> N56 [ label="A119:44->56:sgrid'trans 1: {p3=2,con={i=6,t=CON,c=2},p4=0}" ];
+  N45 -> N57 [ label="A122:45->57:sgrid'trans 1: {p3=2,con={i=5,t=CON,c=1},p4=0}" ];
+  N45 -> N60 [ label="A121:45->60:sgrid'trans 1: {p3=2,con={i=6,t=CON,c=2},p4=4}" ];
+  N46 -> N56 [ label="A123:46->56:sgrid'trans 1: {p3=1,con={i=5,t=CON,c=1},p4=0}" ];
+  N48 -> N58 [ label="A124:48->58:sgrid'gen 1: {p2=0,gen={i=3,t=GEN,c=3},p1=3}" ];
+  N49 -> N59 [ label="A125:49->59:sgrid'gen 1: {p2=0,gen={i=2,t=GEN,c=1},p1=1}" ];
+  N5 -> N17 [ label="A19:5->17:sgrid'trans 1: {p3=3,con={i=6,t=CON,c=2},p4=0}" ];
+  N5 -> N16 [ label="A18:5->16:sgrid'trans 1: {p3=3,con={i=5,t=CON,c=1},p4=0}" ];
+  N5 -> N15 [ label="A17:5->15:sgrid'trans 1: {p3=3,con={i=4,t=CON,c=3},p4=0}" ];
+  N5 -> N14 [ label="A16:5->14:sgrid'gen 1: {p2=3,gen={i=3,t=GEN,c=3},p1=3}" ];
+  N50 -> N57 [ label="A126:50->57:sgrid'gen 1: {p2=0,gen={i=2,t=GEN,c=1},p1=1}" ];
+  N51 -> N61 [ label="A128:51->61:sgrid'trans 1: {p3=1,con={i=5,t=CON,c=1},p4=2}" ];
+  N51 -> N55 [ label="A127:51->55:sgrid'gen 1: {p2=1,gen={i=2,t=GEN,c=1},p1=1}" ];
+  N52 -> N61 [ label="A131:52->61:sgrid'trans 1: {p3=2,con={i=6,t=CON,c=2},p4=0}" ];
+  N52 -> N62 [ label="A130:52->62:sgrid'trans 1: {p3=2,con={i=5,t=CON,c=1},p4=3}" ];
+  N52 -> N58 [ label="A129:52->58:sgrid'gen 1: {p2=2,gen={i=2,t=GEN,c=1},p1=1}" ];
+  N53 -> N55 [ label="A132:53->55:sgrid'gen 1: {p2=0,gen={i=1,t=GEN,c=2},p1=2}" ];
+  N54 -> N63 [ label="A134:54->63:sgrid'trans 1: {p3=1,con={i=5,t=CON,c=1},p4=3}" ];
+  N54 -> N58 [ label="A133:54->58:sgrid'gen 1: {p2=1,gen={i=1,t=GEN,c=2},p1=2}" ];
+  N55 -> N65 [ label="A136:55->65:sgrid'trans 1: {p3=2,con={i=5,t=CON,c=1},p4=2}" ];
+  N55 -> N64 [ label="A135:55->64:sgrid'trans 1: {p3=2,con={i=6,t=CON,c=2},p4=2}" ];
+  N57 -> N64 [ label="A137:57->64:sgrid'trans 1: {p3=1,con={i=5,t=CON,c=1},p4=1}" ];
+  N58 -> N67 [ label="A140:58->67:sgrid'trans 1: {p3=3,con={i=4,t=CON,c=3},p4=0}" ];
+  N58 -> N66 [ label="A139:58->66:sgrid'trans 1: {p3=3,con={i=5,t=CON,c=1},p4=3}" ];
+  N58 -> N65 [ label="A138:58->65:sgrid'trans 1: {p3=3,con={i=6,t=CON,c=2},p4=0}" ];
+  N59 -> N67 [ label="A141:59->67:sgrid'trans 1: {p3=1,con={i=5,t=CON,c=1},p4=2}" ];
+  N6 -> N20 [ label="A23:6->20:sgrid'trans 1: {p3=5,con={i=5,t=CON,c=1},p4=0}" ];
+  N6 -> N19 [ label="A22:6->19:sgrid'trans 1: {p3=5,con={i=6,t=CON,c=2},p4=0}" ];
+  N6 -> N18 [ label="A21:6->18:sgrid'trans 1: {p3=5,con={i=4,t=CON,c=3},p4=0}" ];
+  N6 -> N14 [ label="A20:6->14:sgrid'gen 1: {p2=5,gen={i=2,t=GEN,c=1},p1=1}" ];
+  N61 -> N65 [ label="A142:61->65:sgrid'gen 1: {p2=0,gen={i=2,t=GEN,c=1},p1=1}" ];
+  N62 -> N68 [ label="A144:62->68:sgrid'trans 1: {p3=1,con={i=5,t=CON,c=1},p4=4}" ];
+  N62 -> N66 [ label="A143:62->66:sgrid'gen 1: {p2=1,gen={i=2,t=GEN,c=1},p1=1}" ];
+  N63 -> N66 [ label="A145:63->66:sgrid'gen 1: {p2=0,gen={i=1,t=GEN,c=2},p1=2}" ];
+  N65 -> N69 [ label="A146:65->69:sgrid'trans 1: {p3=1,con={i=5,t=CON,c=1},p4=3}" ];
+  N66 -> N69 [ label="A148:66->69:sgrid'trans 1: {p3=2,con={i=6,t=CON,c=2},p4=0}" ];
+  N66 -> N70 [ label="A147:66->70:sgrid'trans 1: {p3=2,con={i=5,t=CON,c=1},p4=4}" ];
+  N68 -> N70 [ label="A149:68->70:sgrid'gen 1: {p2=0,gen={i=2,t=GEN,c=1},p1=1}" ];
+  N7 -> N19 [ label="A25:7->19:sgrid'gen 1: {p2=0,gen={i=3,t=GEN,c=3},p1=3}" ];
+  N7 -> N17 [ label="A24:7->17:sgrid'gen 1: {p2=0,gen={i=2,t=GEN,c=1},p1=1}" ];
+  N70 -> N71 [ label="A150:70->71:sgrid'trans 1: {p3=1,con={i=5,t=CON,c=1},p4=5}" ];
+  N8 -> N21 [ label="A28:8->21:sgrid'trans 1: {p3=1,con={i=5,t=CON,c=1},p4=1}" ];
+  N8 -> N16 [ label="A27:8->16:sgrid'gen 1: {p2=1,gen={i=2,t=GEN,c=1},p1=1}" ];
+  N8 -> N20 [ label="A26:8->20:sgrid'gen 1: {p2=1,gen={i=3,t=GEN,c=3},p1=3}" ];
+  N9 -> N24 [ label="A32:9->24:sgrid'trans 1: {p3=4,con={i=5,t=CON,c=1},p4=0}" ];
+  N9 -> N23 [ label="A31:9->23:sgrid'trans 1: {p3=4,con={i=4,t=CON,c=3},p4=0}" ];
+  N9 -> N22 [ label="A30:9->22:sgrid'trans 1: {p3=4,con={i=6,t=CON,c=2},p4=0}" ];
+  N9 -> N14 [ label="A29:9->14:sgrid'gen 1: {p2=4,gen={i=1,t=GEN,c=2},p1=2}" ];
+}
