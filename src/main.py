@@ -3,7 +3,7 @@ import pygraphviz as pgv
 import networkx as nx
 import functools
 
-INPUT_FILE = "data/dots/1_fixed.dot"
+INPUT_FILE = "data/dots/conventional_1.dot"
 
 
 def count_terminal_node_from_raw_input(text: str) -> int:
@@ -27,4 +27,4 @@ res, _ = min(
     [(n, path[n]) for n in terminal_nodes],
     key=lambda np: len(np[1]),
 )
-print(res, path[res], G.nodes[res]["label"], sep="\n" + "-" * 30 + "\n")
+print(res, path[res], G.nodes[res]["label"], len(path[res]), sep="\n" + "-" * 30 + "\n")

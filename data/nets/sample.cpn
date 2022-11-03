@@ -945,7 +945,7 @@ Modeling&apos;Consumer 1: 1`({i=4,t=CON,c=3},0)++
       </Aux>
       <Aux id="ID1412418139">
         <posattr x="-378.000000"
-                 y="-99.000000"/>
+                 y="-210.000000"/>
         <fillattr colour="White"
                   pattern=""
                   filled="false"/>
@@ -1101,7 +1101,7 @@ end</text>
       </Aux>
       <Aux id="ID1412474956">
         <posattr x="-378.000000"
-                 y="-210.000000"/>
+                 y="-294.000000"/>
         <fillattr colour="White"
                   pattern=""
                   filled="false"/>
@@ -1116,7 +1116,7 @@ end</text>
       </Aux>
       <Aux id="ID1412489354">
         <posattr x="-378.000000"
-                 y="-126.000000"/>
+                 y="-234.000000"/>
         <fillattr colour="White"
                   pattern=""
                   filled="false"/>
@@ -1130,7 +1130,7 @@ end</text>
       </Aux>
       <Aux id="ID1412491955">
         <posattr x="-378.000000"
-                 y="-156.000000"/>
+                 y="-252.000000"/>
         <fillattr colour="White"
                   pattern=""
                   filled="false"/>
@@ -1144,7 +1144,7 @@ end</text>
       </Aux>
       <Aux id="ID1412497422">
         <posattr x="-378.000000"
-                 y="-187.000000"/>
+                 y="-266.000000"/>
         <fillattr colour="White"
                   pattern=""
                   filled="false"/>
@@ -1158,7 +1158,7 @@ end</text>
       </Aux>
       <Aux id="ID1412502322">
         <posattr x="-378.000000"
-                 y="-70.000000"/>
+                 y="-188.000000"/>
         <fillattr colour="White"
                   pattern=""
                   filled="false"/>
@@ -1172,7 +1172,7 @@ end</text>
       </Aux>
       <Aux id="ID1412504345">
         <posattr x="-378.000000"
-                 y="-42.000000"/>
+                 y="-168.000000"/>
         <fillattr colour="White"
                   pattern=""
                   filled="false"/>
@@ -1217,6 +1217,39 @@ end</text>
         <label/>
         <text>OGSet.StringRepOptions&apos;Mark(
 fn (PI,mark) =&gt; PI ^ &quot;: &quot; ^ mark ^ &quot;\n&quot;)</text>
+      </Aux>
+      <Aux id="ID1412526608">
+        <posattr x="-378.000000"
+                 y="-62.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <label/>
+        <text>OGSet.StringRepOptions&apos;TI(
+    fn (page,trans,inst) =&gt; trans
+)</text>
+      </Aux>
+      <Aux id="ID1412527774">
+        <posattr x="-378.000000"
+                 y="-109.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <label/>
+        <text>OGSet.StringRepOptions&apos;TI(
+    fn (page,trans,inst) =&gt;
+        page ^ &quot;&apos;&quot; ^ trans ^ &quot; &quot; ^ inst
+)</text>
       </Aux>
     </page>
     <instances>
@@ -1495,8 +1528,8 @@ fn (PI,mark) =&gt; PI ^ &quot;: &quot; ^ mark ^ &quot;\n&quot;)</text>
             </zorder>
           </cpnsheet>
           <cpnsheet id="ID1412398397"
-                    panx="-49.000000"
-                    pany="39.000000"
+                    panx="-93.000000"
+                    pany="28.000000"
                     zoom="1.000000"
                     instance="ID1412397227">
             <zorder>
@@ -1506,8 +1539,8 @@ fn (PI,mark) =&gt; PI ^ &quot;: &quot; ^ mark ^ &quot;\n&quot;)</text>
         </sheets>
         <zorder>
           <position value="1"/>
-          <position value="2"/>
           <position value="0"/>
+          <position value="2"/>
         </zorder>
       </cpnbinder>
     </binders>
@@ -1577,7 +1610,9 @@ fn (PI,mark) =&gt; PI ^ &quot;: &quot; ^ mark ^ &quot;\n&quot;)</text>
           <IndexNode expanded="false"/>
         </IndexNode>
       </IndexNode>
-      <IndexNode expanded="false"/>
+      <IndexNode expanded="false">
+        <IndexNode expanded="false"/>
+      </IndexNode>
       <IndexNode expanded="true">
         <IndexNode expanded="false">
           <IndexNode expanded="true"/>

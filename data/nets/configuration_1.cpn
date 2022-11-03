@@ -412,6 +412,10 @@
         <label />
         <text>val outputpath = "C:/Users/at/Dev/smart-grid/data/dots/";
 val filename = "configuration_1";
+OGSet.StringRepOptions'PI(fn (page, place, inst) =&gt; place);
+OGSet.StringRepOptions'TI(
+    fn (page,trans,inst) =&gt; trans
+);
 OGtoGraphviz.ExportStateSpace(outputpath ^ filename ^ ".dot");
 </text>
       </Aux>

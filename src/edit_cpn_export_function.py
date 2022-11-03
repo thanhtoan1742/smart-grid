@@ -6,6 +6,10 @@ DIR = "data/nets/"
 SCRIPT = """\
 val outputpath = "C:/Users/at/Dev/smart-grid/data/dots/";
 val filename = "{name}";
+OGSet.StringRepOptions'PI(fn (page, place, inst) => place);
+OGSet.StringRepOptions'TI(
+    fn (page,trans,inst) => trans
+);
 OGtoGraphviz.ExportStateSpace(outputpath ^ filename ^ ".dot");
 """
 

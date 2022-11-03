@@ -1,0 +1,25 @@
+node_label: number ":" kvp*
+
+kvp: string ":" marking
+
+edge_label: "A" number ":" number "->" number ":" string ":" record
+
+marking: "empty" -> empty
+    | number "`" value ("++" number "`" value)*
+
+?value: number
+    | string
+    | product
+    | record
+
+product: "(" value ("," value)* ")"
+record: "{" string "=" value ("," string "=" value)* "}"
+
+string: CNAME
+number: INT
+
+%import common.INT
+%import common.CNAME
+%import common.WS
+%ignore WS
+
