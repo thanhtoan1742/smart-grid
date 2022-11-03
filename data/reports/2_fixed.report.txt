@@ -1,0 +1,78 @@
+CPN Tools state space report for:
+/cygdrive/C/Users/at/Dev/smart-grid/data/nets/2_fixed.cpn
+Report generated: Thu Nov  3 14:34:41 2022
+
+
+ Statistics
+------------------------------------------------------------------------
+
+  State Space
+     Nodes:  4620
+     Arcs:   19838
+     Secs:   3
+     Status: Full
+
+  Scc Graph
+     Nodes:  4620
+     Arcs:   19838
+     Secs:   1
+
+
+ Boundedness Properties
+------------------------------------------------------------------------
+
+  Best Integer Bounds
+                             Upper      Lower
+     sgrid'B1 1              5          0
+     sgrid'B2 1              8          0
+     sgrid'Ba1 1             5          0
+     sgrid'C1 1              5          0
+     sgrid'C2 1              8          0
+     sgrid'C3 1              8          0
+     sgrid'G1 1              5          0
+     sgrid'G2 1              3          0
+
+  Best Upper Multi-set Bounds
+     sgrid'B1 1          5`1
+     sgrid'B2 1          8`1
+     sgrid'Ba1 1         5`1
+     sgrid'C1 1          5`1
+     sgrid'C2 1          8`1
+     sgrid'C3 1          8`1
+     sgrid'G1 1          5`1
+     sgrid'G2 1          3`1
+
+  Best Lower Multi-set Bounds
+     sgrid'B1 1          empty
+     sgrid'B2 1          empty
+     sgrid'Ba1 1         empty
+     sgrid'C1 1          empty
+     sgrid'C2 1          empty
+     sgrid'C3 1          empty
+     sgrid'G1 1          empty
+     sgrid'G2 1          empty
+
+
+ Home Properties
+------------------------------------------------------------------------
+
+  Home Markings
+     None
+
+
+ Liveness Properties
+------------------------------------------------------------------------
+
+  Dead Markings
+     119 [4620,4619,4618,4617,4616,...]
+
+  Dead Transition Instances
+     None
+
+  Live Transition Instances
+     None
+
+
+ Fairness Properties
+------------------------------------------------------------------------
+     No infinite occurrence sequences.
