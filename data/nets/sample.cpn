@@ -927,7 +927,7 @@ Modeling&apos;Consumer 1: 1`({i=4,t=CON,c=3},0)++
         <textattr colour="Black"
                   bold="false"/>
         <label/>
-        <text>OGtoGraphviz.ExportStateSpace(workingDir ^ &quot;StateSpace.dot&quot;);</text>
+        <text>OGtoGraphviz.ExportStateSpace(workingDir ^ &quot;sample.dot&quot;);</text>
       </Aux>
       <Aux id="ID1412416100">
         <posattr x="-378.000000"
@@ -1043,7 +1043,7 @@ Modeling&apos;Consumer 1: 1`({i=4,t=CON,c=3},0)++
         <textattr colour="Black"
                   bold="false"/>
         <label/>
-        <text>val workingDir = &quot;C:/Users/at/Dev/smart-grid/cpns/&quot;;</text>
+        <text>val workingDir = &quot;C:/Users/at/Dev/smart-grid/data/dots/&quot;;</text>
       </Aux>
       <Aux id="ID1412462431">
         <posattr x="168.000000"
@@ -1250,6 +1250,63 @@ fn (PI,mark) =&gt; PI ^ &quot;: &quot; ^ mark ^ &quot;\n&quot;)</text>
     fn (page,trans,inst) =&gt;
         page ^ &quot;&apos;&quot; ^ trans ^ &quot; &quot; ^ inst
 )</text>
+      </Aux>
+      <Aux id="ID1412528260">
+        <posattr x="-378.000000"
+                 y="-398.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <label/>
+        <text>OGtoGraphviz.ExportNodes(workingDir ^ &quot;sample_nodes.dot&quot;, iota(NoOfNodes()));</text>
+      </Aux>
+      <Aux id="ID1412528381">
+        <posattr x="168.000000"
+                 y="-353.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <label/>
+        <text>NoOfNodes()</text>
+      </Aux>
+      <Aux id="ID1412528689">
+        <posattr x="168.000000"
+                 y="-311.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <label/>
+        <text>fun iota(n: int) = if n &lt; 1 then [] else (iota (n-1)) ++ [n];
+iota 10</text>
+      </Aux>
+      <Aux id="ID1412529637">
+        <posattr x="168.000000"
+                 y="-378.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <label/>
+        <text>NoOfArcs()</text>
       </Aux>
     </page>
     <instances>
@@ -1528,8 +1585,8 @@ fn (PI,mark) =&gt; PI ^ &quot;: &quot; ^ mark ^ &quot;\n&quot;)</text>
             </zorder>
           </cpnsheet>
           <cpnsheet id="ID1412398397"
-                    panx="-93.000000"
-                    pany="28.000000"
+                    panx="-90.000000"
+                    pany="-438.000000"
                     zoom="1.000000"
                     instance="ID1412397227">
             <zorder>

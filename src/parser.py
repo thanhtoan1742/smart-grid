@@ -1,5 +1,6 @@
 from lark import Lark, Transformer
 from functools import reduce
+from typing import Any, Literal
 
 
 class Marshaller(Transformer):
@@ -27,3 +28,9 @@ parser = Lark.open(
     start=["node_label", "edge_label"],
 )
 marshaller = Marshaller()
+
+
+def parse(text: str, start: Literal["node_label", "edge_label"]) -> Any:
+    if text == "":
+        return {}
+    return marshaller.transform(parser.parse(text, start=start))

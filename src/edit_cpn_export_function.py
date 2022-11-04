@@ -6,10 +6,13 @@ DIR = "data/nets/"
 SCRIPT = """\
 val outputpath = "C:/Users/at/Dev/smart-grid/data/dots/";
 val filename = "{name}";
+fun iota(n: int) = if n < 1 then [] else (iota (n-1)) ++ [n];
 OGSet.StringRepOptions'PI(fn (page, place, inst) => place);
 OGSet.StringRepOptions'TI(
     fn (page,trans,inst) => trans
 );
+OGtoGraphviz.ExportNodes(outputpath ^ filename ^ ".nodes.dot", iota(NoOfNodes()));
+OGtoGraphviz.ExportArcs(outputpath ^ filename ^ ".arcs.dot", iota(NoOfArcs()));
 OGtoGraphviz.ExportStateSpace(outputpath ^ filename ^ ".dot");
 """
 

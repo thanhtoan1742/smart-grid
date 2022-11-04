@@ -1,0 +1,100 @@
+CPN Tools state space report for:
+/cygdrive/C/Users/at/Dev/smart-grid/data/nets/conventional_4.cpn
+Report generated: Fri Nov  4 05:29:16 2022
+
+
+ Statistics
+------------------------------------------------------------------------
+
+  State Space
+     Nodes:  4998
+     Arcs:   22812
+     Secs:   4
+     Status: Full
+
+  Scc Graph
+     Nodes:  2000
+     Arcs:   15950
+     Secs:   0
+
+
+ Boundedness Properties
+------------------------------------------------------------------------
+
+  Best Integer Bounds
+                             Upper      Lower
+     sgrid'B1 1              7          0
+     sgrid'B2 1              7          0
+     sgrid'C1 1              7          0
+     sgrid'C2 1              7          0
+     sgrid'C3 1              7          0
+     sgrid'G1 1              2          0
+     sgrid'G2 1              1          0
+     sgrid'G3 1              4          0
+
+  Best Upper Multi-set Bounds
+     sgrid'B1 1          6`1++
+1`2
+     sgrid'B2 1          6`1++
+1`2
+     sgrid'C1 1          6`1++
+1`2
+     sgrid'C2 1          6`1++
+1`2
+     sgrid'C3 1          6`1++
+1`2
+     sgrid'G1 1          2`1
+     sgrid'G2 1          1`2
+     sgrid'G3 1          4`1
+
+  Best Lower Multi-set Bounds
+     sgrid'B1 1          empty
+     sgrid'B2 1          empty
+     sgrid'C1 1          empty
+     sgrid'C2 1          empty
+     sgrid'C3 1          empty
+     sgrid'G1 1          empty
+     sgrid'G2 1          empty
+     sgrid'G3 1          empty
+
+
+ Home Properties
+------------------------------------------------------------------------
+
+  Home Markings
+     None
+
+
+ Liveness Properties
+------------------------------------------------------------------------
+
+  Dead Markings
+     84 [4998,4997,4996,4995,4994,...]
+
+  Dead Transition Instances
+     None
+
+  Live Transition Instances
+     None
+
+
+ Fairness Properties
+------------------------------------------------------------------------
+
+  Impartial Transition Instances
+     sgrid'CB4a 1
+     sgrid'CB4b 1
+
+  Fair Transition Instances
+     None
+
+  Just Transition Instances
+     None
+
+  Transition Instances with No Fairness
+     sgrid'CB1 1
+     sgrid'CB2 1
+     sgrid'CB3 1
+     sgrid'CB5 1
+     sgrid'CB6 1
+     sgrid'CB7 1

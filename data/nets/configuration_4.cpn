@@ -141,13 +141,14 @@
           <text tool="CPN Tools" version="4.0.1">NODE_POWER</text>
         </type>
         <initmark id="ID1412356303">
-          <posattr x="-424.000000" y="24.000000" />
+          <posattr x="-424.000000" y="17.000000" />
           <fillattr colour="White" pattern="Solid" filled="false" />
           <lineattr colour="Black" thick="0" type="Solid" />
           <textattr colour="Black" bold="false" />
           <text tool="CPN Tools" version="4.0.1">[
-    ({i=1, t=GEN, c=5 },5),
-    ({i=2, t=GEN, c=3 },3)
+    ({i=1, t=GEN, c=2 },2),
+    ({i=2, t=GEN, c=1},1),
+    ({i=3, t=GEN, c=3},3)
 ]</text>
         </initmark>
       </place>
@@ -196,12 +197,11 @@
           <text tool="CPN Tools" version="4.0.1">NODE_POWER</text>
         </type>
         <initmark id="ID1412323959">
-          <posattr x="-81.500000" y="-254.000000" />
+          <posattr x="-76.000000" y="-254.000000" />
           <fillattr colour="White" pattern="Solid" filled="false" />
           <lineattr colour="Black" thick="0" type="Solid" />
           <textattr colour="Black" bold="false" />
           <text tool="CPN Tools" version="4.0.1">[
-    ({i=3, t=BAT, c=100}, 0),
     ({i=4, t=CON, c=3}, 0),
     ({i=5, t=CON, c=1}, 0),
     ({i=6, t=CON, c=2}, 0)
@@ -436,7 +436,7 @@
         <textattr colour="Black" bold="false" />
         <label />
         <text>val outputpath = "C:/Users/at/Dev/smart-grid/data/dots/";
-val filename = "configuration_1";
+val filename = "configuration_4";
 fun iota(n: int) = if n &lt; 1 then [] else (iota (n-1)) ++ [n];
 OGSet.StringRepOptions'PI(fn (page, place, inst) =&gt; place);
 OGSet.StringRepOptions'TI(
@@ -695,9 +695,9 @@ OGtoGraphviz.ExportStateSpace(outputpath ^ filename ^ ".dot");
       </option>
     </options>
     <binders>
-      <cpnbinder id="ID2222" x="609" y="166" width="1052" height="581">
+      <cpnbinder id="ID2222" x="562" y="227" width="1052" height="581">
         <sheets>
-          <cpnsheet id="ID2215" panx="30.000000" pany="-114.000000" zoom="1.000000" instance="ID2149">
+          <cpnsheet id="ID2215" panx="54.000000" pany="-119.000000" zoom="1.000000" instance="ID2149">
             <zorder>
               <position value="0" />
             </zorder>

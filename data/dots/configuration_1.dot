@@ -1,201 +1,246 @@
 digraph cpn_tools_graph {
-  N47 [label="47:
+  N13 [label="13:
 Generator: empty
 Generated: 1`0
-Consumer: 1`({i=4,t=CON,c=3},6)++
+Consumer: 1`({i=3,t=BAT,c=100},8)++
+1`({i=4,t=CON,c=3},0)++
 1`({i=5,t=CON,c=1},0)++
 1`({i=6,t=CON,c=2},0)
 "];
-  N56 [label="56:
+  N30 [label="30:
 Generator: empty
 Generated: 1`0
-Consumer: 1`({i=4,t=CON,c=3},3)++
+Consumer: 1`({i=3,t=BAT,c=100},7)++
+1`({i=4,t=CON,c=3},0)++
+1`({i=5,t=CON,c=1},1)++
+1`({i=6,t=CON,c=2},0)
+"];
+  N34 [label="34:
+Generator: empty
+Generated: 1`0
+Consumer: 1`({i=3,t=BAT,c=100},6)++
+1`({i=4,t=CON,c=3},0)++
+1`({i=5,t=CON,c=1},0)++
+1`({i=6,t=CON,c=2},2)
+"];
+  N35 [label="35:
+Generator: empty
+Generated: 1`0
+Consumer: 1`({i=3,t=BAT,c=100},5)++
+1`({i=4,t=CON,c=3},3)++
+1`({i=5,t=CON,c=1},0)++
+1`({i=6,t=CON,c=2},0)
+"];
+  N51 [label="51:
+Generator: empty
+Generated: 1`0
+Consumer: 1`({i=3,t=BAT,c=100},5)++
+1`({i=4,t=CON,c=3},0)++
 1`({i=5,t=CON,c=1},1)++
 1`({i=6,t=CON,c=2},2)
 "];
-  N60 [label="60:
+  N53 [label="53:
 Generator: empty
 Generated: 1`0
-Consumer: 1`({i=4,t=CON,c=3},0)++
+Consumer: 1`({i=3,t=BAT,c=100},4)++
+1`({i=4,t=CON,c=3},3)++
+1`({i=5,t=CON,c=1},1)++
+1`({i=6,t=CON,c=2},0)
+"];
+  N54 [label="54:
+Generator: empty
+Generated: 1`0
+Consumer: 1`({i=3,t=BAT,c=100},3)++
+1`({i=4,t=CON,c=3},3)++
 1`({i=5,t=CON,c=1},0)++
-1`({i=6,t=CON,c=2},6)
+1`({i=6,t=CON,c=2},2)
 "];
-  N64 [label="64:
+  N58 [label="58:
 Generator: empty
 Generated: 1`0
-Consumer: 1`({i=4,t=CON,c=3},0)++
-1`({i=5,t=CON,c=1},2)++
-1`({i=6,t=CON,c=2},4)
+Consumer: 1`({i=3,t=BAT,c=100},5)++
+1`({i=4,t=CON,c=3},1)++
+1`({i=5,t=CON,c=1},0)++
+1`({i=6,t=CON,c=2},2)
 "];
-  N67 [label="67:
+  N61 [label="61:
 Generator: empty
 Generated: 1`0
-Consumer: 1`({i=4,t=CON,c=3},3)++
-1`({i=5,t=CON,c=1},3)++
+Consumer: 1`({i=3,t=BAT,c=100},5)++
+1`({i=4,t=CON,c=3},2)++
+1`({i=5,t=CON,c=1},1)++
 1`({i=6,t=CON,c=2},0)
 "];
   N69 [label="69:
 Generator: empty
 Generated: 1`0
-Consumer: 1`({i=4,t=CON,c=3},0)++
-1`({i=5,t=CON,c=1},4)++
+Consumer: 1`({i=3,t=BAT,c=100},2)++
+1`({i=4,t=CON,c=3},3)++
+1`({i=5,t=CON,c=1},1)++
 1`({i=6,t=CON,c=2},2)
 "];
   N71 [label="71:
 Generator: empty
 Generated: 1`0
-Consumer: 1`({i=4,t=CON,c=3},0)++
-1`({i=5,t=CON,c=1},6)++
-1`({i=6,t=CON,c=2},0)
+Consumer: 1`({i=3,t=BAT,c=100},4)++
+1`({i=4,t=CON,c=3},1)++
+1`({i=5,t=CON,c=1},1)++
+1`({i=6,t=CON,c=2},2)
 "];
-  N1 -> N4 [ label="A3:1->4:gen: {p2=0,gen={i=2,t=GEN,c=1},p1=1}" ];
-  N1 -> N3 [ label="A2:1->3:gen: {p2=0,gen={i=3,t=GEN,c=3},p1=3}" ];
-  N1 -> N2 [ label="A1:1->2:gen: {p2=0,gen={i=1,t=GEN,c=2},p1=2}" ];
-  N10 -> N23 [ label="A34:10->23:gen: {p2=0,gen={i=2,t=GEN,c=1},p1=1}" ];
-  N10 -> N18 [ label="A33:10->18:gen: {p2=0,gen={i=1,t=GEN,c=2},p1=2}" ];
-  N11 -> N25 [ label="A37:11->25:trans: {p3=1,con={i=5,t=CON,c=1},p4=0}" ];
-  N11 -> N22 [ label="A36:11->22:gen: {p2=1,gen={i=2,t=GEN,c=1},p1=1}" ];
-  N11 -> N19 [ label="A35:11->19:gen: {p2=1,gen={i=1,t=GEN,c=2},p1=2}" ];
-  N12 -> N25 [ label="A41:12->25:trans: {p3=2,con={i=6,t=CON,c=2},p4=0}" ];
-  N12 -> N26 [ label="A40:12->26:trans: {p3=2,con={i=5,t=CON,c=1},p4=1}" ];
-  N12 -> N20 [ label="A39:12->20:gen: {p2=2,gen={i=1,t=GEN,c=2},p1=2}" ];
-  N12 -> N24 [ label="A38:12->24:gen: {p2=2,gen={i=2,t=GEN,c=1},p1=1}" ];
-  N13 -> N24 [ label="A43:13->24:gen: {p2=0,gen={i=3,t=GEN,c=3},p1=3}" ];
-  N13 -> N16 [ label="A42:13->16:gen: {p2=0,gen={i=1,t=GEN,c=2},p1=2}" ];
-  N14 -> N29 [ label="A46:14->29:trans: {p3=6,con={i=4,t=CON,c=3},p4=0}" ];
-  N14 -> N28 [ label="A45:14->28:trans: {p3=6,con={i=6,t=CON,c=2},p4=0}" ];
-  N14 -> N27 [ label="A44:14->27:trans: {p3=6,con={i=5,t=CON,c=1},p4=0}" ];
-  N15 -> N29 [ label="A47:15->29:gen: {p2=0,gen={i=3,t=GEN,c=3},p1=3}" ];
-  N16 -> N31 [ label="A50:16->31:trans: {p3=2,con={i=5,t=CON,c=1},p4=1}" ];
-  N16 -> N30 [ label="A49:16->30:trans: {p3=2,con={i=6,t=CON,c=2},p4=0}" ];
-  N16 -> N27 [ label="A48:16->27:gen: {p2=2,gen={i=3,t=GEN,c=3},p1=3}" ];
-  N17 -> N30 [ label="A52:17->30:trans: {p3=1,con={i=5,t=CON,c=1},p4=0}" ];
-  N17 -> N28 [ label="A51:17->28:gen: {p2=1,gen={i=3,t=GEN,c=3},p1=3}" ];
-  N18 -> N33 [ label="A55:18->33:trans: {p3=2,con={i=6,t=CON,c=2},p4=0}" ];
-  N18 -> N32 [ label="A54:18->32:trans: {p3=2,con={i=5,t=CON,c=1},p4=0}" ];
-  N18 -> N29 [ label="A53:18->29:gen: {p2=2,gen={i=2,t=GEN,c=1},p1=1}" ];
-  N19 -> N35 [ label="A59:19->35:trans: {p3=3,con={i=5,t=CON,c=1},p4=0}" ];
-  N19 -> N34 [ label="A58:19->34:trans: {p3=3,con={i=6,t=CON,c=2},p4=2}" ];
-  N19 -> N33 [ label="A57:19->33:trans: {p3=3,con={i=4,t=CON,c=3},p4=0}" ];
-  N19 -> N28 [ label="A56:19->28:gen: {p2=3,gen={i=2,t=GEN,c=1},p1=1}" ];
-  N2 -> N8 [ label="A7:2->8:trans: {p3=2,con={i=5,t=CON,c=1},p4=0}" ];
-  N2 -> N7 [ label="A6:2->7:trans: {p3=2,con={i=6,t=CON,c=2},p4=0}" ];
-  N2 -> N6 [ label="A5:2->6:gen: {p2=2,gen={i=3,t=GEN,c=3},p1=3}" ];
-  N2 -> N5 [ label="A4:2->5:gen: {p2=2,gen={i=2,t=GEN,c=1},p1=1}" ];
-  N20 -> N32 [ label="A63:20->32:trans: {p3=4,con={i=4,t=CON,c=3},p4=0}" ];
-  N20 -> N35 [ label="A62:20->35:trans: {p3=4,con={i=6,t=CON,c=2},p4=0}" ];
-  N20 -> N36 [ label="A61:20->36:trans: {p3=4,con={i=5,t=CON,c=1},p4=1}" ];
-  N20 -> N27 [ label="A60:20->27:gen: {p2=4,gen={i=2,t=GEN,c=1},p1=1}" ];
-  N21 -> N31 [ label="A65:21->31:gen: {p2=0,gen={i=2,t=GEN,c=1},p1=1}" ];
-  N21 -> N36 [ label="A64:21->36:gen: {p2=0,gen={i=3,t=GEN,c=3},p1=3}" ];
-  N22 -> N38 [ label="A68:22->38:trans: {p3=2,con={i=6,t=CON,c=2},p4=2}" ];
-  N22 -> N37 [ label="A67:22->37:trans: {p3=2,con={i=5,t=CON,c=1},p4=0}" ];
-  N22 -> N28 [ label="A66:22->28:gen: {p2=2,gen={i=1,t=GEN,c=2},p1=2}" ];
-  N23 -> N39 [ label="A70:23->39:trans: {p3=1,con={i=5,t=CON,c=1},p4=0}" ];
-  N23 -> N29 [ label="A69:23->29:gen: {p2=1,gen={i=1,t=GEN,c=2},p1=2}" ];
-  N24 -> N40 [ label="A74:24->40:trans: {p3=3,con={i=5,t=CON,c=1},p4=1}" ];
-  N24 -> N37 [ label="A73:24->37:trans: {p3=3,con={i=6,t=CON,c=2},p4=0}" ];
-  N24 -> N39 [ label="A72:24->39:trans: {p3=3,con={i=4,t=CON,c=3},p4=0}" ];
-  N24 -> N27 [ label="A71:24->27:gen: {p2=3,gen={i=1,t=GEN,c=2},p1=2}" ];
-  N25 -> N37 [ label="A76:25->37:gen: {p2=0,gen={i=2,t=GEN,c=1},p1=1}" ];
-  N25 -> N35 [ label="A75:25->35:gen: {p2=0,gen={i=1,t=GEN,c=2},p1=2}" ];
-  N26 -> N41 [ label="A79:26->41:trans: {p3=1,con={i=5,t=CON,c=1},p4=2}" ];
-  N26 -> N36 [ label="A78:26->36:gen: {p2=1,gen={i=1,t=GEN,c=2},p1=2}" ];
-  N26 -> N40 [ label="A77:26->40:gen: {p2=1,gen={i=2,t=GEN,c=1},p1=1}" ];
-  N27 -> N44 [ label="A82:27->44:trans: {p3=5,con={i=4,t=CON,c=3},p4=0}" ];
-  N27 -> N43 [ label="A81:27->43:trans: {p3=5,con={i=5,t=CON,c=1},p4=1}" ];
-  N27 -> N42 [ label="A80:27->42:trans: {p3=5,con={i=6,t=CON,c=2},p4=0}" ];
-  N28 -> N42 [ label="A85:28->42:trans: {p3=4,con={i=5,t=CON,c=1},p4=0}" ];
-  N28 -> N46 [ label="A84:28->46:trans: {p3=4,con={i=4,t=CON,c=3},p4=0}" ];
-  N28 -> N45 [ label="A83:28->45:trans: {p3=4,con={i=6,t=CON,c=2},p4=2}" ];
-  N29 -> N44 [ label="A88:29->44:trans: {p3=3,con={i=5,t=CON,c=1},p4=0}" ];
-  N29 -> N46 [ label="A87:29->46:trans: {p3=3,con={i=6,t=CON,c=2},p4=0}" ];
-  N29 -> N47 [ label="A86:29->47:trans: {p3=3,con={i=4,t=CON,c=3},p4=3}" ];
-  N3 -> N12 [ label="A12:3->12:trans: {p3=3,con={i=5,t=CON,c=1},p4=0}" ];
-  N3 -> N11 [ label="A11:3->11:trans: {p3=3,con={i=6,t=CON,c=2},p4=0}" ];
-  N3 -> N10 [ label="A10:3->10:trans: {p3=3,con={i=4,t=CON,c=3},p4=0}" ];
-  N3 -> N9 [ label="A9:3->9:gen: {p2=3,gen={i=2,t=GEN,c=1},p1=1}" ];
-  N3 -> N6 [ label="A8:3->6:gen: {p2=3,gen={i=1,t=GEN,c=2},p1=2}" ];
-  N30 -> N42 [ label="A89:30->42:gen: {p2=0,gen={i=3,t=GEN,c=3},p1=3}" ];
-  N31 -> N48 [ label="A91:31->48:trans: {p3=1,con={i=5,t=CON,c=1},p4=2}" ];
-  N31 -> N43 [ label="A90:31->43:gen: {p2=1,gen={i=3,t=GEN,c=3},p1=3}" ];
-  N32 -> N49 [ label="A93:32->49:trans: {p3=1,con={i=5,t=CON,c=1},p4=1}" ];
-  N32 -> N44 [ label="A92:32->44:gen: {p2=1,gen={i=2,t=GEN,c=1},p1=1}" ];
-  N33 -> N46 [ label="A94:33->46:gen: {p2=0,gen={i=2,t=GEN,c=1},p1=1}" ];
-  N34 -> N50 [ label="A96:34->50:trans: {p3=1,con={i=5,t=CON,c=1},p4=0}" ];
-  N34 -> N45 [ label="A95:34->45:gen: {p2=1,gen={i=2,t=GEN,c=1},p1=1}" ];
-  N35 -> N50 [ label="A99:35->50:trans: {p3=2,con={i=6,t=CON,c=2},p4=2}" ];
-  N35 -> N51 [ label="A98:35->51:trans: {p3=2,con={i=5,t=CON,c=1},p4=1}" ];
-  N35 -> N42 [ label="A97:35->42:gen: {p2=2,gen={i=2,t=GEN,c=1},p1=1}" ];
-  N36 -> N52 [ label="A103:36->52:trans: {p3=3,con={i=5,t=CON,c=1},p4=2}" ];
-  N36 -> N49 [ label="A102:36->49:trans: {p3=3,con={i=4,t=CON,c=3},p4=0}" ];
-  N36 -> N51 [ label="A101:36->51:trans: {p3=3,con={i=6,t=CON,c=2},p4=0}" ];
-  N36 -> N43 [ label="A100:36->43:gen: {p2=3,gen={i=2,t=GEN,c=1},p1=1}" ];
-  N37 -> N53 [ label="A105:37->53:trans: {p3=1,con={i=5,t=CON,c=1},p4=1}" ];
-  N37 -> N42 [ label="A104:37->42:gen: {p2=1,gen={i=1,t=GEN,c=2},p1=2}" ];
-  N38 -> N45 [ label="A106:38->45:gen: {p2=0,gen={i=1,t=GEN,c=2},p1=2}" ];
-  N39 -> N44 [ label="A107:39->44:gen: {p2=0,gen={i=1,t=GEN,c=2},p1=2}" ];
-  N4 -> N13 [ label="A15:4->13:trans: {p3=1,con={i=5,t=CON,c=1},p4=0}" ];
-  N4 -> N9 [ label="A14:4->9:gen: {p2=1,gen={i=3,t=GEN,c=3},p1=3}" ];
-  N4 -> N5 [ label="A13:4->5:gen: {p2=1,gen={i=1,t=GEN,c=2},p1=2}" ];
-  N40 -> N53 [ label="A110:40->53:trans: {p3=2,con={i=6,t=CON,c=2},p4=0}" ];
-  N40 -> N54 [ label="A109:40->54:trans: {p3=2,con={i=5,t=CON,c=1},p4=2}" ];
-  N40 -> N43 [ label="A108:40->43:gen: {p2=2,gen={i=1,t=GEN,c=2},p1=2}" ];
-  N41 -> N52 [ label="A112:41->52:gen: {p2=0,gen={i=1,t=GEN,c=2},p1=2}" ];
-  N41 -> N54 [ label="A111:41->54:gen: {p2=0,gen={i=2,t=GEN,c=1},p1=1}" ];
-  N42 -> N57 [ label="A115:42->57:trans: {p3=3,con={i=6,t=CON,c=2},p4=2}" ];
-  N42 -> N56 [ label="A114:42->56:trans: {p3=3,con={i=4,t=CON,c=3},p4=0}" ];
-  N42 -> N55 [ label="A113:42->55:trans: {p3=3,con={i=5,t=CON,c=1},p4=1}" ];
-  N43 -> N59 [ label="A118:43->59:trans: {p3=4,con={i=4,t=CON,c=3},p4=0}" ];
-  N43 -> N58 [ label="A117:43->58:trans: {p3=4,con={i=5,t=CON,c=1},p4=2}" ];
-  N43 -> N55 [ label="A116:43->55:trans: {p3=4,con={i=6,t=CON,c=2},p4=0}" ];
-  N44 -> N59 [ label="A120:44->59:trans: {p3=2,con={i=5,t=CON,c=1},p4=1}" ];
-  N44 -> N56 [ label="A119:44->56:trans: {p3=2,con={i=6,t=CON,c=2},p4=0}" ];
-  N45 -> N57 [ label="A122:45->57:trans: {p3=2,con={i=5,t=CON,c=1},p4=0}" ];
-  N45 -> N60 [ label="A121:45->60:trans: {p3=2,con={i=6,t=CON,c=2},p4=4}" ];
-  N46 -> N56 [ label="A123:46->56:trans: {p3=1,con={i=5,t=CON,c=1},p4=0}" ];
-  N48 -> N58 [ label="A124:48->58:gen: {p2=0,gen={i=3,t=GEN,c=3},p1=3}" ];
-  N49 -> N59 [ label="A125:49->59:gen: {p2=0,gen={i=2,t=GEN,c=1},p1=1}" ];
-  N5 -> N17 [ label="A19:5->17:trans: {p3=3,con={i=6,t=CON,c=2},p4=0}" ];
-  N5 -> N16 [ label="A18:5->16:trans: {p3=3,con={i=5,t=CON,c=1},p4=0}" ];
-  N5 -> N15 [ label="A17:5->15:trans: {p3=3,con={i=4,t=CON,c=3},p4=0}" ];
-  N5 -> N14 [ label="A16:5->14:gen: {p2=3,gen={i=3,t=GEN,c=3},p1=3}" ];
-  N50 -> N57 [ label="A126:50->57:gen: {p2=0,gen={i=2,t=GEN,c=1},p1=1}" ];
-  N51 -> N61 [ label="A128:51->61:trans: {p3=1,con={i=5,t=CON,c=1},p4=2}" ];
-  N51 -> N55 [ label="A127:51->55:gen: {p2=1,gen={i=2,t=GEN,c=1},p1=1}" ];
-  N52 -> N61 [ label="A131:52->61:trans: {p3=2,con={i=6,t=CON,c=2},p4=0}" ];
-  N52 -> N62 [ label="A130:52->62:trans: {p3=2,con={i=5,t=CON,c=1},p4=3}" ];
-  N52 -> N58 [ label="A129:52->58:gen: {p2=2,gen={i=2,t=GEN,c=1},p1=1}" ];
-  N53 -> N55 [ label="A132:53->55:gen: {p2=0,gen={i=1,t=GEN,c=2},p1=2}" ];
-  N54 -> N63 [ label="A134:54->63:trans: {p3=1,con={i=5,t=CON,c=1},p4=3}" ];
-  N54 -> N58 [ label="A133:54->58:gen: {p2=1,gen={i=1,t=GEN,c=2},p1=2}" ];
-  N55 -> N65 [ label="A136:55->65:trans: {p3=2,con={i=5,t=CON,c=1},p4=2}" ];
-  N55 -> N64 [ label="A135:55->64:trans: {p3=2,con={i=6,t=CON,c=2},p4=2}" ];
-  N57 -> N64 [ label="A137:57->64:trans: {p3=1,con={i=5,t=CON,c=1},p4=1}" ];
-  N58 -> N67 [ label="A140:58->67:trans: {p3=3,con={i=4,t=CON,c=3},p4=0}" ];
-  N58 -> N66 [ label="A139:58->66:trans: {p3=3,con={i=5,t=CON,c=1},p4=3}" ];
-  N58 -> N65 [ label="A138:58->65:trans: {p3=3,con={i=6,t=CON,c=2},p4=0}" ];
-  N59 -> N67 [ label="A141:59->67:trans: {p3=1,con={i=5,t=CON,c=1},p4=2}" ];
-  N6 -> N20 [ label="A23:6->20:trans: {p3=5,con={i=5,t=CON,c=1},p4=0}" ];
-  N6 -> N19 [ label="A22:6->19:trans: {p3=5,con={i=6,t=CON,c=2},p4=0}" ];
-  N6 -> N18 [ label="A21:6->18:trans: {p3=5,con={i=4,t=CON,c=3},p4=0}" ];
-  N6 -> N14 [ label="A20:6->14:gen: {p2=5,gen={i=2,t=GEN,c=1},p1=1}" ];
-  N61 -> N65 [ label="A142:61->65:gen: {p2=0,gen={i=2,t=GEN,c=1},p1=1}" ];
-  N62 -> N68 [ label="A144:62->68:trans: {p3=1,con={i=5,t=CON,c=1},p4=4}" ];
-  N62 -> N66 [ label="A143:62->66:gen: {p2=1,gen={i=2,t=GEN,c=1},p1=1}" ];
-  N63 -> N66 [ label="A145:63->66:gen: {p2=0,gen={i=1,t=GEN,c=2},p1=2}" ];
-  N65 -> N69 [ label="A146:65->69:trans: {p3=1,con={i=5,t=CON,c=1},p4=3}" ];
-  N66 -> N69 [ label="A148:66->69:trans: {p3=2,con={i=6,t=CON,c=2},p4=0}" ];
-  N66 -> N70 [ label="A147:66->70:trans: {p3=2,con={i=5,t=CON,c=1},p4=4}" ];
-  N68 -> N70 [ label="A149:68->70:gen: {p2=0,gen={i=2,t=GEN,c=1},p1=1}" ];
-  N7 -> N19 [ label="A25:7->19:gen: {p2=0,gen={i=3,t=GEN,c=3},p1=3}" ];
-  N7 -> N17 [ label="A24:7->17:gen: {p2=0,gen={i=2,t=GEN,c=1},p1=1}" ];
-  N70 -> N71 [ label="A150:70->71:trans: {p3=1,con={i=5,t=CON,c=1},p4=5}" ];
-  N8 -> N21 [ label="A28:8->21:trans: {p3=1,con={i=5,t=CON,c=1},p4=1}" ];
-  N8 -> N16 [ label="A27:8->16:gen: {p2=1,gen={i=2,t=GEN,c=1},p1=1}" ];
-  N8 -> N20 [ label="A26:8->20:gen: {p2=1,gen={i=3,t=GEN,c=3},p1=3}" ];
-  N9 -> N24 [ label="A32:9->24:trans: {p3=4,con={i=5,t=CON,c=1},p4=0}" ];
-  N9 -> N23 [ label="A31:9->23:trans: {p3=4,con={i=4,t=CON,c=3},p4=0}" ];
-  N9 -> N22 [ label="A30:9->22:trans: {p3=4,con={i=6,t=CON,c=2},p4=0}" ];
-  N9 -> N14 [ label="A29:9->14:gen: {p2=4,gen={i=1,t=GEN,c=2},p1=2}" ];
+  N72 [label="72:
+Generator: empty
+Generated: 1`0
+Consumer: 1`({i=3,t=BAT,c=100},3)++
+1`({i=4,t=CON,c=3},2)++
+1`({i=5,t=CON,c=1},1)++
+1`({i=6,t=CON,c=2},2)
+"];
+  N73 [label="73:
+Generator: empty
+Generated: 1`0
+Consumer: 1`({i=3,t=BAT,c=100},3)++
+1`({i=4,t=CON,c=3},3)++
+1`({i=5,t=CON,c=1},1)++
+1`({i=6,t=CON,c=2},1)
+"];
+  N1 -> N3 [ label="A2:1->3:gen: {p2=0,gen={i=1,t=GEN,c=5},p1=5}" ];
+  N1 -> N2 [ label="A1:1->2:gen: {p2=0,gen={i=2,t=GEN,c=3},p1=3}" ];
+  N10 -> N26 [ label="A31:10->26:gen: {p2=0,gen={i=2,t=GEN,c=3},p1=3}" ];
+  N11 -> N28 [ label="A35:11->28:trans: {p3=4,con={i=4,t=CON,c=3},p4=0}" ];
+  N11 -> N27 [ label="A34:11->27:trans: {p3=4,con={i=3,t=BAT,c=100},p4=0}" ];
+  N11 -> N23 [ label="A33:11->23:trans: {p3=4,con={i=6,t=CON,c=2},p4=0}" ];
+  N11 -> N14 [ label="A32:11->14:gen: {p2=4,gen={i=2,t=GEN,c=3},p1=3}" ];
+  N12 -> N29 [ label="A39:12->29:trans: {p3=2,con={i=3,t=BAT,c=100},p4=0}" ];
+  N12 -> N24 [ label="A38:12->24:trans: {p3=2,con={i=6,t=CON,c=2},p4=0}" ];
+  N12 -> N28 [ label="A37:12->28:trans: {p3=2,con={i=5,t=CON,c=1},p4=0}" ];
+  N12 -> N16 [ label="A36:12->16:gen: {p2=2,gen={i=2,t=GEN,c=3},p1=3}" ];
+  N14 -> N32 [ label="A42:14->32:trans: {p3=7,con={i=4,t=CON,c=3},p4=0}" ];
+  N14 -> N31 [ label="A41:14->31:trans: {p3=7,con={i=6,t=CON,c=2},p4=0}" ];
+  N14 -> N30 [ label="A40:14->30:trans: {p3=7,con={i=3,t=BAT,c=100},p4=0}" ];
+  N15 -> N31 [ label="A45:15->31:trans: {p3=6,con={i=5,t=CON,c=1},p4=0}" ];
+  N15 -> N34 [ label="A44:15->34:trans: {p3=6,con={i=3,t=BAT,c=100},p4=0}" ];
+  N15 -> N33 [ label="A43:15->33:trans: {p3=6,con={i=4,t=CON,c=3},p4=0}" ];
+  N16 -> N35 [ label="A48:16->35:trans: {p3=5,con={i=3,t=BAT,c=100},p4=0}" ];
+  N16 -> N32 [ label="A47:16->32:trans: {p3=5,con={i=5,t=CON,c=1},p4=0}" ];
+  N16 -> N33 [ label="A46:16->33:trans: {p3=5,con={i=6,t=CON,c=2},p4=0}" ];
+  N17 -> N36 [ label="A49:17->36:gen: {p2=0,gen={i=1,t=GEN,c=5},p1=5}" ];
+  N18 -> N37 [ label="A50:18->37:gen: {p2=0,gen={i=1,t=GEN,c=5},p1=5}" ];
+  N19 -> N31 [ label="A51:19->31:gen: {p2=0,gen={i=1,t=GEN,c=5},p1=5}" ];
+  N2 -> N8 [ label="A7:2->8:trans: {p3=3,con={i=3,t=BAT,c=100},p4=0}" ];
+  N2 -> N7 [ label="A6:2->7:trans: {p3=3,con={i=4,t=CON,c=3},p4=0}" ];
+  N2 -> N6 [ label="A5:2->6:trans: {p3=3,con={i=5,t=CON,c=1},p4=0}" ];
+  N2 -> N5 [ label="A4:2->5:trans: {p3=3,con={i=6,t=CON,c=2},p4=0}" ];
+  N2 -> N4 [ label="A3:2->4:gen: {p2=3,gen={i=1,t=GEN,c=5},p1=5}" ];
+  N20 -> N38 [ label="A52:20->38:gen: {p2=0,gen={i=1,t=GEN,c=5},p1=5}" ];
+  N21 -> N39 [ label="A53:21->39:gen: {p2=0,gen={i=1,t=GEN,c=5},p1=5}" ];
+  N22 -> N42 [ label="A57:22->42:trans: {p3=5,con={i=5,t=CON,c=1},p4=0}" ];
+  N22 -> N41 [ label="A56:22->41:trans: {p3=5,con={i=4,t=CON,c=3},p4=0}" ];
+  N22 -> N40 [ label="A55:22->40:trans: {p3=5,con={i=6,t=CON,c=2},p4=0}" ];
+  N22 -> N13 [ label="A54:22->13:trans: {p3=5,con={i=3,t=BAT,c=100},p4=3}" ];
+  N23 -> N44 [ label="A60:23->44:trans: {p3=2,con={i=4,t=CON,c=3},p4=0}" ];
+  N23 -> N43 [ label="A59:23->43:trans: {p3=2,con={i=3,t=BAT,c=100},p4=0}" ];
+  N23 -> N31 [ label="A58:23->31:gen: {p2=2,gen={i=2,t=GEN,c=3},p1=3}" ];
+  N24 -> N33 [ label="A61:24->33:gen: {p2=0,gen={i=2,t=GEN,c=3},p1=3}" ];
+  N25 -> N40 [ label="A62:25->40:gen: {p2=0,gen={i=2,t=GEN,c=3},p1=3}" ];
+  N26 -> N46 [ label="A66:26->46:trans: {p3=3,con={i=5,t=CON,c=1},p4=0}" ];
+  N26 -> N35 [ label="A65:26->35:trans: {p3=3,con={i=4,t=CON,c=3},p4=0}" ];
+  N26 -> N13 [ label="A64:26->13:trans: {p3=3,con={i=3,t=BAT,c=100},p4=5}" ];
+  N26 -> N45 [ label="A63:26->45:trans: {p3=3,con={i=6,t=CON,c=2},p4=0}" ];
+  N27 -> N47 [ label="A67:27->47:gen: {p2=0,gen={i=2,t=GEN,c=3},p1=3}" ];
+  N28 -> N49 [ label="A70:28->49:trans: {p3=1,con={i=6,t=CON,c=2},p4=0}" ];
+  N28 -> N48 [ label="A69:28->48:trans: {p3=1,con={i=3,t=BAT,c=100},p4=0}" ];
+  N28 -> N32 [ label="A68:28->32:gen: {p2=1,gen={i=2,t=GEN,c=3},p1=3}" ];
+  N29 -> N50 [ label="A71:29->50:gen: {p2=0,gen={i=2,t=GEN,c=3},p1=3}" ];
+  N3 -> N12 [ label="A12:3->12:trans: {p3=5,con={i=4,t=CON,c=3},p4=0}" ];
+  N3 -> N11 [ label="A11:3->11:trans: {p3=5,con={i=5,t=CON,c=1},p4=0}" ];
+  N3 -> N10 [ label="A10:3->10:trans: {p3=5,con={i=3,t=BAT,c=100},p4=0}" ];
+  N3 -> N9 [ label="A9:3->9:trans: {p3=5,con={i=6,t=CON,c=2},p4=0}" ];
+  N3 -> N4 [ label="A8:3->4:gen: {p2=5,gen={i=2,t=GEN,c=3},p1=3}" ];
+  N31 -> N52 [ label="A73:31->52:trans: {p3=5,con={i=4,t=CON,c=3},p4=0}" ];
+  N31 -> N51 [ label="A72:31->51:trans: {p3=5,con={i=3,t=BAT,c=100},p4=0}" ];
+  N32 -> N53 [ label="A75:32->53:trans: {p3=4,con={i=3,t=BAT,c=100},p4=0}" ];
+  N32 -> N52 [ label="A74:32->52:trans: {p3=4,con={i=6,t=CON,c=2},p4=0}" ];
+  N33 -> N54 [ label="A77:33->54:trans: {p3=3,con={i=3,t=BAT,c=100},p4=0}" ];
+  N33 -> N52 [ label="A76:33->52:trans: {p3=3,con={i=5,t=CON,c=1},p4=0}" ];
+  N36 -> N56 [ label="A80:36->56:trans: {p3=5,con={i=4,t=CON,c=3},p4=0}" ];
+  N36 -> N55 [ label="A79:36->55:trans: {p3=5,con={i=5,t=CON,c=1},p4=0}" ];
+  N36 -> N34 [ label="A78:36->34:trans: {p3=5,con={i=3,t=BAT,c=100},p4=1}" ];
+  N37 -> N58 [ label="A83:37->58:trans: {p3=5,con={i=3,t=BAT,c=100},p4=0}" ];
+  N37 -> N57 [ label="A82:37->57:trans: {p3=5,con={i=5,t=CON,c=1},p4=0}" ];
+  N37 -> N33 [ label="A81:37->33:trans: {p3=5,con={i=4,t=CON,c=3},p4=1}" ];
+  N38 -> N30 [ label="A86:38->30:trans: {p3=5,con={i=3,t=BAT,c=100},p4=2}" ];
+  N38 -> N60 [ label="A85:38->60:trans: {p3=5,con={i=6,t=CON,c=2},p4=0}" ];
+  N38 -> N59 [ label="A84:38->59:trans: {p3=5,con={i=4,t=CON,c=3},p4=0}" ];
+  N39 -> N32 [ label="A89:39->32:trans: {p3=5,con={i=4,t=CON,c=3},p4=2}" ];
+  N39 -> N62 [ label="A88:39->62:trans: {p3=5,con={i=6,t=CON,c=2},p4=0}" ];
+  N39 -> N61 [ label="A87:39->61:trans: {p3=5,con={i=3,t=BAT,c=100},p4=0}" ];
+  N4 -> N16 [ label="A16:4->16:trans: {p3=8,con={i=4,t=CON,c=3},p4=0}" ];
+  N4 -> N15 [ label="A15:4->15:trans: {p3=8,con={i=6,t=CON,c=2},p4=0}" ];
+  N4 -> N14 [ label="A14:4->14:trans: {p3=8,con={i=5,t=CON,c=1},p4=0}" ];
+  N4 -> N13 [ label="A13:4->13:trans: {p3=8,con={i=3,t=BAT,c=100},p4=0}" ];
+  N40 -> N54 [ label="A92:40->54:trans: {p3=3,con={i=4,t=CON,c=3},p4=0}" ];
+  N40 -> N63 [ label="A91:40->63:trans: {p3=3,con={i=5,t=CON,c=1},p4=0}" ];
+  N40 -> N34 [ label="A90:40->34:trans: {p3=3,con={i=3,t=BAT,c=100},p4=3}" ];
+  N41 -> N54 [ label="A95:41->54:trans: {p3=2,con={i=6,t=CON,c=2},p4=0}" ];
+  N41 -> N64 [ label="A94:41->64:trans: {p3=2,con={i=5,t=CON,c=1},p4=0}" ];
+  N41 -> N35 [ label="A93:41->35:trans: {p3=2,con={i=3,t=BAT,c=100},p4=3}" ];
+  N42 -> N64 [ label="A98:42->64:trans: {p3=4,con={i=4,t=CON,c=3},p4=0}" ];
+  N42 -> N30 [ label="A97:42->30:trans: {p3=4,con={i=3,t=BAT,c=100},p4=3}" ];
+  N42 -> N63 [ label="A96:42->63:trans: {p3=4,con={i=6,t=CON,c=2},p4=0}" ];
+  N43 -> N60 [ label="A99:43->60:gen: {p2=0,gen={i=2,t=GEN,c=3},p1=3}" ];
+  N44 -> N62 [ label="A100:44->62:gen: {p2=0,gen={i=2,t=GEN,c=3},p1=3}" ];
+  N45 -> N34 [ label="A103:45->34:trans: {p3=1,con={i=3,t=BAT,c=100},p4=5}" ];
+  N45 -> N51 [ label="A102:45->51:trans: {p3=1,con={i=5,t=CON,c=1},p4=0}" ];
+  N45 -> N58 [ label="A101:45->58:trans: {p3=1,con={i=4,t=CON,c=3},p4=0}" ];
+  N46 -> N61 [ label="A106:46->61:trans: {p3=2,con={i=4,t=CON,c=3},p4=0}" ];
+  N46 -> N51 [ label="A105:46->51:trans: {p3=2,con={i=6,t=CON,c=2},p4=0}" ];
+  N46 -> N30 [ label="A104:46->30:trans: {p3=2,con={i=3,t=BAT,c=100},p4=5}" ];
+  N47 -> N53 [ label="A109:47->53:trans: {p3=3,con={i=4,t=CON,c=3},p4=0}" ];
+  N47 -> N65 [ label="A108:47->65:trans: {p3=3,con={i=6,t=CON,c=2},p4=0}" ];
+  N47 -> N30 [ label="A107:47->30:trans: {p3=3,con={i=3,t=BAT,c=100},p4=4}" ];
+  N48 -> N66 [ label="A110:48->66:gen: {p2=0,gen={i=2,t=GEN,c=3},p1=3}" ];
+  N49 -> N67 [ label="A111:49->67:gen: {p2=0,gen={i=2,t=GEN,c=3},p1=3}" ];
+  N5 -> N19 [ label="A20:5->19:trans: {p3=1,con={i=5,t=CON,c=1},p4=0}" ];
+  N5 -> N18 [ label="A19:5->18:trans: {p3=1,con={i=4,t=CON,c=3},p4=0}" ];
+  N5 -> N17 [ label="A18:5->17:trans: {p3=1,con={i=3,t=BAT,c=100},p4=0}" ];
+  N5 -> N15 [ label="A17:5->15:gen: {p2=1,gen={i=1,t=GEN,c=5},p1=5}" ];
+  N50 -> N35 [ label="A114:50->35:trans: {p3=3,con={i=3,t=BAT,c=100},p4=2}" ];
+  N50 -> N59 [ label="A113:50->59:trans: {p3=3,con={i=5,t=CON,c=1},p4=0}" ];
+  N50 -> N68 [ label="A112:50->68:trans: {p3=3,con={i=6,t=CON,c=2},p4=0}" ];
+  N52 -> N69 [ label="A115:52->69:trans: {p3=2,con={i=3,t=BAT,c=100},p4=0}" ];
+  N55 -> N51 [ label="A117:55->51:trans: {p3=4,con={i=3,t=BAT,c=100},p4=1}" ];
+  N55 -> N70 [ label="A116:55->70:trans: {p3=4,con={i=4,t=CON,c=3},p4=0}" ];
+  N56 -> N54 [ label="A119:56->54:trans: {p3=2,con={i=3,t=BAT,c=100},p4=1}" ];
+  N56 -> N70 [ label="A118:56->70:trans: {p3=2,con={i=5,t=CON,c=1},p4=0}" ];
+  N57 -> N52 [ label="A121:57->52:trans: {p3=4,con={i=4,t=CON,c=3},p4=1}" ];
+  N57 -> N71 [ label="A120:57->71:trans: {p3=4,con={i=3,t=BAT,c=100},p4=0}" ];
+  N59 -> N53 [ label="A123:59->53:trans: {p3=2,con={i=3,t=BAT,c=100},p4=2}" ];
+  N59 -> N69 [ label="A122:59->69:trans: {p3=2,con={i=6,t=CON,c=2},p4=0}" ];
+  N6 -> N19 [ label="A24:6->19:trans: {p3=2,con={i=6,t=CON,c=2},p4=0}" ];
+  N6 -> N21 [ label="A23:6->21:trans: {p3=2,con={i=4,t=CON,c=3},p4=0}" ];
+  N6 -> N20 [ label="A22:6->20:trans: {p3=2,con={i=3,t=BAT,c=100},p4=0}" ];
+  N6 -> N14 [ label="A21:6->14:gen: {p2=2,gen={i=1,t=GEN,c=5},p1=5}" ];
+  N60 -> N69 [ label="A125:60->69:trans: {p3=3,con={i=4,t=CON,c=3},p4=0}" ];
+  N60 -> N51 [ label="A124:60->51:trans: {p3=3,con={i=3,t=BAT,c=100},p4=2}" ];
+  N62 -> N72 [ label="A127:62->72:trans: {p3=3,con={i=3,t=BAT,c=100},p4=0}" ];
+  N62 -> N52 [ label="A126:62->52:trans: {p3=3,con={i=4,t=CON,c=3},p4=2}" ];
+  N63 -> N51 [ label="A129:63->51:trans: {p3=2,con={i=3,t=BAT,c=100},p4=3}" ];
+  N63 -> N72 [ label="A128:63->72:trans: {p3=2,con={i=4,t=CON,c=3},p4=0}" ];
+  N64 -> N53 [ label="A131:64->53:trans: {p3=1,con={i=3,t=BAT,c=100},p4=3}" ];
+  N64 -> N73 [ label="A130:64->73:trans: {p3=1,con={i=6,t=CON,c=2},p4=0}" ];
+  N65 -> N71 [ label="A133:65->71:trans: {p3=1,con={i=4,t=CON,c=3},p4=0}" ];
+  N65 -> N51 [ label="A132:65->51:trans: {p3=1,con={i=3,t=BAT,c=100},p4=4}" ];
+  N66 -> N70 [ label="A135:66->70:trans: {p3=3,con={i=6,t=CON,c=2},p4=0}" ];
+  N66 -> N53 [ label="A134:66->53:trans: {p3=3,con={i=3,t=BAT,c=100},p4=1}" ];
+  N67 -> N73 [ label="A137:67->73:trans: {p3=3,con={i=3,t=BAT,c=100},p4=0}" ];
+  N67 -> N52 [ label="A136:67->52:trans: {p3=3,con={i=6,t=CON,c=2},p4=1}" ];
+  N68 -> N54 [ label="A139:68->54:trans: {p3=1,con={i=3,t=BAT,c=100},p4=2}" ];
+  N68 -> N69 [ label="A138:68->69:trans: {p3=1,con={i=5,t=CON,c=1},p4=0}" ];
+  N7 -> N16 [ label="A25:7->16:gen: {p2=0,gen={i=1,t=GEN,c=5},p1=5}" ];
+  N70 -> N69 [ label="A140:70->69:trans: {p3=1,con={i=3,t=BAT,c=100},p4=1}" ];
+  N8 -> N22 [ label="A26:8->22:gen: {p2=0,gen={i=1,t=GEN,c=5},p1=5}" ];
+  N9 -> N25 [ label="A30:9->25:trans: {p3=3,con={i=3,t=BAT,c=100},p4=0}" ];
+  N9 -> N24 [ label="A29:9->24:trans: {p3=3,con={i=4,t=CON,c=3},p4=0}" ];
+  N9 -> N23 [ label="A28:9->23:trans: {p3=3,con={i=5,t=CON,c=1},p4=0}" ];
+  N9 -> N15 [ label="A27:9->15:gen: {p2=3,gen={i=2,t=GEN,c=3},p1=3}" ];
 }

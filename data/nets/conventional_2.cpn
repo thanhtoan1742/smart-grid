@@ -911,10 +911,13 @@
         <label />
         <text>val outputpath = "C:/Users/at/Dev/smart-grid/data/dots/";
 val filename = "conventional_2";
+fun iota(n: int) = if n &lt; 1 then [] else (iota (n-1)) ++ [n];
 OGSet.StringRepOptions'PI(fn (page, place, inst) =&gt; place);
 OGSet.StringRepOptions'TI(
     fn (page,trans,inst) =&gt; trans
 );
+OGtoGraphviz.ExportNodes(outputpath ^ filename ^ ".nodes.dot", iota(NoOfNodes()));
+OGtoGraphviz.ExportArcs(outputpath ^ filename ^ ".arcs.dot", iota(NoOfArcs()));
 OGtoGraphviz.ExportStateSpace(outputpath ^ filename ^ ".dot");
 </text>
       </Aux>
