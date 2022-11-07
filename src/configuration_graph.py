@@ -17,19 +17,22 @@ def read(filename: str) -> nx.MultiDiGraph:
     return G
 
 
-def valid_terminal_nodes(G: nx.MultiDiGraph, config) -> List[str]:
-    res = []
-
-    for node in G.nodes():
-        state = G.nodes[node]["grid"]
+def valid_terminal_nodes(G: nx.MultiDiGraph) -> List[str]:
+    terminal_nodes = []
+    for n in G.nodes:
         valid = True
-        for k in config:
-            if k not in state or not state[k] or state[k][0][0] < config[k]:
+        for consumer in G.nodes[n]["grid"]["Consumer"]:
+            typ = consumer[1][0]["t"]
+            if typ == "BAT":
+                continue
+            cap = consumer[1][0]["c"]
+            power = consumer[1][1]
+            if power < cap:
                 valid = False
                 break
         if valid:
-            res.append(node)
-    return res
+            terminal_nodes.append(n)
+    return terminal_nodes
 
 
 def bfs_path(
@@ -39,9 +42,9 @@ def bfs_path(
     min_lenth = min([len(path[n]) for n in terminal_nodes])
     for n in terminal_nodes:
         if len(path[n]) == min_lenth:
-            return n, path[n], min_lenth
+            return n, path[n], len(path[n])
 
-    return None, []
+    return None, [], -1
 
 
 def dijkstra_path(
