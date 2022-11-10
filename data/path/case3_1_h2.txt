@@ -4,3 +4,12 @@ Path length:  5
 Path: ['N1', 'N5', 'N12', 'N20', 'N23']
 Length searched nodes: 9
 Searched nodes: ['N1', 'N5', 'N12', 'N13', 'N20', 'N7', 'N18', 'N15', 'N23']
+Searched edges:
+N1-N5
+N5-N12
+N5-N13
+N12-N20
+N5-N7
+N12-N18
+N13-N15
+N20-N23

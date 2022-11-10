@@ -1,13 +1,11 @@
-import functools
-import sys
 from queue import PriorityQueue
-
 import networkx as nx
-
 import configuration_graph
+import functools
+import json
 
 INPUT_FORMAT = "../data/dots/{name}.dot"
-OUTPUT_FORMAT = "../data/path/{name}.txt"
+OUTPUT_FORMAT = "../data/path/{name}.json"
 MAX_VALUE = 2147483647
 
 
@@ -118,21 +116,30 @@ def PrintResult(u, cost, trace, searched_nodes):
     lst.append(u)
     lst.reverse()
 
+    searched_edges = []
+    for u in searched_nodes:
+        if trace[u]:
+            searched_edges.append(trace[u] + "-" + u)
+
     name = "case3_1"
     heuristic = "h1_rever"
+
+    output = {
+        "final_node": lst[-1],
+        "cost": cost,
+        "path_length": len(lst),
+        "path": lst,
+        "searched_nodes_length": len(searched_nodes),
+        "searched_nodes": searched_nodes,
+        "searched_edges": searched_edges,
+    }
+
     output_file = OUTPUT_FORMAT.format(name=name + "_" + heuristic)
-    with open(output_file, "w") as f:
-        sys.stdout = f  # Change the standard output to the file we created.
-        print("Final node:", lst[-1])
-        print("Cost:", cost)
-        print("Path length: ", len(lst))
-        print("Path:", lst)
-        print("Length searched nodes:", len(searched_nodes))
-        print("Searched nodes:", searched_nodes)
-        # print(u, cost, len(searched_nodes))
-        # print(lst)
-        # print(searched_nodes)
-        sys.stdout = sys.stdout  #
+    json_object = json.dumps(output, indent=4)
+
+    # Writing to sample.json
+    with open(output_file, "w") as outfile:
+        outfile.write(json_object)
 
 
 def astar(graph: Graph, request_state):
@@ -141,6 +148,7 @@ def astar(graph: Graph, request_state):
     in_path = {}
     trace = {}
     searched_nodes = []
+    # searched_edges = []
     for node in graph.get_nodes():
         f[node] = MAX_VALUE
         in_path[node] = False
@@ -164,11 +172,17 @@ def astar(graph: Graph, request_state):
             continue
         if isFinal(request_state, graph.get_detail(u.node)):
             searched_nodes.append(u.node)
-            PrintResult(u.node, f[u.node], trace, searched_nodes)
+            PrintResult(
+                u.node,
+                f[u.node],
+                trace,
+                searched_nodes,
+            )
             return
 
         in_path[u.node] = True
         searched_nodes.append(u.node)
+        # if (trace[u.node]): searched_edges.append([trace[u.node], u.node])
         for edge in graph.get_edges(u.node):
             v = edge["to"]
             new_cost = f[u.node] + 1
@@ -186,7 +200,7 @@ def astar(graph: Graph, request_state):
 
 
 def configuration_4_astar():
-    name = "example_2"
+    name = "case3_1"
     input_file = INPUT_FORMAT.format(name=name)
     G: nx.MultiDiGraph = configuration_graph.read(input_file)
 
@@ -200,8 +214,7 @@ def configuration_4_astar():
         adj_edges[u] = adj_edges[u] + [{"to": edge[1], "info": G.edges[edge]["grid"]}]
 
     # request_state = [150, 100, 90, 250]
-    # request_state = [1, 1]
-    request_state = [1, 3, 1, 2]
+    request_state = [1, 1]
 
     # terminal_nodes = []
     # for n in G.nodes:

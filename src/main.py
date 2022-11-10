@@ -5,6 +5,8 @@ import networkx as nx
 import configuration_graph
 import conventional_graph
 from utils import timer
+import json
+
 
 INPUT_FORMAT = "../data/dots/{name}.dot"
 OUTPUT_FORMAT = "../data/json/{name}.json"
@@ -219,9 +221,4 @@ def read_configuration():
 # configuration_4_bfs()
 # configuration_1_cost_dijkstra()
 
-# read_configuration()
-
-if __name__ == "__main__":
-    import os
-
-    print(os.getcwd())
+read_configuration()
