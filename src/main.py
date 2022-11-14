@@ -2,9 +2,11 @@ import networkx as nx
 import conventional_graph
 import configuration_graph
 from utils import timer
+import json
 
 
-INPUT_FORMAT = "data/dots/{name}.dot"
+INPUT_FORMAT = "../data/dots/{name}.dot"
+OUTPUT_FORMAT = "../data/json/{name}.json"
 
 
 def conventional_1_bfs():
@@ -178,11 +180,48 @@ def configuration_4_bfs():
 
     run()
 
+def to_json(dic, file_name):
+    # Serializing json
+    output_file = OUTPUT_FORMAT.format(name = file_name)
+    json_object = json.dumps(dic, indent=4)
+    
+    # Writing to sample.json
+    with open(output_file, "w") as outfile:
+        outfile.write(json_object)
 
-conventional_1_bfs()
-conventional_4_bfs()
+
+def read_configuration():
+    name = "configuration_4"
+    input_file = INPUT_FORMAT.format(name=name)
+    G: nx.MultiDiGraph = configuration_graph.read(input_file)
+
+    node_dic = {}
+    for node in G.nodes:
+        node_dic[node] = G.nodes[node]["grid"]
+
+    to_json(node_dic, name + "_nodes")
+
+    edge_list = []
+    for edge in G.edges:
+        e = {
+            "from": edge[0],
+            "to" : edge[1],
+            "info": G.edges[edge]["grid"]
+        }
+        edge_list = edge_list + [e]
+        
+    
+    to_json(edge_list, name + "_edges")
+    
+
+# conventional_1_bfs()
+# conventional_4_bfs()
 # conventional_1_cost_dijkstra()
 # conventional_4_cost_dijkstra()
-configuration_1_bfs()
-configuration_4_bfs()
+# configuration_1_bfs()
+# configuration_4_bfs()
 # configuration_1_cost_dijkstra()
+
+read_configuration()
+
+
