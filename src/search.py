@@ -22,6 +22,8 @@ class Graph:
         return [cons[1][1] for cons in detail["Consumer"]]
     
     def get_edges(self, node):
+        if (node not in self.adj_edges.keys()): 
+            return []
         return self.adj_edges[node]
 
 @functools.total_ordering
@@ -34,23 +36,23 @@ class Heu_element:
         self.cost = cost
         self.priority = self.get_priority()
 
-    # def get_priority(self):
-    #     priority = 0
-    #     for i in range(len(Heu_element.request_state)):
-    #         temp = (Heu_element.request_state[i] - self.cons_power_list[i]) / Heu_element.request_state[i]
-    #         if temp > 0: priority += temp
-    #     return priority
-
     def get_priority(self):
         priority = 0
         for i in range(len(Heu_element.request_state)):
             temp = (Heu_element.request_state[i] - self.cons_power_list[i]) / Heu_element.request_state[i]
             if temp > 0: priority += temp
+        return 0
 
-        sumlst = sum(Heu_element.request_state)
-        if (self.generated <= sumlst):
-            priority += (sumlst - self.generated) 
-        return priority
+    # def get_priority(self):
+    #     priority = 0
+    #     for i in range(len(Heu_element.request_state)):
+    #         temp = (Heu_element.request_state[i] - self.cons_power_list[i]) / Heu_element.request_state[i]
+    #         if temp > 0: priority += temp
+
+    #     sumlst = sum(Heu_element.request_state) - sum(self.cons_power_list)
+    #     if (self.generated <= sumlst):
+    #         priority += (sumlst - self.generated) 
+    #     return priority
 
     def __lt__(self, other):
         return self.cost + self.priority < other.cost + other.priority
@@ -113,9 +115,13 @@ def astar(graph: Graph, request_state):
                 trace[v] = u.node
 
 def configuration_4_astar():
-    name = "test"
+    name = "configuration_5"
     input_file = INPUT_FORMAT.format(name=name)
     G: nx.MultiDiGraph = configuration_graph.read(input_file)
+
+    print("Finish Parser")
+
+    
 
     adj_edges = {}
     for edge in G.edges:
@@ -126,7 +132,27 @@ def configuration_4_astar():
             "info": G.edges[edge]["grid"]
         }]
 
-    request_state = [100, 800, 450]
+    request_state = [150, 100, 90, 250]
+
+    terminal_nodes = []
+    for n in G.nodes:
+        valid = True
+        ls = []
+        for consumer in G.nodes[n]["grid"]["Consumer"]:
+            # cap = consumer[1][0]["c"]
+            power = consumer[1][1]
+            # if power < cap:
+            #     valid = False
+            #     break
+            ls.append(power)
+        for i in range(len(ls)):
+            if ls[i] < request_state[i]:
+                valid = False
+                break
+        if valid:
+            terminal_nodes.append(n)
+
+    print(terminal_nodes)
 
     graph = Graph(G, adj_edges)
     astar(graph, request_state)
