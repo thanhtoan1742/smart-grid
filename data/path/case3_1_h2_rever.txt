@@ -1,0 +1,6 @@
+Final node: N23
+Cost: 4
+Path length:  5
+Path: ['N1', 'N5', 'N13', 'N20', 'N23']
+Length searched nodes: 19
+Searched nodes: ['N1', 'N4', 'N2', 'N3', 'N5', 'N6', 'N8', 'N11', 'N10', 'N9', 'N7', 'N13', 'N12', 'N20', 'N16', 'N17', 'N14', 'N21', 'N23']
