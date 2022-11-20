@@ -1,6 +1,6 @@
 CPN Tools state space report for:
-/cygdrive/D/HCMUT/Do an chuyen nganh/smart-grid/data/nets/case3_1.cpn
-Report generated: Sun Nov 20 14:52:36 2022
+/cygdrive/C/Users/at/Dev/smart-grid/data/nets/case3_1.cpn
+Report generated: Sun Nov 20 22:57:21 2022
 
 
  Statistics
