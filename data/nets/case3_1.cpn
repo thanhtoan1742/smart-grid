@@ -834,6 +834,29 @@ OGSet.StringRepOptions&apos;BE(fn (ti,b) =&gt; ti^&quot; &quot;^b);</text>
         <label/>
         <text>OGtoGraphviz.ExportStateSpace(outputpath^&quot;case3_1.dot&quot;);</text>
       </Aux>
+      <Aux id="ID1427397085">
+        <posattr x="-588.000000"
+                 y="-126.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <label/>
+        <text>val outputpath = &quot;D:/HCMUT/Do an chuyen nganh/smart-grid/data/dots/&quot;;
+val filename = &quot;case3_1&quot;;
+fun iota(n: int) = if n &lt; 1 then [] else (iota (n-1)) ++ [n];
+OGSet.StringRepOptions&apos;PI(fn (page, place, inst) =&gt; place);
+OGSet.StringRepOptions&apos;TI(
+    fn (page,trans,inst) =&gt; trans
+);
+OGtoGraphviz.ExportNodes(outputpath ^ filename ^ &quot;.nodes.dot&quot;, iota(NoOfNodes()));
+OGtoGraphviz.ExportArcs(outputpath ^ filename ^ &quot;.arcs.dot&quot;, iota(NoOfArcs()));
+OGtoGraphviz.ExportStateSpace(outputpath ^ filename ^ &quot;.dot&quot;);</text>
+      </Aux>
     </page>
     <instances>
       <instance id="ID2149"
@@ -1085,14 +1108,14 @@ OGSet.StringRepOptions&apos;BE(fn (ti,b) =&gt; ti^&quot; &quot;^b);</text>
     </options>
     <binders>
       <cpnbinder id="ID1426328769"
-                 x="240"
-                 y="113"
+                 x="256"
+                 y="136"
                  width="690"
                  height="539">
         <sheets>
           <cpnsheet id="ID2215"
-                    panx="633.992187"
-                    pany="125.667969"
+                    panx="508.992187"
+                    pany="93.667969"
                     zoom="1.000000"
                     instance="ID2149">
             <zorder>
@@ -1100,8 +1123,8 @@ OGSet.StringRepOptions&apos;BE(fn (ti,b) =&gt; ti^&quot; &quot;^b);</text>
             </zorder>
           </cpnsheet>
           <cpnsheet id="ID1426398584"
-                    panx="280.000000"
-                    pany="88.000000"
+                    panx="330.000000"
+                    pany="-125.000000"
                     zoom="1.000000"
                     instance="ID1426398530">
             <zorder>
@@ -1110,8 +1133,8 @@ OGSet.StringRepOptions&apos;BE(fn (ti,b) =&gt; ti^&quot; &quot;^b);</text>
           </cpnsheet>
         </sheets>
         <zorder>
-          <position value="0"/>
           <position value="1"/>
+          <position value="0"/>
         </zorder>
       </cpnbinder>
     </binders>
@@ -1183,7 +1206,9 @@ OGSet.StringRepOptions&apos;BE(fn (ti,b) =&gt; ti^&quot; &quot;^b);</text>
           <IndexNode expanded="false"/>
         </IndexNode>
       </IndexNode>
-      <IndexNode expanded="false"/>
+      <IndexNode expanded="false">
+        <IndexNode expanded="false"/>
+      </IndexNode>
       <IndexNode expanded="true">
         <IndexNode expanded="false">
           <IndexNode expanded="true"/>
