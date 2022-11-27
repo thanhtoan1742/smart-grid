@@ -1,3 +1,6 @@
 pygraphviz
 networkx[default]
 lark
+
+black
+isort
