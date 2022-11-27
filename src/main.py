@@ -1,9 +1,10 @@
-import networkx as nx
-import conventional_graph
-import configuration_graph
-from utils import timer
 import json
 
+import networkx as nx
+
+import configuration_graph
+import conventional_graph
+from utils import timer
 
 INPUT_FORMAT = "../data/dots/{name}.dot"
 OUTPUT_FORMAT = "../data/json/{name}.json"
@@ -180,11 +181,12 @@ def configuration_4_bfs():
 
     run()
 
+
 def to_json(dic, file_name):
     # Serializing json
-    output_file = OUTPUT_FORMAT.format(name = file_name)
+    output_file = OUTPUT_FORMAT.format(name=file_name)
     json_object = json.dumps(dic, indent=4)
-    
+
     # Writing to sample.json
     with open(output_file, "w") as outfile:
         outfile.write(json_object)
@@ -203,16 +205,11 @@ def read_configuration():
 
     edge_list = []
     for edge in G.edges:
-        e = {
-            "from": edge[0],
-            "to" : edge[1],
-            "info": G.edges[edge]["grid"]
-        }
+        e = {"from": edge[0], "to": edge[1], "info": G.edges[edge]["grid"]}
         edge_list = edge_list + [e]
-        
-    
+
     to_json(edge_list, name + "_edges")
-    
+
 
 # conventional_1_bfs()
 # conventional_4_bfs()
@@ -223,5 +220,3 @@ def read_configuration():
 # configuration_1_cost_dijkstra()
 
 read_configuration()
-
-

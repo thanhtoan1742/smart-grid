@@ -1,8 +1,10 @@
-from queue import PriorityQueue
-import networkx as nx
-import configuration_graph
 import functools
 import sys
+from queue import PriorityQueue
+
+import networkx as nx
+
+import configuration_graph
 
 INPUT_FORMAT = "../data/dots/{name}.dot"
 OUTPUT_FORMAT = "../data/path/{name}.txt"

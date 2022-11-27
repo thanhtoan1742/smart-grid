@@ -1,6 +1,7 @@
-from lark import Lark, Transformer
 from functools import reduce
 from typing import Any, Literal
+
+from lark import Lark, Transformer
 
 
 class Marshaller(Transformer):

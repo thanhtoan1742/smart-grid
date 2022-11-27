@@ -1,8 +1,9 @@
-import pygraphviz as pg
-from pathlib import Path
-import subprocess
-import shutil
 import os
+import shutil
+import subprocess
+from pathlib import Path
+
+import pygraphviz as pg
 
 
 def ls2l(s):

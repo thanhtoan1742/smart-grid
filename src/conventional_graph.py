@@ -1,8 +1,8 @@
+from parser import parse
 from typing import List, Tuple
+
 import networkx as nx
 import pygraphviz
-
-from parser import parse
 
 
 def read(filename: str) -> nx.MultiDiGraph:
