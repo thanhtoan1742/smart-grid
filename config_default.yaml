@@ -1,0 +1,4 @@
+dir:
+  base: "C:/Users/at/Dev/smart-grid"
+net: "example_1"
+heuristic: "h1"
