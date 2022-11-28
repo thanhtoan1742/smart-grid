@@ -935,7 +935,7 @@
     <page id="ID1426398528">
       <pageattr name="ExportToGraphviz" />
       <constraints />
-      <Aux id="ID1427350336"><posattr x="0.00000" y="0.00000" /><fillattr colour="White" pattern="" filled="false" /><lineattr colour="Black" thick="1" type="Solid" /><textattr colour="Black" bold="false" /><text>val output_path = "C:/Users/at/Dev/smart-grid/data/dots/";
+      <Aux id="ID1427350336"><posattr x="0.00000" y="0.00000" /><fillattr colour="White" pattern="" filled="false" /><lineattr colour="Black" thick="1" type="Solid" /><textattr colour="Black" bold="false" /><label /><text>val output_path = "C:/Users/at/Dev/smart-grid/data/dots/";
 val file_name = "conventional_4";
 fun iota(n: int) = if n &lt; 1 then [] else (iota (n-1)) ++ [n];
 OGSet.StringRepOptions'PI(fn (page, place, inst) =&gt; place);

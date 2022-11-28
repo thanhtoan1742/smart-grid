@@ -4,16 +4,13 @@
     <globbox>
       <block id="ID1412310166">
         <id>Standard priorities</id>
-        <ml id="ID1412310255">
-          val P_HIGH = 100;
+        <ml id="ID1412310255">val P_HIGH = 100;
           <layout>val P_HIGH = 100;</layout>
         </ml>
-        <ml id="ID1412310292">
-          val P_NORMAL = 1000;
+        <ml id="ID1412310292">val P_NORMAL = 1000;
           <layout>val P_NORMAL = 1000;</layout>
         </ml>
-        <ml id="ID1412310322">
-          val P_LOW = 10000;
+        <ml id="ID1412310322">val P_LOW = 10000;
           <layout>val P_LOW = 10000;</layout>
         </ml>
       </block>
@@ -153,20 +150,16 @@
           <id>rcb_gen</id>
           <layout>var rcb_gen: CB;</layout>
         </var>
-        <ml id="ID1427309465">
-          fun fn_gen(p1: POWER,p2: POWER) = p1+ p2;
+        <ml id="ID1427309465">fun fn_gen(p1: POWER,p2: POWER) = p1+ p2;
           <layout>fun fn_gen(p1: POWER,p2: POWER) = p1+ p2;</layout>
         </ml>
-        <ml id="ID1427321284">
-          fun fn_gen2(cb: CB, p1: POWER,p2: POWER) = if cb=ON then p1+ p2 else p2;
+        <ml id="ID1427321284">fun fn_gen2(cb: CB, p1: POWER,p2: POWER) = if cb=ON then p1+ p2 else p2;
           <layout>fun fn_gen2(cb: CB, p1: POWER,p2: POWER) = if cb=ON then p1+ p2 else p2;</layout>
         </ml>
-        <ml id="ID1427309733">
-          fun fn_cons(n: NODE, p: POWER) = (n,p+(#c(n)))
+        <ml id="ID1427309733">fun fn_cons(n: NODE, p: POWER) = (n,p+(#c(n)))
           <layout>fun fn_cons(n: NODE, p: POWER) = (n,p+(#c(n)))</layout>
         </ml>
-        <ml id="ID1427310925">
-          fun fn_trans(n:NODE, p:POWER) = p-(#c(n))
+        <ml id="ID1427310925">fun fn_trans(n:NODE, p:POWER) = p-(#c(n))
           <layout>fun fn_trans(n:NODE, p:POWER) = p-(#c(n))</layout>
         </ml>
       </block>
@@ -457,12 +450,7 @@
     <page id="ID1426398528">
       <pageattr name="ExportToGraphviz" />
       <constraints />
-      <Aux id="ID1427322108">
-        <posattr x="0.00000" y="0.00000" />
-        <fillattr colour="White" pattern="" filled="false" />
-        <lineattr colour="Black" thick="1" type="Solid" />
-        <textattr colour="Black" bold="false" />
-        <text>val output_path = "C:/Users/at/Dev/smart-grid/data/dots/";
+      <Aux id="ID1427322108"><posattr x="0.00000" y="0.00000" /><fillattr colour="White" pattern="" filled="false" /><lineattr colour="Black" thick="1" type="Solid" /><textattr colour="Black" bold="false" /><label /><text>val output_path = "C:/Users/at/Dev/smart-grid/data/dots/";
 val file_name = "case3_1";
 fun iota(n: int) = if n &lt; 1 then [] else (iota (n-1)) ++ [n];
 OGSet.StringRepOptions'PI(fn (page, place, inst) =&gt; place);
@@ -472,9 +460,7 @@ OGSet.StringRepOptions'TI(
 OGtoGraphviz.ExportNodes(output_path ^ file_name ^ "_nodes.dot", iota(NoOfNodes()));
 OGtoGraphviz.ExportArcs(output_path ^ file_name ^ "_arcs.dot", iota(NoOfArcs()));
 OGtoGraphviz.ExportStateSpace(output_path ^ file_name ^ ".dot");
-</text>
-      </Aux>
-    </page>
+</text></Aux></page>
     <instances>
       <instance id="ID2149" page="ID6" />
       <instance id="ID1426398530" page="ID1426398528" />
@@ -721,7 +707,26 @@ OGtoGraphviz.ExportStateSpace(output_path ^ file_name ^ ".dot");
         </value>
       </option>
     </options>
-    <binders />
+    <binders>
+      <cpnbinder id="ID1427322646" x="612" y="124" width="758" height="426">
+        <sheets>
+          <cpnsheet id="ID1427322630" panx="612.000000" pany="92.000000" zoom="1.000000" instance="ID2149">
+            <zorder>
+              <position value="0" />
+            </zorder>
+          </cpnsheet>
+          <cpnsheet id="ID1427322659" panx="-290.000000" pany="41.000000" zoom="1.000000" instance="ID1426398530">
+            <zorder>
+              <position value="0" />
+            </zorder>
+          </cpnsheet>
+        </sheets>
+        <zorder>
+          <position value="0" />
+          <position value="1" />
+        </zorder>
+      </cpnbinder>
+    </binders>
     <monitorblock name="Monitors">
       <monitorblock name="New monitor block" />
     </monitorblock>
@@ -790,9 +795,7 @@ OGtoGraphviz.ExportStateSpace(output_path ^ file_name ^ ".dot");
           <IndexNode expanded="false" />
         </IndexNode>
       </IndexNode>
-      <IndexNode expanded="false">
-        <IndexNode expanded="false" />
-      </IndexNode>
+      <IndexNode expanded="false" />
       <IndexNode expanded="true">
         <IndexNode expanded="false">
           <IndexNode expanded="true" />

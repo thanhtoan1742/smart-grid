@@ -1,8 +1,13 @@
 import os
 import xml.etree.ElementTree as ET
+import yaml
+
+with open("config.yaml") as f:
+    cfg = yaml.safe_load(f)
 
 DIR = "data/nets/"
-OUTPUT_PATH = "C:/Users/at/Dev/smart-grid/data/dots/"
+OUTPUT_PATH = cfg["dir"]["base"] + "/data/dots/"
+print(OUTPUT_PATH)
 
 SCRIPT = """\
 val output_path = "{output_path}";
@@ -44,6 +49,7 @@ def edit_script(name: str) -> bool:
             ET.Element("fillattr", colour="White", pattern="", filled="false"),
             ET.Element("lineattr", colour="Black", thick="1", type="Solid"),
             ET.Element("textattr", colour="Black", bold="false"),
+            ET.Element("label"),
             text,
         ]
     )

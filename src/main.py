@@ -219,4 +219,9 @@ def read_configuration():
 # configuration_4_bfs()
 # configuration_1_cost_dijkstra()
 
-read_configuration()
+# read_configuration()
+
+if __name__ == "__main__":
+    import os
+
+    print(os.getcwd())
