@@ -10,7 +10,10 @@ OUTPUT_FORMAT = "../data/path/{name}.json"
 MAX_VALUE = 2147483647
 
 DOTFILE_NAME = 'case3_1'
-HEURISTIC_NAME = 'h2'
+HEURISTIC_NAME = 'h3_rever'
+
+ALPHA = 1
+BETA = 1
 
 class EdgeType(Enum):
     GEN = 1
@@ -79,7 +82,7 @@ class HeuristicElement:
     def __init__(self, id, cost, node: Node):
         self.id = id
         self.cost = cost
-        self.node = node
+        self.node : Node = node
         self.priority = self.get_priority()
         # print(id, self.priority)
         # self.priority = self.get_rever_priority()
@@ -95,15 +98,21 @@ class HeuristicElement:
         return 1 / value
 
     def get_priority(self):
-        if HEURISTIC_NAME == self.h1.__name__:
-            return self.h1()
-        elif HEURISTIC_NAME == self.h2.__name__:
-            return self.h2()
-        elif HEURISTIC_NAME == self.h1.__name__ + '_rever':
-            return self.get_rever(self.h1())
-        elif HEURISTIC_NAME == self.h2.__name__ + '_rever':
-            return self.get_rever(self.h1())
-        return 0
+        result = 0
+        if self.h1.__name__ in HEURISTIC_NAME :
+            result = self.h1()
+        elif self.h2.__name__ in HEURISTIC_NAME :
+            result = self.h2()
+        elif self.h3.__name__ in HEURISTIC_NAME :
+            result = self.h3()
+
+        if result == 0:
+            return 0
+        
+        if '_rever' in HEURISTIC_NAME:
+            result = 1 / result
+
+        return result
 
     def h1(self):
         priority = 0
@@ -124,11 +133,18 @@ class HeuristicElement:
         
         return priority
 
+    def h3(self):
+        priority = self.h2()
+        for generator in self.node.info['Generator']:
+            if (generator['power'] > 0):
+                priority += 1 / generator['power']
+        return priority
+
     def __lt__(self, other):
-        return self.cost + self.priority < other.cost + other.priority
+        return self.cost * ALPHA + self.priority * BETA < other.cost * ALPHA + other.priority * BETA
 
     def __eq__(self, other):
-        return self.cost + self.priority == other.cost + other.priority
+        return  self.cost * ALPHA + self.priority * BETA == other.cost * ALPHA + other.priority * BETA
 
 
 def PrintResult(u, cost, trace, searched_nodes):
@@ -157,7 +173,7 @@ def PrintResult(u, cost, trace, searched_nodes):
     }
 
     output_file = OUTPUT_FORMAT.format(name=DOTFILE_NAME + "_" + HEURISTIC_NAME)
-    print(output_file)
+    # print(output_file)
     json_object = json.dumps(output, indent=4)
 
     # Writing to sample.json
