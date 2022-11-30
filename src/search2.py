@@ -10,10 +10,14 @@ OUTPUT_FORMAT = "../data/path/{name}.json"
 MAX_VALUE = 2147483647
 
 DOTFILE_NAME = 'case3_1'
-HEURISTIC_NAME = 'h3_rever'
+HEURISTIC_NAME = 'h4'
+HEURISTIC_NAME += '_rever'
+
 
 ALPHA = 1
 BETA = 1
+
+HEURISTIC_NAME += '_a' + str(ALPHA).replace('.', '_') + '_b' + str(BETA).replace('.', '_')
 
 class EdgeType(Enum):
     GEN = 1
@@ -73,18 +77,20 @@ class Edge:
             return 1
         if ('rcb_gen' in self.info.keys()) and (self.info['rcb_gen']) == 'OFF': 
             return 0
-        return self.info['p1']
+        return (self.info['p1'] if 'h4' not in HEURISTIC_NAME else 1 / self.info['p1'])
 
 @functools.total_ordering
 class HeuristicElement:
     request_state: list
+    generator_power: list
 
     def __init__(self, id, cost, node: Node):
         self.id = id
         self.cost = cost
         self.node : Node = node
         self.priority = self.get_priority()
-        # print(id, self.priority)
+        self.value = self.cost * ALPHA + self.priority * BETA
+        print(f"{self.id}: cost = {self.cost * ALPHA} - prio = {self.priority * BETA} - value: {self.value}")
         # self.priority = self.get_rever_priority()
 
     # def get_rever_priority(self):
@@ -105,6 +111,8 @@ class HeuristicElement:
             result = self.h2()
         elif self.h3.__name__ in HEURISTIC_NAME :
             result = self.h3()
+        elif self.h4.__name__ in HEURISTIC_NAME :
+            result = self.h4()
 
         if result == 0:
             return 0
@@ -134,18 +142,38 @@ class HeuristicElement:
         return priority
 
     def h3(self):
+        # priority = self.h2()
+        # temp = 0
+        # for generator in self.node.info['Generator']:
+        #     if (generator['power'] > 0):
+        #         temp += 1 / generator['power']
+        # # lst = [generator for generator in ]
+        # if (temp == 0):
+        #     temp = sum([1 / p for p in HeuristicElement.generator_power])
+        # print(f"temp: {temp}")
+        # priority += temp * 1
+
         priority = self.h2()
-        for generator in self.node.info['Generator']:
-            if (generator['power'] > 0):
-                priority += 1 / generator['power']
+        generator_power_sum = sum([p for p in HeuristicElement.generator_power])
+        out_power = sum([consumer['power'] for consumer in self.node.info['Consumer']]) + self.node.info['Generated']
+
+        priority += out_power / generator_power_sum
+        return priority
+
+    def h4(self):
+        priority = self.h2()
+        generator_power_sum = sum([p for p in HeuristicElement.generator_power])
+        out_power = sum([consumer['power'] for consumer in self.node.info['Consumer']]) + self.node.info['Generated']
+
+        print(f"temp: {1 - out_power / generator_power_sum}")
+        priority += 1 - out_power / generator_power_sum
         return priority
 
     def __lt__(self, other):
-        return self.cost * ALPHA + self.priority * BETA < other.cost * ALPHA + other.priority * BETA
+        return self.value < other.value
 
     def __eq__(self, other):
-        return  self.cost * ALPHA + self.priority * BETA == other.cost * ALPHA + other.priority * BETA
-
+        return  self.value == other.value
 
 def PrintResult(u, cost, trace, searched_nodes):
     lst = []
@@ -246,6 +274,7 @@ class Graph:
         f[start_id] = 0
 
         HeuristicElement.request_state = self.request_state
+        HeuristicElement.generator_power = [generator['power'] for generator in self.nodes["N1"].info['Generator']]
         Q.put(
             HeuristicElement(
                 start_id,
@@ -258,6 +287,7 @@ class Graph:
             u: HeuristicElement = Q.get()
             if in_path[u.id]:
                 continue
+            print(f"Pop: {u.id}")
             if self.isFinal(u.node):
                 searched_nodes.append(u.id)
                 PrintResult(

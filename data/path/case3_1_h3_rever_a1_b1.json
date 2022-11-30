@@ -9,7 +9,7 @@
         "N15",
         "N23"
     ],
-    "searched_nodes_length": 26,
+    "searched_nodes_length": 25,
     "searched_nodes": [
         "N1",
         "N4",
@@ -34,8 +34,7 @@
         "N24",
         "N21",
         "N25",
-        "N28",
-        "N27",
+        "N20",
         "N23"
     ],
     "searched_edges": [
@@ -61,8 +60,7 @@
         "N14-N24",
         "N12-N21",
         "N15-N25",
-        "N19-N28",
-        "N18-N27",
+        "N13-N20",
         "N15-N23"
     ]
 }
