@@ -1,0 +1,32 @@
+{
+    "final_node": "N270",
+    "cost": 12,
+    "path_length": 7,
+    "path": [
+        "N1",
+        "N5",
+        "N22",
+        "N65",
+        "N140",
+        "N188",
+        "N270"
+    ],
+    "searched_nodes_length": 7,
+    "searched_nodes": [
+        "N1",
+        "N5",
+        "N22",
+        "N65",
+        "N140",
+        "N188",
+        "N270"
+    ],
+    "searched_edges": [
+        "N1-N5",
+        "N5-N22",
+        "N22-N65",
+        "N65-N140",
+        "N140-N188",
+        "N188-N270"
+    ]
+}

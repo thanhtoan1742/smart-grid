@@ -9,13 +9,14 @@ INPUT_FORMAT = "../data/dots/{name}.dot"
 OUTPUT_FORMAT = "../data/path/{name}.json"
 MAX_VALUE = 2147483647
 
-DOTFILE_NAME = 'case3_1'
+DOTFILE_NAME = 'configuration_6'
 HEURISTIC_NAME = 'h4'
 HEURISTIC_NAME += '_rever'
 
 
 ALPHA = 1
-BETA = 1
+BETA = 1.75
+
 
 HEURISTIC_NAME += '_a' + str(ALPHA).replace('.', '_') + '_b' + str(BETA).replace('.', '_')
 
@@ -78,6 +79,8 @@ class Edge:
         if ('rcb_gen' in self.info.keys()) and (self.info['rcb_gen']) == 'OFF': 
             return 0
         return (self.info['p1'] if 'h4' not in HEURISTIC_NAME else 1 / self.info['p1'])
+        # return 1
+
 
 @functools.total_ordering
 class HeuristicElement:
@@ -90,14 +93,7 @@ class HeuristicElement:
         self.node : Node = node
         self.priority = self.get_priority()
         self.value = self.cost * ALPHA + self.priority * BETA
-        print(f"{self.id}: cost = {self.cost * ALPHA} - prio = {self.priority * BETA} - value: {self.value}")
-        # self.priority = self.get_rever_priority()
-
-    # def get_rever_priority(self):
-    #     priority = self.get_priority()
-    #     if priority == 0:
-    #         return 0
-    #     return 1 / priority
+        # print(f"{self.id}: cost = {self.cost * ALPHA} - prio = {self.priority * BETA} - value: {self.value}")
     def get_rever(self, value):
         if value == 0:
             return 0
@@ -142,17 +138,6 @@ class HeuristicElement:
         return priority
 
     def h3(self):
-        # priority = self.h2()
-        # temp = 0
-        # for generator in self.node.info['Generator']:
-        #     if (generator['power'] > 0):
-        #         temp += 1 / generator['power']
-        # # lst = [generator for generator in ]
-        # if (temp == 0):
-        #     temp = sum([1 / p for p in HeuristicElement.generator_power])
-        # print(f"temp: {temp}")
-        # priority += temp * 1
-
         priority = self.h2()
         generator_power_sum = sum([p for p in HeuristicElement.generator_power])
         out_power = sum([consumer['power'] for consumer in self.node.info['Consumer']]) + self.node.info['Generated']
@@ -165,7 +150,7 @@ class HeuristicElement:
         generator_power_sum = sum([p for p in HeuristicElement.generator_power])
         out_power = sum([consumer['power'] for consumer in self.node.info['Consumer']]) + self.node.info['Generated']
 
-        print(f"temp: {1 - out_power / generator_power_sum}")
+        # print(f"temp: {1 - out_power / generator_power_sum}")
         priority += 1 - out_power / generator_power_sum
         return priority
 
@@ -240,8 +225,11 @@ class Graph:
         return self.adj_edges[id]
 
     def checkTerminal(self, node: Node):
-        if node.info["Generator"] == [] and node.info["Generated"] == 0:
-            return True
+        if node.id not in self.adj_edges.keys(): 
+            self.adj_edges[node.id] = []
+        return self.adj_edges[node.id] == []
+        # if node.info["Generator"] == [] and node.info["Generated"] == 0:
+        #     return True
         # for cons in detail["Consumer"]:
         #     c = cons[1][0]['c']
         #     p = cons[1][1]
@@ -287,7 +275,7 @@ class Graph:
             u: HeuristicElement = Q.get()
             if in_path[u.id]:
                 continue
-            print(f"Pop: {u.id}")
+            # print(f"Pop: {u.id}")
             if self.isFinal(u.node):
                 searched_nodes.append(u.id)
                 PrintResult(
@@ -321,9 +309,27 @@ def main():
     input_file = INPUT_FORMAT.format(name=DOTFILE_NAME)
     G: nx.MultiDiGraph = configuration_graph.read(input_file)
 
+    print("Finish read from dot file!")
+    print(f"Start search {DOTFILE_NAME} - Method: {HEURISTIC_NAME}")
     graph = Graph(G)
-    # graph.set_request([150, 100, 90, 250])
-    graph.set_request([1,1])
+    case3_1_rqs = [1, 1]
+    ex2_rqs = [1, 3, 1, 2]
+    cf5_rqs = [150, 100, 90, 250]
+    cf6_rqs = [150, 100, 90, 250, 60]
+
+    request_state = []
+    if DOTFILE_NAME == 'case3_1': 
+        request_state = case3_1_rqs
+    elif DOTFILE_NAME == 'example_2':
+        request_state = ex2_rqs
+    elif DOTFILE_NAME == 'configuration_5':
+        request_state = cf5_rqs
+    elif DOTFILE_NAME == 'configuration_6':
+        request_state = cf6_rqs
+
+    # graph.set_request()
+    graph.set_request(request_state)
     graph.astar()
+    print(request_state)
 
 main()

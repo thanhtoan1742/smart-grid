@@ -49,8 +49,8 @@ class Heu_element:
         return 1 / priority
 
     def get_priority(self):
-        return self.h1()
-        # return self.h2()
+        # return self.h1()
+        return self.h2()
         # return 0
 
     def h1(self):
@@ -97,9 +97,9 @@ def checkTerminal(detail):
 
 
 def isFinal(request_list, detail):
-    isTerminal = checkTerminal(detail)
-    if not isTerminal:
-        return False
+    # isTerminal = checkTerminal(detail)
+    # if not isTerminal:
+    #     return False
     power_list = [cons[1][1] for cons in detail["Consumer"]]
     flag = True
     for i in range(len(power_list)):
@@ -121,8 +121,8 @@ def PrintResult(u, cost, trace, searched_nodes):
         if trace[u]:
             searched_edges.append(trace[u] + "-" + u)
 
-    name = "case3_1"
-    heuristic = "h1_rever"
+    name = "configuration_6_old"
+    heuristic = "h2_rever"
 
     output = {
         "final_node": lst[-1],
@@ -170,7 +170,7 @@ def astar(graph: Graph, request_state):
         u: Heu_element = Q.get()
         if in_path[u.node]:
             continue
-        if isFinal(request_state, graph.get_detail(u.node)):
+        if isFinal(request_state, graph.get_detail(u.node)) and (graph.get_edges(u.node) == []):
             searched_nodes.append(u.node)
             PrintResult(
                 u.node,
@@ -200,7 +200,7 @@ def astar(graph: Graph, request_state):
 
 
 def configuration_4_astar():
-    name = "case3_1"
+    name = "configuration_6"
     input_file = INPUT_FORMAT.format(name=name)
     G: nx.MultiDiGraph = configuration_graph.read(input_file)
 
@@ -213,8 +213,10 @@ def configuration_4_astar():
             adj_edges[u] = []
         adj_edges[u] = adj_edges[u] + [{"to": edge[1], "info": G.edges[edge]["grid"]}]
 
+    request_state = [150, 100, 90, 250, 60]
     # request_state = [150, 100, 90, 250]
-    request_state = [1, 1]
+
+    # request_state = [1, 1]
 
     # terminal_nodes = []
     # for n in G.nodes:

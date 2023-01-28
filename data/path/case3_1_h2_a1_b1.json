@@ -1,0 +1,44 @@
+{
+    "final_node": "N23",
+    "cost": 4,
+    "path_length": 5,
+    "path": [
+        "N1",
+        "N5",
+        "N7",
+        "N15",
+        "N23"
+    ],
+    "searched_nodes_length": 14,
+    "searched_nodes": [
+        "N1",
+        "N5",
+        "N3",
+        "N2",
+        "N7",
+        "N10",
+        "N8",
+        "N6",
+        "N15",
+        "N17",
+        "N16",
+        "N4",
+        "N13",
+        "N23"
+    ],
+    "searched_edges": [
+        "N1-N5",
+        "N1-N3",
+        "N1-N2",
+        "N5-N7",
+        "N3-N10",
+        "N3-N8",
+        "N2-N6",
+        "N7-N15",
+        "N8-N17",
+        "N10-N16",
+        "N1-N4",
+        "N5-N13",
+        "N15-N23"
+    ]
+}
