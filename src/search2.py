@@ -17,6 +17,7 @@ HEURISTIC_NAME += '_rever'
 ALPHA = 1
 BETA = 1.75
 
+
 HEURISTIC_NAME += '_a' + str(ALPHA).replace('.', '_') + '_b' + str(BETA).replace('.', '_')
 
 class EdgeType(Enum):
@@ -80,6 +81,7 @@ class Edge:
         return (self.info['p1'] if 'h4' not in HEURISTIC_NAME else 1 / self.info['p1'])
         # return 1
 
+
 @functools.total_ordering
 class HeuristicElement:
     request_state: list
@@ -92,7 +94,6 @@ class HeuristicElement:
         self.priority = self.get_priority()
         self.value = self.cost * ALPHA + self.priority * BETA
         # print(f"{self.id}: cost = {self.cost * ALPHA} - prio = {self.priority * BETA} - value: {self.value}")
-
     def get_rever(self, value):
         if value == 0:
             return 0
