@@ -13,9 +13,9 @@ OUTPUT_FORMAT = "../data/json/{name}.json"
 
 
 def conventional_1_bfs():
-    name = "conventional_1"
+    name = "conventional_m"
     input_file = INPUT_FORMAT.format(name=name)
-    G: nx.MultiDiGraph = conventional_graph.read(input_file)
+    G: nx.MultiDiGraph = conventional_graph.ream(input_file)
 
     print(name)
 
@@ -24,14 +24,14 @@ def conventional_1_bfs():
         terminal_nodes = conventional_graph.valid_terminal_nodes(
             G,
             {
-                "C1": 3,
+                "Cm": 3,
                 "C2": 1,
                 "C3": 2,
                 "Ba1": 2,
             },
         )
         print(conventional_graph.bfs_path(G, terminal_nodes))
-
+     
     run()
 
 

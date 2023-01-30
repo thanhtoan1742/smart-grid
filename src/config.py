@@ -6,7 +6,7 @@ from typing import Dict, Any
 cfg = None
 
 
-def deep_update_dict(a: Any, b: Any) -> Any:
+def deep_merge_with(a: Any, b: Any) -> Any:
     if not isinstance(a, dict):
         return b or a
 
@@ -17,7 +17,8 @@ def deep_update_dict(a: Any, b: Any) -> Any:
             vb = None
         else:
             vb = b[ck]
-        res[ck] = deep_update_dict(va, vb)
+        res[ck] = deep_merge_with(va, vb)
+
     return res
 
 
@@ -33,5 +34,5 @@ def config() -> Dict:
     if os.path.exists("config.yaml"):
         with open("config.yaml") as f:
             user = yaml.safe_load(f)
-    cfg = deep_update_dict(cfg, user)
+    cfg = deep_merge_with(cfg, user)
     return cfg
