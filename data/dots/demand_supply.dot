@@ -1,0 +1,178 @@
+digraph cpn_tools_graph {
+  N40 [label="40:
+Generator: 1`({idx=1,ty=GEN,cap=2},0)++
+1`({idx=2,ty=GEN,cap=3},3)
+Demanded: 1`0
+Consumer: 1`({idx=3,ty=CON,cap=2},2,true)++
+1`({idx=4,ty=CON,cap=1},1,true)
+Supplied: 1`0
+"];
+  N44 [label="44:
+Generator: 1`({idx=1,ty=GEN,cap=2},2)++
+1`({idx=2,ty=GEN,cap=3},0)
+Demanded: 1`0
+Consumer: 1`({idx=3,ty=CON,cap=2},1,true)++
+1`({idx=4,ty=CON,cap=1},1,true)
+Supplied: 1`0
+"];
+  N48 [label="48:
+Generator: 1`({idx=1,ty=GEN,cap=2},0)++
+1`({idx=2,ty=GEN,cap=3},2)
+Demanded: 1`0
+Consumer: 1`({idx=3,ty=CON,cap=2},1,true)++
+1`({idx=4,ty=CON,cap=1},1,true)
+Supplied: 1`0
+"];
+  N56 [label="56:
+Generator: 1`({idx=1,ty=GEN,cap=2},2)++
+1`({idx=2,ty=GEN,cap=3},1)
+Demanded: 1`0
+Consumer: 1`({idx=3,ty=CON,cap=2},2,true)++
+1`({idx=4,ty=CON,cap=1},1,true)
+Supplied: 1`0
+"];
+  N58 [label="58:
+Generator: 1`({idx=1,ty=GEN,cap=2},1)++
+1`({idx=2,ty=GEN,cap=3},2)
+Demanded: 1`0
+Consumer: 1`({idx=3,ty=CON,cap=2},2,true)++
+1`({idx=4,ty=CON,cap=1},1,true)
+Supplied: 1`0
+"];
+  N61 [label="61:
+Generator: 1`({idx=1,ty=GEN,cap=2},2)++
+1`({idx=2,ty=GEN,cap=3},0)
+Demanded: 1`0
+Consumer: 1`({idx=3,ty=CON,cap=2},2,true)++
+1`({idx=4,ty=CON,cap=1},0,true)
+Supplied: 1`0
+"];
+  N62 [label="62:
+Generator: 1`({idx=1,ty=GEN,cap=2},1)++
+1`({idx=2,ty=GEN,cap=3},1)
+Demanded: 1`0
+Consumer: 1`({idx=3,ty=CON,cap=2},2,true)++
+1`({idx=4,ty=CON,cap=1},0,true)
+Supplied: 1`0
+"];
+  N63 [label="63:
+Generator: 1`({idx=1,ty=GEN,cap=2},1)++
+1`({idx=2,ty=GEN,cap=3},1)
+Demanded: 1`0
+Consumer: 1`({idx=3,ty=CON,cap=2},1,true)++
+1`({idx=4,ty=CON,cap=1},1,true)
+Supplied: 1`0
+"];
+  N64 [label="64:
+Generator: 1`({idx=1,ty=GEN,cap=2},0)++
+1`({idx=2,ty=GEN,cap=3},2)
+Demanded: 1`0
+Consumer: 1`({idx=3,ty=CON,cap=2},2,true)++
+1`({idx=4,ty=CON,cap=1},0,true)
+Supplied: 1`0
+"];
+  N1 -> N3 [  ];
+  N1 -> N2 [  ];
+  N10 -> N26 [  ];
+  N10 -> N25 [  ];
+  N10 -> N24 [  ];
+  N11 -> N28 [  ];
+  N11 -> N27 [  ];
+  N12 -> N25 [  ];
+  N13 -> N31 [  ];
+  N13 -> N30 [  ];
+  N13 -> N9 [  ];
+  N13 -> N29 [  ];
+  N14 -> N30 [  ];
+  N15 -> N33 [  ];
+  N15 -> N32 [  ];
+  N16 -> N35 [  ];
+  N16 -> N34 [  ];
+  N16 -> N29 [  ];
+  N16 -> N10 [  ];
+  N17 -> N34 [  ];
+  N18 -> N36 [  ];
+  N19 -> N38 [  ];
+  N19 -> N37 [  ];
+  N19 -> N9 [  ];
+  N19 -> N24 [  ];
+  N2 -> N6 [  ];
+  N2 -> N5 [  ];
+  N2 -> N4 [  ];
+  N20 -> N37 [  ];
+  N21 -> N39 [  ];
+  N22 -> N40 [  ];
+  N23 -> N40 [  ];
+  N24 -> N42 [  ];
+  N24 -> N41 [  ];
+  N25 -> N41 [  ];
+  N26 -> N43 [  ];
+  N26 -> N42 [  ];
+  N27 -> N44 [  ];
+  N28 -> N44 [  ];
+  N29 -> N46 [  ];
+  N29 -> N45 [  ];
+  N3 -> N8 [  ];
+  N3 -> N7 [  ];
+  N3 -> N4 [  ];
+  N30 -> N45 [  ];
+  N30 -> N22 [  ];
+  N31 -> N47 [  ];
+  N31 -> N23 [  ];
+  N31 -> N46 [  ];
+  N32 -> N48 [  ];
+  N33 -> N48 [  ];
+  N34 -> N26 [  ];
+  N34 -> N46 [  ];
+  N35 -> N50 [  ];
+  N35 -> N49 [  ];
+  N36 -> N52 [  ];
+  N36 -> N51 [  ];
+  N37 -> N42 [  ];
+  N37 -> N23 [  ];
+  N38 -> N54 [  ];
+  N38 -> N53 [  ];
+  N39 -> N52 [  ];
+  N39 -> N55 [  ];
+  N4 -> N10 [  ];
+  N4 -> N9 [  ];
+  N41 -> N56 [  ];
+  N42 -> N56 [  ];
+  N43 -> N57 [  ];
+  N45 -> N58 [  ];
+  N46 -> N58 [  ];
+  N47 -> N60 [  ];
+  N47 -> N59 [  ];
+  N49 -> N45 [  ];
+  N49 -> N60 [  ];
+  N5 -> N12 [  ];
+  N5 -> N11 [  ];
+  N5 -> N10 [  ];
+  N50 -> N43 [  ];
+  N50 -> N25 [  ];
+  N50 -> N53 [  ];
+  N51 -> N61 [  ];
+  N51 -> N44 [  ];
+  N52 -> N63 [  ];
+  N52 -> N62 [  ];
+  N53 -> N57 [  ];
+  N53 -> N41 [  ];
+  N54 -> N59 [  ];
+  N54 -> N22 [  ];
+  N55 -> N48 [  ];
+  N55 -> N64 [  ];
+  N57 -> N56 [  ];
+  N59 -> N40 [  ];
+  N6 -> N15 [  ];
+  N6 -> N14 [  ];
+  N6 -> N13 [  ];
+  N60 -> N58 [  ];
+  N7 -> N18 [  ];
+  N7 -> N17 [  ];
+  N7 -> N16 [  ];
+  N8 -> N21 [  ];
+  N8 -> N20 [  ];
+  N8 -> N19 [  ];
+  N9 -> N23 [  ];
+  N9 -> N22 [  ];
+}

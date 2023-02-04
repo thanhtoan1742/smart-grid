@@ -802,26 +802,7 @@ OGtoGraphviz.ExportStateSpace(output_path ^ file_name ^ ".dot");
         </value>
       </option>
     </options>
-    <binders>
-      <cpnbinder id="ID1426328769" x="525" y="98" width="735" height="644">
-        <sheets>
-          <cpnsheet id="ID2215" panx="652.992187" pany="120.667969" zoom="1.000000" instance="ID2149">
-            <zorder>
-              <position value="0" />
-            </zorder>
-          </cpnsheet>
-          <cpnsheet id="ID1426398584" panx="499.000000" pany="232.000000" zoom="1.000000" instance="ID1426398530">
-            <zorder>
-              <position value="0" />
-            </zorder>
-          </cpnsheet>
-        </sheets>
-        <zorder>
-          <position value="1" />
-          <position value="0" />
-        </zorder>
-      </cpnbinder>
-    </binders>
+    <binders />
     <monitorblock name="Monitors">
       <monitorblock name="New monitor block" />
     </monitorblock>
@@ -892,12 +873,12 @@ OGtoGraphviz.ExportStateSpace(output_path ^ file_name ^ ".dot");
       </IndexNode>
       <IndexNode expanded="false" />
       <IndexNode expanded="true">
-        <IndexNode expanded="true">
+        <IndexNode expanded="false">
           <IndexNode expanded="true" />
           <IndexNode expanded="true" />
           <IndexNode expanded="true" />
         </IndexNode>
-        <IndexNode expanded="true">
+        <IndexNode expanded="false">
           <IndexNode expanded="true" />
           <IndexNode expanded="false" />
           <IndexNode expanded="true" />

@@ -1,0 +1,86 @@
+CPN Tools state space report for:
+/cygdrive/C/Users/at/Dev/smart-grid/data/nets/demand_supply.cpn
+Report generated: Sat Feb  4 04:05:00 2023
+
+
+ Statistics
+------------------------------------------------------------------------
+
+  State Space
+     Nodes:  64
+     Arcs:   104
+     Secs:   0
+     Status: Full
+
+  Scc Graph
+     Nodes:  64
+     Arcs:   104
+     Secs:   0
+
+
+ Boundedness Properties
+------------------------------------------------------------------------
+
+  Best Integer Bounds
+                             Upper      Lower
+     Consumer                2          2
+     Demanded                1          1
+     Generator               2          2
+     Supplied                1          1
+
+  Best Upper Multi-set Bounds
+     Consumer            1`({idx=3,ty=CON,cap=2},0,false)++
+1`({idx=3,ty=CON,cap=2},0,true)++
+1`({idx=3,ty=CON,cap=2},1,false)++
+1`({idx=3,ty=CON,cap=2},1,true)++
+1`({idx=3,ty=CON,cap=2},2,true)++
+1`({idx=4,ty=CON,cap=1},0,false)++
+1`({idx=4,ty=CON,cap=1},0,true)++
+1`({idx=4,ty=CON,cap=1},1,false)++
+1`({idx=4,ty=CON,cap=1},1,true)
+     Demanded            1`0++
+1`1++
+1`2++
+1`3
+     Generator           1`({idx=1,ty=GEN,cap=2},0)++
+1`({idx=1,ty=GEN,cap=2},1)++
+1`({idx=1,ty=GEN,cap=2},2)++
+1`({idx=2,ty=GEN,cap=3},0)++
+1`({idx=2,ty=GEN,cap=3},1)++
+1`({idx=2,ty=GEN,cap=3},2)++
+1`({idx=2,ty=GEN,cap=3},3)
+     Supplied            1`0++
+1`1++
+1`2++
+1`3
+
+  Best Lower Multi-set Bounds
+     Consumer            empty
+     Demanded            empty
+     Generator           empty
+     Supplied            empty
+
+
+ Home Properties
+------------------------------------------------------------------------
+
+  Home Markings
+     None
+
+
+ Liveness Properties
+------------------------------------------------------------------------
+
+  Dead Markings
+     9 [64,63,62,61,58,...]
+
+  Dead Transition Instances
+     None
+
+  Live Transition Instances
+     None
+
+
+ Fairness Properties
+------------------------------------------------------------------------
+     No infinite occurrence sequences.

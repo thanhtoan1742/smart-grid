@@ -1,9 +1,10 @@
 import os
 import xml.etree.ElementTree as ET
 import yaml
+from config import config as load_config
 
-with open("config.yaml") as f:
-    cfg = yaml.safe_load(f)
+cfg = load_config()
+
 
 DIR = "data/nets/"
 OUTPUT_PATH = cfg["dir"]["base"] + "/data/dots/"
