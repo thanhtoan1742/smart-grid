@@ -10,3 +10,7 @@ format:
 
 install-dependencies:
 	pip install -r src/python-requirements.txt
+
+runcpp:
+	g++ cpp/self_gen.cpp -o cpp/self_gen.exe
+	./cpp/self_gen
