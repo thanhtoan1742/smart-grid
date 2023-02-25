@@ -92,383 +92,138 @@
                     <string>
                     </string>
                 </color>
-            </block>
-            <block id='ID1425855986'>
-                <id>
-                    GridPower declarations
-                </id>
-                <color id='ID1425795442'>
-                    <id>
-                        IDX
-                    </id>
-                    <int>
-                    </int>
-                    <layout>
-                        colset IDX = int;
-                    </layout>
-                </color>
-                <color id='ID1427252407'>
-                    <id>
-                        TYPE
-                    </id>
-                    <enum>
-                        <id>
-                            GEN
-                        </id>
-                        <id>
-                            CON
-                        </id>
-                    </enum>
-                    <layout>
-                        colset TYPE = with GEN|CON;
-                    </layout>
-                </color>
-                <color id='ID1425923805'>
-                    <id>
-                        CAPACITY
-                    </id>
-                    <int>
-                    </int>
-                    <layout>
-                        colset CAPACITY = int;
-                    </layout>
-                </color>
-                <color id='ID1426114663'>
-                    <id>
-                        POWER
-                    </id>
-                    <int>
-                    </int>
-                    <layout>
-                        colset POWER = int;
-                    </layout>
-                </color>
-                <color id='ID1427321396'>
-                    <id>
-                        CB
-                    </id>
-                    <enum>
-                        <id>
-                            ON
-                        </id>
-                        <id>
-                            OFF
-                        </id>
-                    </enum>
-                    <layout>
-                        colset CB = with ON|OFF;
-                    </layout>
-                </color>
-                <color id='ID1426375012'>
-                    <id>
-                        NODE
-                    </id>
-                    <record>
-                        <recordfield>
-                            <id>
-                                i
-                            </id>
-                            <id>
-                                IDX
-                            </id>
-                        </recordfield>
-                        <recordfield>
-                            <id>
-                                t
-                            </id>
-                            <id>
-                                TYPE
-                            </id>
-                        </recordfield>
-                        <recordfield>
-                            <id>
-                                c
-                            </id>
-                            <id>
-                                INT
-                            </id>
-                        </recordfield>
-                    </record>
-                    <layout>
-                        colset NODE = record i:IDX*t:TYPE*c:INT;
-                    </layout>
-                </color>
-                <color id='ID1427250211'>
-                    <id>
-                        NODE_POWER
-                    </id>
-                    <product>
-                        <id>
-                            NODE
-                        </id>
-                        <id>
-                            POWER
-                        </id>
-                    </product>
-                    <layout>
-                        colset NODE_POWER = product NODE*POWER;
-                    </layout>
-                </color>
-                <color id='ID1427320177'>
-                    <id>
-                        RanPow
-                    </id>
-                    <int>
-                        <with>
-                            <ml>
-                                1
-                            </ml>
-                            <ml>
-                                3
-                            </ml>
-                        </with>
-                    </int>
-                    <layout>
-                        colset RanPow = int with 1..3;
-                    </layout>
-                </color>
-                <var id='ID1425812908'>
+                <var id='ID1412330717'>
                     <type>
                         <id>
-                            POWER
+                            INT
                         </id>
                     </type>
                     <id>
-                        p1
-                    </id>
-                    <id>
-                        p2
-                    </id>
-                    <id>
-                        p3
-                    </id>
-                    <id>
-                        p4
+                        x
                     </id>
                     <layout>
-                        var p1,p2,p3,p4: POWER;
+                        var x: INT;
                     </layout>
                 </var>
-                <var id='ID1426335365'>
-                    <type>
-                        <id>
-                            NODE
-                        </id>
-                    </type>
-                    <id>
-                        gen
-                    </id>
-                    <id>
-                        con
-                    </id>
-                    <layout>
-                        var gen, con: NODE;
-                    </layout>
-                </var>
-                <var id='ID1427320507'>
-                    <type>
-                        <id>
-                            RanPow
-                        </id>
-                    </type>
-                    <id>
-                        r2
-                    </id>
-                    <layout>
-                        var r2:RanPow;
-                    </layout>
-                </var>
-                <var id='ID1427321550'>
-                    <type>
-                        <id>
-                            CB
-                        </id>
-                    </type>
-                    <id>
-                        rcb_gen
-                    </id>
-                    <layout>
-                        var rcb_gen: CB;
-                    </layout>
-                </var>
-                <ml id='ID1427309465'>
-                    <layout>
-                        fun fn_gen(p1: POWER,p2: POWER) = p1+ p2;
-                    </layout>
-                    fun fn_gen(p1: POWER,p2: POWER) = p1+ p2;
-                </ml>
-                <ml id='ID1427321284'>
-                    <layout>
-                        fun fn_gen2(cb: CB, p1: POWER,p2: POWER) = if cb=ON then p1+ p2 else p2;
-                    </layout>
-                    fun fn_gen2(cb: CB, p1: POWER,p2: POWER) = if cb=ON then p1+ p2 else p2;
-                </ml>
-                <ml id='ID1427309733'>
-                    <layout>
-                        fun fn_cons(n: NODE, p: POWER) = (n,p+(#c(n)))
-                    </layout>
-                    fun fn_cons(n: NODE, p: POWER) = (n,p+(#c(n)))
-                </ml>
-                <ml id='ID1427310925'>
-                    <layout>
-                        fun fn_trans(n:NODE, p:POWER) = p-(#c(n))
-                    </layout>
-                    fun fn_trans(n:NODE, p:POWER) = p-(#c(n))
-                </ml>
             </block>
         </globbox>
         <page id='ID6'>
-            <pageattr name='sgrid'/>
-            <place id='ID1425860539'>
-                <posattr x='-504.000000' y='210.000000'/>
+            <pageattr name='myNet'/>
+            <place id='ID1412328424'>
+                <posattr x='-331.000000' y='191.000000'/>
                 <fillattr colour='White' pattern='' filled='false'/>
                 <lineattr colour='Black' thick='1' type='Solid'/>
                 <textattr colour='Black' bold='false'/>
                 <text>
-                    Generated
+                    AVert
                 </text>
-                <ellipse w='86.000000' h='48.000000'/>
-                <token x='-10.000000' y='0.000000'>
+                <ellipse w='74.000000' h='70.000000'/>
+                <token x='-6.000000' y='31.000000'>
                     <text>
+                        8
                     </text>
                 </token>
-                <marking x='-14.000000' y='34.000000' hidden='false'>
-                    <snap snap_id='0' anchor.horizontal='1' anchor.vertical='2'/>
+                <marking x='-4.000000' y='-10.000000' hidden='false'>
+                    <snap snap_id='9' anchor.horizontal='1' anchor.vertical='3'/>
                     <text>
+                        1`1++
+3`2++
+4`3
                     </text>
                 </marking>
-                <type id='ID1425860540'>
-                    <posattr x='-446.000000' y='183.000000'/>
+                <type id='ID1412330961'>
+                    <posattr x='-265.000000' y='129.000000'/>
                     <fillattr colour='White' pattern='Solid' filled='false'/>
                     <lineattr colour='Black' thick='0' type='Solid'/>
                     <textattr colour='Black' bold='false'/>
                     <text tool='CPN Tools' version='4.0.1'>
-                        POWER
+                        INT
                     </text>
                 </type>
-                <initmark id='ID1425860541'>
-                    <posattr x='-482.000000' y='248.000000'/>
+                <initmark id='ID1412331086'>
+                    <posattr x='-325.000000' y='251.000000'/>
                     <fillattr colour='White' pattern='Solid' filled='false'/>
                     <lineattr colour='Black' thick='0' type='Solid'/>
                     <textattr colour='Black' bold='false'/>
                     <text tool='CPN Tools' version='4.0.1'>
-                        1`0
+                        1`1++3`2++4`3
                     </text>
                 </initmark>
             </place>
-            <place id='ID1426505182'>
-                <posattr x='-899.000000' y='210.000000'/>
+            <place id='ID1412328454'>
+                <posattr x='-9.000000' y='146.000000'/>
                 <fillattr colour='White' pattern='' filled='false'/>
                 <lineattr colour='Black' thick='1' type='Solid'/>
                 <textattr colour='Black' bold='false'/>
                 <text>
-                    Generator
+                    CVert
                 </text>
-                <ellipse w='86.000000' h='40.000000'/>
-                <token x='-10.000000' y='0.000000'>
+                <ellipse w='60.000000' h='40.000000'/>
+                <token x='-4.000000' y='17.000000'>
                     <text>
+                        1
                     </text>
                 </token>
-                <marking x='-30.000000' y='-86.000000' hidden='false'>
-                    <snap snap_id='0' anchor.horizontal='3' anchor.vertical='1'/>
+                <marking x='0.000000' y='0.000000' hidden='false'>
+                    <snap snap_id='0' anchor.horizontal='0' anchor.vertical='0'/>
                     <text>
+                        empty
                     </text>
                 </marking>
-                <type id='ID1426505183'>
-                    <posattr x='-835.000000' y='178.000000'/>
+                <type id='ID1412328455'>
+                    <posattr x='45.000000' y='110.000000'/>
                     <fillattr colour='White' pattern='Solid' filled='false'/>
                     <lineattr colour='Black' thick='0' type='Solid'/>
                     <textattr colour='Black' bold='false'/>
                     <text tool='CPN Tools' version='4.0.1'>
-                        NODE_POWER
+                        INT
                     </text>
                 </type>
-                <initmark id='ID1426505184'>
-                    <posattr x='-865.000000' y='146.000000'/>
+                <initmark id='ID1412328456'>
+                    <posattr x='46.000000' y='157.000000'/>
                     <fillattr colour='White' pattern='Solid' filled='false'/>
                     <lineattr colour='Black' thick='0' type='Solid'/>
                     <textattr colour='Black' bold='false'/>
                     <text tool='CPN Tools' version='4.0.1'>
-                        [({i=1,t=GEN,c=2},2)
-,({i=2,t=GEN,c=1},1)
-]
                     </text>
                 </initmark>
             </place>
-            <place id='ID1426875468'>
-                <posattr x='-504.000000' y='-30.000000'/>
-                <fillattr colour='White' pattern='' filled='false'/>
-                <lineattr colour='Black' thick='1' type='Solid'/>
-                <textattr colour='Black' bold='false'/>
-                <text>
-                    Consumer
-                </text>
-                <ellipse w='88.000000' h='40.000000'/>
-                <token x='-6.000000' y='15.000000'>
-                    <text>
-                    </text>
-                </token>
-                <marking x='-14.000000' y='13.000000' hidden='false'>
-                    <snap snap_id='3' anchor.horizontal='1' anchor.vertical='2'/>
-                    <text>
-                    </text>
-                </marking>
-                <type id='ID1426875469'>
-                    <posattr x='-442.000000' y='-64.000000'/>
-                    <fillattr colour='White' pattern='Solid' filled='false'/>
-                    <lineattr colour='Black' thick='0' type='Solid'/>
-                    <textattr colour='Black' bold='false'/>
-                    <text tool='CPN Tools' version='4.0.1'>
-                        NODE_POWER
-                    </text>
-                </type>
-                <initmark id='ID1427278289'>
-                    <posattr x='-587.000000' y='10.000000'/>
-                    <fillattr colour='White' pattern='Solid' filled='false'/>
-                    <lineattr colour='Black' thick='0' type='Solid'/>
-                    <textattr colour='Black' bold='false'/>
-                    <text tool='CPN Tools' version='4.0.1'>
-                        [({i=4,t=CON,c=1},0)
-,({i=5,t=CON,c=1},0)]
-                    </text>
-                </initmark>
-            </place>
-            <trans id='ID1426523629' explicit='false'>
-                <posattr x='-714.000000' y='210.000000'/>
+            <trans id='ID1412328496' explicit='false'>
+                <posattr x='-184.000000' y='146.000000'/>
                 <fillattr colour='White' pattern='' filled='false'/>
                 <lineattr colour='Black' thick='1' type='solid'/>
                 <textattr colour='Black' bold='false'/>
                 <text>
-                    gen
+                    BTran
                 </text>
                 <box w='60.000000' h='40.000000'/>
                 <binding x='7.200000' y='-3.000000'/>
-                <cond id='ID1426523630'>
-                    <posattr x='-753.000000' y='241.000000'/>
+                <cond id='ID1412328497'>
+                    <posattr x='-197.000000' y='165.000000'/>
                     <fillattr colour='White' pattern='Solid' filled='false'/>
                     <lineattr colour='Black' thick='0' type='Solid'/>
                     <textattr colour='Black' bold='false'/>
                     <text tool='CPN Tools' version='4.0.1'>
                     </text>
                 </cond>
-                <time id='ID1426523631'>
-                    <posattr x='-669.000000' y='241.000000'/>
+                <time id='ID1412328498'>
+                    <posattr x='-119.000000' y='165.000000'/>
                     <fillattr colour='White' pattern='Solid' filled='false'/>
                     <lineattr colour='Black' thick='0' type='Solid'/>
                     <textattr colour='Black' bold='false'/>
                     <text tool='CPN Tools' version='4.0.1'>
                     </text>
                 </time>
-                <code id='ID1426523632'>
-                    <posattr x='-649.000000' y='158.000000'/>
+                <code id='ID1412328499'>
+                    <posattr x='-112.000000' y='103.000000'/>
                     <fillattr colour='White' pattern='Solid' filled='false'/>
                     <lineattr colour='Black' thick='0' type='Solid'/>
                     <textattr colour='Black' bold='false'/>
                     <text tool='CPN Tools' version='4.0.1'>
                     </text>
                 </code>
-                <priority id='ID1426523634'>
-                    <posattr x='-782.000000' y='179.000000'/>
+                <priority id='ID1412328501'>
+                    <posattr x='-256.000000' y='103.000000'/>
                     <fillattr colour='White' pattern='Solid' filled='false'/>
                     <lineattr colour='Black' thick='0' type='Solid'/>
                     <textattr colour='Black' bold='false'/>
@@ -476,197 +231,41 @@
                     </text>
                 </priority>
             </trans>
-            <trans id='ID1426854737' explicit='false'>
-                <posattr x='-504.000000' y='94.000000'/>
-                <fillattr colour='White' pattern='' filled='false'/>
-                <lineattr colour='Black' thick='1' type='solid'/>
-                <textattr colour='Black' bold='false'/>
-                <text>
-                    trans
-                </text>
-                <box w='60.000000' h='40.000000'/>
-                <binding x='7.200000' y='-3.000000'/>
-                <cond id='ID1426854738'>
-                    <posattr x='-410.000000' y='92.000000'/>
-                    <fillattr colour='White' pattern='Solid' filled='false'/>
-                    <lineattr colour='Black' thick='0' type='Solid'/>
-                    <textattr colour='Black' bold='false'/>
-                    <text tool='CPN Tools' version='4.0.1'>
-                        [p3 &gt;= #c(con)]
-                    </text>
-                </cond>
-                <time id='ID1426854739'>
-                    <posattr x='-459.000000' y='125.000000'/>
-                    <fillattr colour='White' pattern='Solid' filled='false'/>
-                    <lineattr colour='Black' thick='0' type='Solid'/>
-                    <textattr colour='Black' bold='false'/>
-                    <text tool='CPN Tools' version='4.0.1'>
-                    </text>
-                </time>
-                <code id='ID1426854740'>
-                    <posattr x='-439.000000' y='42.000000'/>
-                    <fillattr colour='White' pattern='Solid' filled='false'/>
-                    <lineattr colour='Black' thick='0' type='Solid'/>
-                    <textattr colour='Black' bold='false'/>
-                    <text tool='CPN Tools' version='4.0.1'>
-                    </text>
-                </code>
-                <priority id='ID1426854742'>
-                    <posattr x='-572.000000' y='63.000000'/>
-                    <fillattr colour='White' pattern='Solid' filled='false'/>
-                    <lineattr colour='Black' thick='0' type='Solid'/>
-                    <textattr colour='Black' bold='false'/>
-                    <text tool='CPN Tools' version='4.0.1'>
-                    </text>
-                </priority>
-            </trans>
-            <arc id='ID1426529327' orientation='PtoT' order='1'>
+            <arc id='ID1412328564' orientation='PtoT' order='1'>
                 <posattr x='0.000000' y='0.000000'/>
                 <fillattr colour='White' pattern='' filled='false'/>
                 <lineattr colour='Black' thick='1' type='Solid'/>
                 <textattr colour='Black' bold='false'/>
                 <arrowattr headsize='1.200000' currentcyckle='2'/>
-                <transend idref='ID1426523629'/>
-                <placeend idref='ID1426505182'/>
-                <annot id='ID1426529328'>
-                    <posattr x='-801.000000' y='221.000000'/>
+                <transend idref='ID1412328496'/>
+                <placeend idref='ID1412328424'/>
+                <annot id='ID1412328565'>
+                    <posattr x='-221.000000' y='160.000000'/>
                     <fillattr colour='White' pattern='Solid' filled='false'/>
                     <lineattr colour='Black' thick='0' type='Solid'/>
                     <textattr colour='Black' bold='false'/>
                     <text tool='CPN Tools' version='4.0.1'>
-                        (gen,p1)
+                        x
                     </text>
                 </annot>
                 <text>
                 </text>
             </arc>
-            <arc id='ID1426532249' orientation='TtoP' order='1'>
+            <arc id='ID1412328605' orientation='TtoP' order='1'>
                 <posattr x='0.000000' y='0.000000'/>
                 <fillattr colour='White' pattern='' filled='false'/>
                 <lineattr colour='Black' thick='1' type='Solid'/>
                 <textattr colour='Black' bold='false'/>
                 <arrowattr headsize='1.200000' currentcyckle='2'/>
-                <transend idref='ID1426523629'/>
-                <placeend idref='ID1425860539'/>
-                <annot id='ID1426532250'>
-                    <posattr x='-631.000000' y='169.000000'/>
+                <transend idref='ID1412328496'/>
+                <placeend idref='ID1412328454'/>
+                <annot id='ID1412328606'>
+                    <posattr x='-70.000000' y='145.000000'/>
                     <fillattr colour='White' pattern='Solid' filled='false'/>
                     <lineattr colour='Black' thick='0' type='Solid'/>
                     <textattr colour='Black' bold='false'/>
                     <text tool='CPN Tools' version='4.0.1'>
-                        fn_gen2(rcb_gen,p1,p2)
-                    </text>
-                </annot>
-                <text>
-                </text>
-            </arc>
-            <arc id='ID1426870635' orientation='PtoT' order='2'>
-                <posattr x='0.000000' y='0.000000'/>
-                <fillattr colour='White' pattern='' filled='false'/>
-                <lineattr colour='Black' thick='1' type='Solid'/>
-                <textattr colour='Black' bold='false'/>
-                <arrowattr headsize='1.200000' currentcyckle='2'/>
-                <transend idref='ID1426854737'/>
-                <placeend idref='ID1425860539'/>
-                <annot id='ID1426870636'>
-                    <posattr x='-539.000000' y='148.000000'/>
-                    <fillattr colour='White' pattern='Solid' filled='false'/>
-                    <lineattr colour='Black' thick='0' type='Solid'/>
-                    <textattr colour='Black' bold='false'/>
-                    <text tool='CPN Tools' version='4.0.1'>
-                        p3
-                    </text>
-                </annot>
-                <text>
-                </text>
-            </arc>
-            <arc id='ID1426880331' orientation='TtoP' order='1'>
-                <posattr x='0.000000' y='0.000000'/>
-                <fillattr colour='White' pattern='' filled='false'/>
-                <lineattr colour='Black' thick='1' type='Solid'/>
-                <textattr colour='Black' bold='false'/>
-                <arrowattr headsize='1.200000' currentcyckle='2'/>
-                <transend idref='ID1426854737'/>
-                <placeend idref='ID1426875468'/>
-                <annot id='ID1426880332'>
-                    <posattr x='-558.000000' y='58.000000'/>
-                    <fillattr colour='White' pattern='Solid' filled='false'/>
-                    <lineattr colour='Black' thick='0' type='Solid'/>
-                    <textattr colour='Black' bold='false'/>
-                    <text tool='CPN Tools' version='4.0.1'>
-                        fn_cons(con,p4)
-                    </text>
-                </annot>
-                <text>
-                </text>
-            </arc>
-            <arc id='ID1426951066' orientation='PtoT' order='2'>
-                <posattr x='0.000000' y='0.000000'/>
-                <fillattr colour='White' pattern='' filled='false'/>
-                <lineattr colour='Black' thick='1' type='Solid'/>
-                <textattr colour='Black' bold='false'/>
-                <arrowattr headsize='1.200000' currentcyckle='2'/>
-                <transend idref='ID1426854737'/>
-                <placeend idref='ID1426875468'/>
-                <bendpoint id='ID5798833720' serial='1'>
-                    <posattr x='-490.000000' y='42'/>
-                    <fillattr colour='White' pattern='Solid' filled='false'/>
-                    <lineattr colour='Black' thick='1' type='Solid'/>
-                    <textattr colour='Black' bold='false'/>
-                </bendpoint>
-                <annot id='ID1426951067'>
-                    <posattr x='-460.000000' y='43.000000'/>
-                    <fillattr colour='White' pattern='Solid' filled='false'/>
-                    <lineattr colour='Black' thick='0' type='Solid'/>
-                    <textattr colour='Black' bold='false'/>
-                    <text tool='CPN Tools' version='4.0.1'>
-                        (con,p4)
-                    </text>
-                </annot>
-                <text>
-                </text>
-            </arc>
-            <arc id='ID1426984821' orientation='PtoT' order='2'>
-                <posattr x='0.000000' y='0.000000'/>
-                <fillattr colour='White' pattern='' filled='false'/>
-                <lineattr colour='Black' thick='1' type='Solid'/>
-                <textattr colour='Black' bold='false'/>
-                <arrowattr headsize='1.200000' currentcyckle='2'/>
-                <transend idref='ID1426523629'/>
-                <placeend idref='ID1425860539'/>
-                <bendpoint id='ID5798833721' serial='1'>
-                    <posattr x='-576.000000' y='227'/>
-                    <fillattr colour='White' pattern='Solid' filled='false'/>
-                    <lineattr colour='Black' thick='1' type='Solid'/>
-                    <textattr colour='Black' bold='false'/>
-                </bendpoint>
-                <annot id='ID1426984822'>
-                    <posattr x='-596.000000' y='238.000000'/>
-                    <fillattr colour='White' pattern='Solid' filled='false'/>
-                    <lineattr colour='Black' thick='0' type='Solid'/>
-                    <textattr colour='Black' bold='false'/>
-                    <text tool='CPN Tools' version='4.0.1'>
-                        p2
-                    </text>
-                </annot>
-                <text>
-                </text>
-            </arc>
-            <arc id='ID1427057441' orientation='TtoP' order='1'>
-                <posattr x='0.000000' y='0.000000'/>
-                <fillattr colour='White' pattern='' filled='false'/>
-                <lineattr colour='Black' thick='1' type='Solid'/>
-                <textattr colour='Black' bold='false'/>
-                <arrowattr headsize='1.200000' currentcyckle='2'/>
-                <transend idref='ID1426854737'/>
-                <placeend idref='ID1425860539'/>
-                <annot id='ID1427057442'>
-                    <posattr x='-421.000000' y='143.000000'/>
-                    <fillattr colour='White' pattern='Solid' filled='false'/>
-                    <lineattr colour='Black' thick='0' type='Solid'/>
-                    <textattr colour='Black' bold='false'/>
-                    <text tool='CPN Tools' version='4.0.1'>
-                        fn_trans(con,p3)
+                        x
                     </text>
                 </annot>
                 <text>
@@ -674,43 +273,15 @@
             </arc>
             <constraints>
             </constraints>
-        </page>
-        <page id='ID1426398528'>
-            <pageattr name='ExportToGraphviz'/>
-            <constraints>
-            </constraints>
-            <Aux id='ID1426398882'>
-                <posattr x='0.00000' y='0.00000'/>
-                <fillattr colour='White' pattern='' filled='false'/>
-                <lineattr colour='Black' thick='1' type='Solid'/>
-                <textattr colour='Black' bold='false'/>
-                <label>
-                </label>
-                <text>
-                    val output_path = &quot;C:/Users/at/Dev/smart-grid/data/dots/&quot;;
-val file_name = &quot;case3_1&quot;;
-fun iota(n: int) = if n &lt; 1 then [] else (iota (n-1)) ++ [n];
-OGSet.StringRepOptions&apos;PI(fn (page, place, inst) =&gt; place);
-OGSet.StringRepOptions&apos;TI(
-    fn (page,trans,inst) =&gt; trans
-);
-OGtoGraphviz.ExportNodes(output_path ^ file_name ^ &quot;_nodes.dot&quot;, iota(NoOfNodes()));
-OGtoGraphviz.ExportArcs(output_path ^ file_name ^ &quot;_arcs.dot&quot;, iota(NoOfArcs()));
-OGtoGraphviz.ExportStateSpace(output_path ^ file_name ^ &quot;.dot&quot;);
-                </text>
-            </Aux>
         </page>
         <instances>
-            <instance id='ID6itop' page='ID6'>
-            </instance>
-            <instance id='ID1426398528itop' page='ID1426398528'>
-            </instance>
+            <instance id='ID6itop' page='ID6'/>
         </instances>
         <options>
             <option name='realtimestamp'>
                 <value>
                     <boolean>
-                        true
+                        false
                     </boolean>
                 </value>
             </option>
@@ -735,13 +306,6 @@ OGtoGraphviz.ExportStateSpace(output_path ^ file_name ^ &quot;.dot&quot;);
                     </text>
                 </value>
             </option>
-            <option name='extensions.10005.enable'>
-                <value>
-                    <boolean>
-                        true
-                    </boolean>
-                </value>
-            </option>
             <option name='extensions.10006.enable'>
                 <value>
                     <boolean>
@@ -749,7 +313,7 @@ OGtoGraphviz.ExportStateSpace(output_path ^ file_name ^ &quot;.dot&quot;);
                     </boolean>
                 </value>
             </option>
-            <option name='extensions.10002.enable'>
+            <option name='extensions.10001.enable'>
                 <value>
                     <boolean>
                         true
@@ -763,7 +327,14 @@ OGtoGraphviz.ExportStateSpace(output_path ^ file_name ^ &quot;.dot&quot;);
                     </boolean>
                 </value>
             </option>
-            <option name='extensions.10001.enable'>
+            <option name='extensions.10005.enable'>
+                <value>
+                    <boolean>
+                        true
+                    </boolean>
+                </value>
+            </option>
+            <option name='extensions.10002.enable'>
                 <value>
                     <boolean>
                         true
@@ -1046,7 +617,13 @@ OGtoGraphviz.ExportStateSpace(output_path ^ file_name ^ &quot;.dot&quot;);
         </options>
         <binders/>
         <monitorblock name='Monitors'>
-            <monitorblock name='New monitor block'/>
+            <monitor id='ID4285858218' name='Count transition occurrences monitor (BTran)' type='6' typedescription='Count transition occurrences' disabled='false'>
+                <node idref='ID1412328496' pageinstanceidref='ID6itop'/>
+                <option name='Timed' value='false'>
+                </option>
+                <option name='Logging' value='true'>
+                </option>
+            </monitor>
         </monitorblock>
         <IndexNode expanded='true'>
             <IndexNode expanded='false'>
@@ -1054,7 +631,7 @@ OGtoGraphviz.ExportStateSpace(output_path ^ file_name ^ &quot;.dot&quot;);
             <IndexNode expanded='false'>
             </IndexNode>
             <IndexNode expanded='false'>
-                <IndexNode expanded='true'>
+                <IndexNode expanded='false'>
                 </IndexNode>
                 <IndexNode expanded='false'>
                 </IndexNode>
@@ -1164,7 +741,6 @@ OGtoGraphviz.ExportStateSpace(output_path ^ file_name ^ &quot;.dot&quot;);
                 </IndexNode>
             </IndexNode>
             <IndexNode expanded='false'>
-                <IndexNode expanded='false'/>
             </IndexNode>
             <IndexNode expanded='true'>
                 <IndexNode expanded='false'>
@@ -1178,11 +754,7 @@ OGtoGraphviz.ExportStateSpace(output_path ^ file_name ^ &quot;.dot&quot;);
                 <IndexNode expanded='true'>
                     <IndexNode expanded='true'>
                     </IndexNode>
-                    <IndexNode expanded='false'>
-                    </IndexNode>
                     <IndexNode expanded='true'>
-                    </IndexNode>
-                    <IndexNode expanded='false'>
                     </IndexNode>
                     <IndexNode expanded='true'>
                     </IndexNode>
@@ -1190,46 +762,15 @@ OGtoGraphviz.ExportStateSpace(output_path ^ file_name ^ &quot;.dot&quot;);
                     </IndexNode>
                     <IndexNode expanded='false'>
                     </IndexNode>
-                </IndexNode>
-                <IndexNode expanded='true'>
-                    <IndexNode expanded='true'>
+                    <IndexNode expanded='false'>
                     </IndexNode>
-                    <IndexNode expanded='true'>
-                    </IndexNode>
-                    <IndexNode expanded='true'>
-                    </IndexNode>
-                    <IndexNode expanded='true'>
-                    </IndexNode>
-                    <IndexNode expanded='true'>
-                    </IndexNode>
-                    <IndexNode expanded='true'>
-                    </IndexNode>
-                    <IndexNode expanded='true'>
-                    </IndexNode>
-                    <IndexNode expanded='true'>
-                    </IndexNode>
-                    <IndexNode expanded='true'>
-                    </IndexNode>
-                    <IndexNode expanded='true'>
-                    </IndexNode>
-                    <IndexNode expanded='true'>
-                    </IndexNode>
-                    <IndexNode expanded='true'>
-                    </IndexNode>
-                    <IndexNode expanded='true'>
-                    </IndexNode>
-                    <IndexNode expanded='true'>
-                    </IndexNode>
-                    <IndexNode expanded='true'>
+                    <IndexNode expanded='false'>
                     </IndexNode>
                     <IndexNode expanded='true'>
                     </IndexNode>
                 </IndexNode>
             </IndexNode>
             <IndexNode expanded='false'>
-                <IndexNode expanded='false'/>
-            </IndexNode>
-            <IndexNode expanded='true'>
             </IndexNode>
             <IndexNode expanded='true'>
             </IndexNode>
