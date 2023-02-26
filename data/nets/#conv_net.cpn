@@ -363,12 +363,12 @@
                  h="40.000000"/>
         <token x="-10.000000"
                y="0.000000"/>
-        <marking x="-91.000000"
-                 y="-2.000000"
+        <marking x="-80.000000"
+                 y="-6.000000"
                  hidden="false">
           <snap snap_id="0"
                 anchor.horizontal="2"
-                anchor.vertical="3"/>
+                anchor.vertical="1"/>
         </marking>
         <type id="ID1503905286">
           <posattr x="-191.000000"
@@ -396,7 +396,7 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">[({idx=3, typ = GEN}, 3, 0)]</text>
+                version="4.0.1">[({idx=3, typ = GEN}, 5, 0)]</text>
         </initmark>
       </place>
       <place id="ID1503926963">
@@ -410,7 +410,7 @@
                   type="Solid"/>
         <textattr colour="Black"
                   bold="false"/>
-        <text>LOSS</text>
+        <text>LOSS 1</text>
         <ellipse w="60.000000"
                  h="40.000000"/>
         <token x="-13.000000"
@@ -449,6 +449,58 @@
                     bold="false"/>
           <text tool="CPN Tools"
                 version="4.0.1">[1]</text>
+        </initmark>
+      </place>
+      <place id="ID1503929891">
+        <posattr x="546.000000"
+                 y="-232.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <text>LOSS 2</text>
+        <ellipse w="60.000000"
+                 h="40.000000"/>
+        <token x="-10.000000"
+               y="0.000000"/>
+        <marking x="0.000000"
+                 y="0.000000"
+                 hidden="false">
+          <snap snap_id="0"
+                anchor.horizontal="0"
+                anchor.vertical="0"/>
+        </marking>
+        <type id="ID1503929892">
+          <posattr x="593.500000"
+                   y="-255.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">POWER</text>
+        </type>
+        <initmark id="ID1503929893">
+          <posattr x="579.000000"
+                   y="-208.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">[2]</text>
         </initmark>
       </place>
       <trans id="ID1503900764"
@@ -542,9 +594,9 @@
              h="40.000000"/>
         <binding x="7.200000"
                  y="-3.000000"/>
-        <cond id="ID1503901023">
-          <posattr x="405.000000"
-                   y="-282.000000"/>
+        <cond id="ID1503929412">
+          <posattr x="345.000000"
+                   y="-291.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -554,7 +606,7 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">[ra &lt;= inCarPow andalso (ra + outCarPow) &lt;= outCarCap andalso inCarPow &gt;0]</text>
+                version="4.0.1">[ra &lt;= inCarPow andalso (ra + loss + outCarPow) &lt;= outCarCap andalso inCarPow &gt;0]</text>
         </cond>
         <time id="ID1503901024">
           <posattr x="338.500000"
@@ -724,7 +776,7 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">(outcarrier, outCarCap, outCarPow + ra)</text>
+                version="4.0.1">(outcarrier, outCarCap, outCarPow + ra + loss)</text>
         </annot>
       </arc>
       <arc id="ID1503908819"
@@ -1047,6 +1099,70 @@
                 version="4.0.1">loss</text>
         </annot>
       </arc>
+      <arc id="ID1503930377"
+           orientation="PtoT"
+           order="2">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1503901022"/>
+        <placeend idref="ID1503929891"/>
+        <annot id="ID1503930378">
+          <posattr x="421.000000"
+                   y="-214.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">loss</text>
+        </annot>
+      </arc>
+      <arc id="ID1503930478"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1503901022"/>
+        <placeend idref="ID1503929891"/>
+        <annot id="ID1503930479">
+          <posattr x="421.000000"
+                   y="-250.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">loss</text>
+        </annot>
+      </arc>
       <constraints/>
     </page>
     <page id="ID1503867304">
@@ -1332,8 +1448,8 @@ OGtoGraphviz.ExportStateSpace(output_path ^ file_name ^ &quot;.dot&quot;);</text
                  height="695">
         <sheets>
           <cpnsheet id="ID1503887335"
-                    panx="-310.000000"
-                    pany="-180.000000"
+                    panx="-591.000000"
+                    pany="-125.000000"
                     zoom="1.000000"
                     instance="ID2149">
             <zorder>
