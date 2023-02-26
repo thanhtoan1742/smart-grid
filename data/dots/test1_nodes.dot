@@ -1,0 +1,2906 @@
+digraph cpn_tools_graph {
+  N1 [label="1:
+Carriers: 1`({idx=1,typ=CON},2,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N2 [label="2:
+Carriers: 1`({idx=1,typ=CON},0,2)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N3 [label="3:
+Carriers: 1`({idx=1,typ=CON},0,1)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},1)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N4 [label="4:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},2)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N5 [label="5:
+Carriers: 1`({idx=1,typ=CON},0,1)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,1)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N6 [label="6:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,2)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N7 [label="7:
+Carriers: 1`({idx=1,typ=CON},0,1)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},1)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N8 [label="8:
+Carriers: 1`({idx=1,typ=CON},0,1)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},1)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N9 [label="9:
+Carriers: 1`({idx=1,typ=CON},0,1)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},1)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N10 [label="10:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,1)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},1)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N11 [label="11:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,1)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},1)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N12 [label="12:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},2)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N13 [label="13:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,1)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},1)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N14 [label="14:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},2)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N15 [label="15:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,1)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},1)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N16 [label="16:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},2)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N17 [label="17:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},1)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},1)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N18 [label="18:
+Carriers: 1`({idx=1,typ=CON},0,1)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,1)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N19 [label="19:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},1)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},1)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N20 [label="20:
+Carriers: 1`({idx=1,typ=CON},0,1)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,1)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N21 [label="21:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},1)++
+1`({idx=2,loss=0,inp=4,out=2},1)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N22 [label="22:
+Carriers: 1`({idx=1,typ=CON},0,1)++
+1`({idx=2,typ=GEN},3,1)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N23 [label="23:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},1)++
+1`({idx=3,loss=0,inp=4,out=3},1)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N24 [label="24:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},1)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},1)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N25 [label="25:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,1)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,1)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N26 [label="26:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,2)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N27 [label="27:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},1)++
+1`({idx=4,loss=0,inp=4,out=5},1)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N28 [label="28:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,1)++
+1`({idx=5,typ=BUS},10000,1)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N29 [label="29:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,2)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N30 [label="30:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,1)++
+1`({idx=4,typ=BUS},10000,1)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N31 [label="31:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,2)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N32 [label="32:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,1)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},1)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N33 [label="33:
+Carriers: 1`({idx=1,typ=CON},0,1)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},1)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N34 [label="34:
+Carriers: 1`({idx=1,typ=CON},0,1)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},1)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N35 [label="35:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,1)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},1)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N36 [label="36:
+Carriers: 1`({idx=1,typ=CON},0,1)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},3,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N37 [label="37:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,1)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},1)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N38 [label="38:
+Carriers: 1`({idx=1,typ=CON},0,1)++
+1`({idx=2,typ=GEN},2,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N39 [label="39:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,1)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},1)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N40 [label="40:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,1)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},1)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N41 [label="41:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,1)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},1)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N42 [label="42:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,1)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},1)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N43 [label="43:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,1)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},1)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N44 [label="44:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},2,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,1)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N45 [label="45:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},1,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N46 [label="46:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,1)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},1)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N47 [label="47:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,1)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},1)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N48 [label="48:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,1)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},1)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N49 [label="49:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,1)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},1)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N50 [label="50:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,1)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},1)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N51 [label="51:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,1)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},1)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N52 [label="52:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},2)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N53 [label="53:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},2)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N54 [label="54:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,1)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},1)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N55 [label="55:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,1)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},1)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N56 [label="56:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},3,0)++
+1`({idx=4,typ=BUS},10000,1)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N57 [label="57:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},2,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N58 [label="58:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},1)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},1)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N59 [label="59:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},1)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},1)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N60 [label="60:
+Carriers: 1`({idx=1,typ=CON},0,1)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,1)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N61 [label="61:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},3,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},1)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N62 [label="62:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},2,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},1)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N63 [label="63:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,1)++
+1`({idx=3,typ=GEN},4,1)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N64 [label="64:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},2,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},1)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N65 [label="65:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},3,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},1)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N66 [label="66:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,1)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,1)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N67 [label="67:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},2,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},1)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N68 [label="68:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},1)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},1)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N69 [label="69:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},1)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},1)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N70 [label="70:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},2,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},1)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N71 [label="71:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},1)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},1)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N72 [label="72:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},1)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},1)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N73 [label="73:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,1)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,1)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N74 [label="74:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},3,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},1)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N75 [label="75:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},1)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},1)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N76 [label="76:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,1)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,1)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N77 [label="77:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},1)++
+1`({idx=5,loss=0,inp=5,out=4},1)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N78 [label="78:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},1)++
+1`({idx=6,loss=0,inp=5,out=6},1)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N79 [label="79:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,1)++
+1`({idx=6,typ=GEN},4,1)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N80 [label="80:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,2)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N81 [label="81:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},3,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},1)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N82 [label="82:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,1)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},1)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N83 [label="83:
+Carriers: 1`({idx=1,typ=CON},0,1)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},3,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N84 [label="84:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,1)++
+1`({idx=3,typ=GEN},3,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N85 [label="85:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},2,0)++
+1`({idx=3,typ=GEN},4,1)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N86 [label="86:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,1)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},1)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N87 [label="87:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,1)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},1)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N88 [label="88:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},2,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,1)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N89 [label="89:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,1)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},1)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N90 [label="90:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},2,1)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N91 [label="91:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,1)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},1)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N92 [label="92:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,1)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},1)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N93 [label="93:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,1)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},1)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N94 [label="94:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},3,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,1)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N95 [label="95:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,1)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},1)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N96 [label="96:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,1)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},3,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N97 [label="97:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,1)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},1)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N98 [label="98:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,1)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},1)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N99 [label="99:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,1)++
+1`({idx=6,typ=GEN},3,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N100 [label="100:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},2,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N101 [label="101:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},3,1)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N102 [label="102:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},3,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},1)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N103 [label="103:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},2,0)++
+1`({idx=3,typ=GEN},3,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N104 [label="104:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},2,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},1)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N105 [label="105:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,1)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,1)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N106 [label="106:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},2,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},1)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N107 [label="107:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},3,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},1)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N108 [label="108:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},3,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},1)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N109 [label="109:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,1)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,1)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N110 [label="110:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},3,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},1)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N111 [label="111:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},3,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},1)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N112 [label="112:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},3,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},1)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N113 [label="113:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},3,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},1)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N114 [label="114:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},3,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},1)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N115 [label="115:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,1)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},3,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N116 [label="116:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},2,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,1)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N117 [label="117:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},3,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},4,1)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N118 [label="118:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,1)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},3,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N119 [label="119:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},3,1)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N120 [label="120:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},2,0)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},3,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+  N121 [label="121:
+Carriers: 1`({idx=1,typ=CON},0,0)++
+1`({idx=2,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},3,0)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=6,typ=GEN},3,0)
+Circuit_Breakers: 1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=6,loss=0,inp=5,out=6},0)
+RNG: 1`0++
+1`1++
+1`2++
+1`3++
+1`4++
+1`5++
+1`6++
+1`7++
+1`8++
+1`9
+"];
+}

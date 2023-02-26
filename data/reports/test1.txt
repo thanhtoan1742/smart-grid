@@ -1,20 +1,20 @@
 CPN Tools state space report for:
-/cygdrive/D/HCMUT/Do an chuyen nganh/smart-grid/data/nets/wsn_based_loss.cpn
-Report generated: Sun Feb 26 10:42:12 2023
+/cygdrive/D/HCMUT/Do an chuyen nganh/smart-grid/data/nets/wsn_based_2.cpn
+Report generated: Sun Feb 26 21:34:52 2023
 
 
  Statistics
 ------------------------------------------------------------------------
 
   State Space
-     Nodes:  16
-     Arcs:   38
+     Nodes:  121
+     Arcs:   322
      Secs:   0
      Status: Full
 
   Scc Graph
-     Nodes:  4
-     Arcs:   6
+     Nodes:  79
+     Arcs:   170
      Secs:   0
 
 
@@ -23,9 +23,9 @@ Report generated: Sun Feb 26 10:42:12 2023
 
   Best Integer Bounds
                              Upper      Lower
-     sgrid'Carriers 1        2          2
+     sgrid'Carriers 1        6          6
      sgrid'Circuit_Breakers 1
-                             2          2
+                             6          6
      sgrid'RNG 1             10         10
 
   Best Upper Multi-set Bounds
@@ -38,14 +38,44 @@ Report generated: Sun Feb 26 10:42:12 2023
 1`({idx=2,typ=GEN},2,1)++
 1`({idx=2,typ=GEN},3,0)++
 1`({idx=2,typ=GEN},3,1)++
-1`({idx=2,typ=GEN},3,2)
+1`({idx=2,typ=GEN},3,2)++
+1`({idx=3,typ=GEN},2,0)++
+1`({idx=3,typ=GEN},3,0)++
+1`({idx=3,typ=GEN},3,1)++
+1`({idx=3,typ=GEN},4,0)++
+1`({idx=3,typ=GEN},4,1)++
+1`({idx=3,typ=GEN},4,2)++
+1`({idx=4,typ=BUS},10000,0)++
+1`({idx=4,typ=BUS},10000,1)++
+1`({idx=4,typ=BUS},10000,2)++
+1`({idx=5,typ=BUS},10000,0)++
+1`({idx=5,typ=BUS},10000,1)++
+1`({idx=5,typ=BUS},10000,2)++
+1`({idx=6,typ=GEN},2,0)++
+1`({idx=6,typ=GEN},3,0)++
+1`({idx=6,typ=GEN},3,1)++
+1`({idx=6,typ=GEN},4,0)++
+1`({idx=6,typ=GEN},4,1)++
+1`({idx=6,typ=GEN},4,2)
      sgrid'Circuit_Breakers 1
-                         1`({inp=1,out=2},0)++
-1`({inp=1,out=2},1)++
-1`({inp=1,out=2},2)++
-1`({inp=2,out=1},0)++
-1`({inp=2,out=1},1)++
-1`({inp=2,out=1},2)
+                         1`({idx=1,loss=0,inp=1,out=4},0)++
+1`({idx=1,loss=0,inp=1,out=4},1)++
+1`({idx=1,loss=0,inp=1,out=4},2)++
+1`({idx=2,loss=0,inp=4,out=2},0)++
+1`({idx=2,loss=0,inp=4,out=2},1)++
+1`({idx=2,loss=0,inp=4,out=2},2)++
+1`({idx=3,loss=0,inp=4,out=3},0)++
+1`({idx=3,loss=0,inp=4,out=3},1)++
+1`({idx=3,loss=0,inp=4,out=3},2)++
+1`({idx=4,loss=0,inp=4,out=5},0)++
+1`({idx=4,loss=0,inp=4,out=5},1)++
+1`({idx=4,loss=0,inp=4,out=5},2)++
+1`({idx=5,loss=0,inp=5,out=4},0)++
+1`({idx=5,loss=0,inp=5,out=4},1)++
+1`({idx=5,loss=0,inp=5,out=4},2)++
+1`({idx=6,loss=0,inp=5,out=6},0)++
+1`({idx=6,loss=0,inp=5,out=6},1)++
+1`({idx=6,loss=0,inp=5,out=6},2)
      sgrid'RNG 1         1`0++
 1`1++
 1`2++
@@ -77,14 +107,14 @@ Report generated: Sun Feb 26 10:42:12 2023
 ------------------------------------------------------------------------
 
   Home Markings
-     [10]
+     None
 
 
  Liveness Properties
 ------------------------------------------------------------------------
 
   Dead Markings
-     [10]
+     6 [57,45,121,120,103,...]
 
   Dead Transition Instances
      None
