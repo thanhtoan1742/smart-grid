@@ -1,6 +1,6 @@
 CPN Tools state space report for:
-/cygdrive/D/HCMUT/Do an chuyen nganh/smart-grid/data/nets/wsn_based_2.cpn
-Report generated: Sun Feb 26 21:34:52 2023
+/cygdrive/D/Duy/HCMUT/Do an chuyen nganh/smart-grid/data/nets/wsn_based_2.cpn
+Report generated: Sun Feb 26 22:08:30 2023
 
 
  Statistics
@@ -114,7 +114,7 @@ Report generated: Sun Feb 26 21:34:52 2023
 ------------------------------------------------------------------------
 
   Dead Markings
-     6 [57,45,121,120,103,...]
+     6 [84,57,50,121,120,...]
 
   Dead Transition Instances
      None

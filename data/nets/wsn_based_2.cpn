@@ -205,12 +205,12 @@
                  h="74.000000"/>
         <token x="0.000000"
                y="5.000000"/>
-        <marking x="-136.000000"
-                 y="4.000000"
+        <marking x="1.000000"
+                 y="-88.000000"
                  hidden="false">
           <snap snap_id="0"
-                anchor.horizontal="2"
-                anchor.vertical="3"/>
+                anchor.horizontal="3"
+                anchor.vertical="1"/>
         </marking>
         <type id="ID1412405773">
           <posattr x="-199.000000"
@@ -265,11 +265,11 @@ Breakers</text>
                  h="74.000000"/>
         <token x="-10.000000"
                y="0.000000"/>
-        <marking x="83.500000"
-                 y="59.000000"
+        <marking x="46.000000"
+                 y="60.000000"
                  hidden="false">
           <snap snap_id="0"
-                anchor.horizontal="3"
+                anchor.horizontal="1"
                 anchor.vertical="2"/>
         </marking>
         <type id="ID1412406494">
@@ -287,7 +287,7 @@ Breakers</text>
                 version="4.0.1">CB_NODE</text>
         </type>
         <initmark id="ID1412406495">
-          <posattr x="628.500000"
+          <posattr x="626.500000"
                    y="52.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -301,9 +301,8 @@ Breakers</text>
                 version="4.0.1">[
 ({idx=1, loss = 0, inp=1, out=4}, 0),
 ({idx=2, loss = 1, inp=4, out=2}, 0),
-({idx=3, loss = 1, inp=4, out=3}, 0),
+({idx=3, loss = 0, inp=4, out=3}, 0),
 ({idx=4, loss = 0, inp=4, out=5}, 0),
-({idx=5, loss = 0, inp=5, out=4}, 0), 
 ({idx=6, loss = 0, inp=5, out=6}, 0)
 ]</text>
         </initmark>
@@ -346,7 +345,7 @@ Breakers</text>
                 version="4.0.1">RAND</text>
         </type>
         <initmark id="ID1503883807">
-          <posattr x="610.000000"
+          <posattr x="604.000000"
                    y="-122.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -357,7 +356,7 @@ Breakers</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">[0,1,2,3,4,5,6,7,8,9]</text>
+                version="4.0.1">[1,2,3,4,5,6,7,8,9]</text>
         </initmark>
       </place>
       <trans id="ID1412411769"
@@ -532,8 +531,8 @@ end;</text>
         <binding x="5.200000"
                  y="7.000000"/>
         <cond id="ID1412428696">
-          <posattr x="128.000000"
-                   y="-192.000000"/>
+          <posattr x="144.000000"
+                   y="-196.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -904,7 +903,7 @@ end;</text>
         <transend idref="ID1412428695"/>
         <placeend idref="ID1412406493"/>
         <annot id="ID1412438460">
-          <posattr x="344.500000"
+          <posattr x="349.500000"
                    y="-83.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -915,7 +914,7 @@ end;</text>
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">(cb, inCbPow + ra + #loss cb)</text>
+                version="4.0.1">(cb, inCbPow + ra + (#loss cb))</text>
         </annot>
       </arc>
       <arc id="ID1503893032"
@@ -1127,7 +1126,7 @@ end;</text>
         <textattr colour="Black"
                   bold="false"/>
         <label/>
-        <text>val output_path = &quot;D:/HCMUT/Do an chuyen nganh/smart-grid/data/dots/&quot;;
+        <text>val output_path = &quot;D:/Duy/HCMUT/Do an chuyen nganh/smart-grid/data/dots/&quot;;
 val file_name = &quot;test1&quot;;
 fun iota(n: int) = if n &lt; 1 then [] else (iota (n-1)) ++ [n];
 OGSet.StringRepOptions&apos;PI(fn (page, place, inst) =&gt; place);
@@ -1166,17 +1165,12 @@ OGtoGraphviz.ExportStateSpace(output_path ^ file_name ^ &quot;.dot&quot;);</text
           <text>&lt;same as model&gt;</text>
         </value>
       </option>
-      <option name="extensions.10005.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10006.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
       <option name="extensions.10002.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10005.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -1187,6 +1181,11 @@ OGtoGraphviz.ExportStateSpace(output_path ^ file_name ^ &quot;.dot&quot;);</text
         </value>
       </option>
       <option name="extensions.10001.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10006.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -1389,14 +1388,14 @@ OGtoGraphviz.ExportStateSpace(output_path ^ file_name ^ &quot;.dot&quot;);</text
     </options>
     <binders>
       <cpnbinder id="ID1503887346"
-                 x="488"
-                 y="133"
-                 width="1311"
-                 height="714">
+                 x="195"
+                 y="18"
+                 width="1223"
+                 height="666">
         <sheets>
           <cpnsheet id="ID1503887335"
-                    panx="-233.000000"
-                    pany="-16.000000"
+                    panx="-129.000000"
+                    pany="55.000000"
                     zoom="1.000000"
                     instance="ID2149">
             <zorder>

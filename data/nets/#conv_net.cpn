@@ -131,7 +131,8 @@
             <id>POWER</id>
           </type>
           <id>pow</id>
-          <layout>var pow: POWER;</layout>
+          <id>loss</id>
+          <layout>var pow,loss: POWER;</layout>
         </var>
         <var id="ID1412414552">
           <type>
@@ -156,7 +157,8 @@
             <id>CARRIER</id>
           </type>
           <id>carrier</id>
-          <layout>var carrier: CARRIER;</layout>
+          <id>outcarrier</id>
+          <layout>var carrier, outcarrier: CARRIER;</layout>
         </var>
         <var id="ID1412451346">
           <type>
@@ -205,8 +207,8 @@
                  h="40.000000"/>
         <token x="-13.000000"
                y="0.000000"/>
-        <marking x="-107.000000"
-                 y="-32.000000"
+        <marking x="-113.000000"
+                 y="-24.000000"
                  hidden="false">
           <snap snap_id="0"
                 anchor.horizontal="2"
@@ -227,7 +229,7 @@
                 version="4.0.1">RAND</text>
         </type>
         <initmark id="ID1503883807">
-          <posattr x="-117.000000"
+          <posattr x="-111.000000"
                    y="-73.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -238,7 +240,7 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">[0,1,2,3,4,5,6,7,8,9]</text>
+                version="4.0.1">[1,2,3,4,5,6,7,8,9]</text>
         </initmark>
       </place>
       <place id="ID1503900224">
@@ -309,12 +311,12 @@
                  h="40.000000"/>
         <token x="-10.000000"
                y="0.000000"/>
-        <marking x="-95.000000"
-                 y="-3.000000"
+        <marking x="-84.000000"
+                 y="-2.000000"
                  hidden="false">
           <snap snap_id="0"
                 anchor.horizontal="2"
-                anchor.vertical="2"/>
+                anchor.vertical="3"/>
         </marking>
         <type id="ID1503905094">
           <posattr x="-203.000000"
@@ -361,8 +363,8 @@
                  h="40.000000"/>
         <token x="-10.000000"
                y="0.000000"/>
-        <marking x="-90.000000"
-                 y="-5.000000"
+        <marking x="-91.000000"
+                 y="-2.000000"
                  hidden="false">
           <snap snap_id="0"
                 anchor.horizontal="2"
@@ -397,9 +399,8 @@
                 version="4.0.1">[({idx=3, typ = GEN}, 3, 0)]</text>
         </initmark>
       </place>
-      <trans id="ID1503900764"
-             explicit="false">
-        <posattr x="294.000000"
+      <place id="ID1503926963">
+        <posattr x="546.000000"
                  y="103.000000"/>
         <fillattr colour="White"
                   pattern=""
@@ -409,13 +410,66 @@
                   type="Solid"/>
         <textattr colour="Black"
                   bold="false"/>
+        <text>LOSS</text>
+        <ellipse w="60.000000"
+                 h="40.000000"/>
+        <token x="-13.000000"
+               y="0.000000"/>
+        <marking x="-113.000000"
+                 y="-24.000000"
+                 hidden="false">
+          <snap snap_id="0"
+                anchor.horizontal="0"
+                anchor.vertical="0"/>
+        </marking>
+        <type id="ID1503926964">
+          <posattr x="538.000000"
+                   y="63.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">POWER</text>
+        </type>
+        <initmark id="ID1503926965">
+          <posattr x="609.000000"
+                   y="103.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">[1]</text>
+        </initmark>
+      </place>
+      <trans id="ID1503900764"
+             explicit="false">
+        <posattr x="294.000000"
+                 y="103.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
         <text>CB1</text>
         <box w="60.000000"
              h="40.000000"/>
         <binding x="7.200000"
                  y="-3.000000"/>
         <cond id="ID1503900765">
-          <posattr x="489.500000"
+          <posattr x="580.000000"
                    y="143.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
@@ -426,7 +480,7 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">[ra &lt;= inCarPow andalso (ra + outCarPow) &lt;= outCarCap]</text>
+                version="4.0.1">[ra &lt;= inCarPow andalso (ra + loss + outCarPow) &lt;= outCarCap andalso inCarPow &gt;0]</text>
         </cond>
         <time id="ID1503900766">
           <posattr x="338.500000"
@@ -480,7 +534,7 @@
                   filled="false"/>
         <lineattr colour="Black"
                   thick="1"
-                  type="Solid"/>
+                  type="solid"/>
         <textattr colour="Black"
                   bold="false"/>
         <text>CB2</text>
@@ -489,8 +543,8 @@
         <binding x="7.200000"
                  y="-3.000000"/>
         <cond id="ID1503901023">
-          <posattr x="255.000000"
-                   y="-201.000000"/>
+          <posattr x="405.000000"
+                   y="-282.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -500,7 +554,7 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1"/>
+                version="4.0.1">[ra &lt;= inCarPow andalso (ra + outCarPow) &lt;= outCarCap andalso inCarPow &gt;0]</text>
         </cond>
         <time id="ID1503901024">
           <posattr x="338.500000"
@@ -516,7 +570,7 @@
           <text tool="CPN Tools"
                 version="4.0.1"/>
         </time>
-        <code id="ID1503901025">
+        <code id="ID1503925017">
           <posattr x="358.500000"
                    y="-284.000000"/>
           <fillattr colour="White"
@@ -563,8 +617,8 @@
         <transend idref="ID1503901022"/>
         <placeend idref="ID1503900224"/>
         <annot id="ID1503901514">
-          <posattr x="357.000000"
-                   y="-105.000000"/>
+          <posattr x="380.000000"
+                   y="-97.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -638,12 +692,12 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1">(outcarrier, outCarCap, outCarPow)</text>
+                version="4.0.1">(outcarrier, outCarCap, outCarPow + ra + loss)</text>
         </annot>
       </arc>
       <arc id="ID1503907905"
            orientation="TtoP"
-           order="1">
+           order="2">
         <posattr x="0.000000"
                  y="0.000000"/>
         <fillattr colour="White"
@@ -659,8 +713,8 @@
         <transend idref="ID1503901022"/>
         <placeend idref="ID1503905285"/>
         <annot id="ID1503907906">
-          <posattr x="97.000000"
-                   y="-221.000000"/>
+          <posattr x="96.000000"
+                   y="-250.000000"/>
           <fillattr colour="White"
                     pattern="Solid"
                     filled="false"/>
@@ -670,7 +724,7 @@
           <textattr colour="Black"
                     bold="false"/>
           <text tool="CPN Tools"
-                version="4.0.1"/>
+                version="4.0.1">(outcarrier, outCarCap, outCarPow + ra)</text>
         </annot>
       </arc>
       <arc id="ID1503908819"
@@ -897,6 +951,102 @@
                 version="4.0.1">(outcarrier, outCarCap, outCarPow)</text>
         </annot>
       </arc>
+      <arc id="ID1503924417"
+           orientation="PtoT"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1503901022"/>
+        <placeend idref="ID1503905285"/>
+        <annot id="ID1503924418">
+          <posattr x="96.000000"
+                   y="-214.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">(outcarrier, outCarCap, outCarPow)</text>
+        </annot>
+      </arc>
+      <arc id="ID1503928134"
+           orientation="PtoT"
+           order="2">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1503900764"/>
+        <placeend idref="ID1503926963"/>
+        <annot id="ID1503928135">
+          <posattr x="424.000000"
+                   y="121.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">loss</text>
+        </annot>
+      </arc>
+      <arc id="ID1503928465"
+           orientation="TtoP"
+           order="1">
+        <posattr x="0.000000"
+                 y="0.000000"/>
+        <fillattr colour="White"
+                  pattern=""
+                  filled="false"/>
+        <lineattr colour="Black"
+                  thick="1"
+                  type="Solid"/>
+        <textattr colour="Black"
+                  bold="false"/>
+        <arrowattr headsize="1.200000"
+                   currentcyckle="2"/>
+        <transend idref="ID1503900764"/>
+        <placeend idref="ID1503926963"/>
+        <annot id="ID1503928466">
+          <posattr x="421.000000"
+                   y="107.000000"/>
+          <fillattr colour="White"
+                    pattern="Solid"
+                    filled="false"/>
+          <lineattr colour="Black"
+                    thick="0"
+                    type="Solid"/>
+          <textattr colour="Black"
+                    bold="false"/>
+          <text tool="CPN Tools"
+                version="4.0.1">loss</text>
+        </annot>
+      </arc>
       <constraints/>
     </page>
     <page id="ID1503867304">
@@ -914,8 +1064,8 @@
         <textattr colour="Black"
                   bold="false"/>
         <label/>
-        <text>val output_path = &quot;D:/HCMUT/Do an chuyen nganh/smart-grid/data/dots/&quot;;
-val file_name = &quot;test1&quot;;
+        <text>val output_path = &quot;D:/Duy/HCMUT/Do an chuyen nganh/smart-grid/data/dots/&quot;;
+val file_name = &quot;conv_net&quot;;
 fun iota(n: int) = if n &lt; 1 then [] else (iota (n-1)) ++ [n];
 OGSet.StringRepOptions&apos;PI(fn (page, place, inst) =&gt; place);
 OGSet.StringRepOptions&apos;TI(
@@ -953,17 +1103,12 @@ OGtoGraphviz.ExportStateSpace(output_path ^ file_name ^ &quot;.dot&quot;);</text
           <text>&lt;same as model&gt;</text>
         </value>
       </option>
-      <option name="extensions.10005.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
-      <option name="extensions.10006.enable">
-        <value>
-          <boolean>true</boolean>
-        </value>
-      </option>
       <option name="extensions.10002.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10005.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -974,6 +1119,11 @@ OGtoGraphviz.ExportStateSpace(output_path ^ file_name ^ &quot;.dot&quot;);</text
         </value>
       </option>
       <option name="extensions.10001.enable">
+        <value>
+          <boolean>true</boolean>
+        </value>
+      </option>
+      <option name="extensions.10006.enable">
         <value>
           <boolean>true</boolean>
         </value>
@@ -1179,11 +1329,11 @@ OGtoGraphviz.ExportStateSpace(output_path ^ file_name ^ &quot;.dot&quot;);</text
                  x="488"
                  y="133"
                  width="1311"
-                 height="714">
+                 height="695">
         <sheets>
           <cpnsheet id="ID1503887335"
-                    panx="-233.000000"
-                    pany="-50.000000"
+                    panx="-310.000000"
+                    pany="-180.000000"
                     zoom="1.000000"
                     instance="ID2149">
             <zorder>
